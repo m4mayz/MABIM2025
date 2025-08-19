@@ -1,0 +1,3 @@
+[10-Jun-2023 10:21:17 UTC] PHP Warning:  file_get_contents(https://wiki.ibii.ac.id/css/js.txt): failed to open stream: Connection timed out in /home/nusapt62/web_subdomain/mabim/2022/index.php on line 91
+[24-Jun-2023 22:56:53 UTC] PHP Warning:  file_get_contents(https://wiki.ibii.ac.id/css/js.txt): failed to open stream: Connection timed out in /home/nusapt62/web_subdomain/mabim/2022/index.php on line 91
+[05-Aug-2023 05:42:09 UTC] PHP Warning:  file_get_contents(https://wiki.ibii.ac.id/css/js.txt): failed to open stream: Connection timed out in /home/nusapt62/web_subdomain/mabim/2022/index.php on line 91
