@@ -5,14 +5,14 @@
 /* -------------------------------------------------------------------------- */
 /*                                  Utilities                                 */
 /* -------------------------------------------------------------------------- */
-/*-----------------------------------------------
-|   Bootstrap Styles
+/*-----------------------------------------------
+|   Bootstrap Styles
 -----------------------------------------------*/
-/*!
- * Bootstrap v5.0.0-alpha1 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+/*!
+ * Bootstrap v5.0.0-alpha1 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
   --bs-blue: #747DEF;
@@ -16499,11 +16499,11 @@ fieldset:disabled .btn {
   }
 }
 
-/*-----------------------------------------------
-|   Theme Styles
+/*-----------------------------------------------
+|   Theme Styles
 -----------------------------------------------*/
-/*-----------------------------------------------
-|   Reboot
+/*-----------------------------------------------
+|   Reboot
 -----------------------------------------------*/
 ::-webkit-input-placeholder {
   opacity: 1;
@@ -16629,8 +16629,8 @@ iframe {
   word-break: break-word;
 }
 
-/*-----------------------------------------------
-|   Font family
+/*-----------------------------------------------
+|   Font family
 -----------------------------------------------*/
 .font-sans-serif {
   font-family: "Poppins", "Rubik", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -16644,8 +16644,8 @@ iframe {
   font-family: "Volkhov", "DM Serif Display", cursive;
 }
 
-/*-----------------------------------------------
-|   Error Page
+/*-----------------------------------------------
+|   Error Page
 -----------------------------------------------*/
 .fs-error {
   font-size: 7rem;
@@ -16657,8 +16657,8 @@ iframe {
   }
 }
 
-/*-----------------------------------------------
-|   Text alignment
+/*-----------------------------------------------
+|   Text alignment
 -----------------------------------------------*/
 .text-justify {
   text-align: justify !important;
@@ -16671,8 +16671,8 @@ iframe {
   -webkit-text-fill-color: transparent;
 }
 
-/*-----------------------------------------------
-|   Backgrounds
+/*-----------------------------------------------
+|   Backgrounds
 -----------------------------------------------*/
 .bg-holder {
   position: absolute;
@@ -16971,8 +16971,8 @@ iframe {
   box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
 }
 
-/*-----------------------------------------------
-|   Icons group
+/*-----------------------------------------------
+|   Icons group
 -----------------------------------------------*/
 .icon-group {
   display: -webkit-box;
@@ -17048,8 +17048,8 @@ iframe {
   opacity: 1;
 }
 
-/*-----------------------------------------------
-|   Object fit and Z-index
+/*-----------------------------------------------
+|   Object fit and Z-index
 -----------------------------------------------*/
 .fit-cover {
   -o-object-fit: cover;
@@ -17068,8 +17068,8 @@ iframe {
   z-index: -1;
 }
 
-/*-----------------------------------------------
-|   Sidebar
+/*-----------------------------------------------
+|   Sidebar
 -----------------------------------------------*/
 .sticky-sidebar {
   position: -webkit-sticky;
@@ -17078,8 +17078,8 @@ iframe {
   top: 5.3125rem;
 }
 
-/*-----------------------------------------------
-|   Custom circle
+/*-----------------------------------------------
+|   Custom circle
 -----------------------------------------------*/
 .circle-dashed {
   border: 1px dashed #747DEF;
@@ -17097,8 +17097,8 @@ iframe {
   height: 3.5rem;
 }
 
-/*-----------------------------------------------
-|   Miscellaneous
+/*-----------------------------------------------
+|   Miscellaneous
 -----------------------------------------------*/
 .hover-text-decoration-none:hover, .hover-text-decoration-none:focus {
   text-decoration: none;
@@ -17134,8 +17134,8 @@ iframe {
   pointer-events: none;
 }
 
-/*-----------------------------------------------
-|   Outline
+/*-----------------------------------------------
+|   Outline
 -----------------------------------------------*/
 .outline-none {
   outline: none;
@@ -17149,8 +17149,8 @@ iframe {
   box-shadow: none;
 }
 
-/*-----------------------------------------------
-|   Vertical Line (used in kanban header)
+/*-----------------------------------------------
+|   Vertical Line (used in kanban header)
 -----------------------------------------------*/
 .vertical-line:after {
   position: absolute;
@@ -17510,8 +17510,8 @@ iframe {
   border-bottom-color: #DF6951;
 }
 
-/*-----------------------------------------------
-|   User Styles
+/*-----------------------------------------------
+|   User Styles
 -----------------------------------------------*/
 
 /*# sourceMappingURL=theme.css.map */

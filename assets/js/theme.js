@@ -249,8 +249,8 @@ var detectorInit = function detectorInit() {
 };
 /*eslint-disable*/
 
-/*-----------------------------------------------
-|   Top navigation opacity on scroll
+/*-----------------------------------------------
+|   Top navigation opacity on scroll
 -----------------------------------------------*/
 
 
