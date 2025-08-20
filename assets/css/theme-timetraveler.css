@@ -3,14 +3,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap");
 
 :root {
-    --primary-color: #a30063; /* Magenta */
-    --secondary-color: #1795bc; /* Biru */
-    --accent-color: #fbcc1b; /* Kuning Mustard */
+    --primary-color: #a30063;
+    --secondary-color: #1795bc;
+    --accent-color: #fbcc1b;
     --dark-bg: #1a1a1a;
     --light-bg: #f4f4f4;
     --text-light: #ffffff;
     --text-dark: #333333;
-
     --font-heading: "Orbitron", sans-serif;
     --font-body: "Roboto", sans-serif;
 }
@@ -37,15 +36,39 @@ h6 {
 .navbar-custom {
     background-color: rgba(26, 26, 26, 0.85);
     backdrop-filter: blur(10px);
-    padding: 1rem 0;
+    padding: 0.5rem 1rem;
     transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.7);
 }
 
-.navbar-custom .navbar-brand {
-    font-family: var(--font-heading);
-    font-weight: 900;
+.navbar-brand-placeholder {
+    background-color: #444;
+    border: 2px dashed var(--accent-color);
     color: var(--text-light);
-    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    font-size: 0.8rem;
+    font-family: var(--font-heading);
+}
+
+.lang-switcher a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+}
+.lang-switcher a:hover {
+    color: var(--accent-color);
+}
+.lang-switcher a.active {
+    border-color: var(--accent-color);
+    border-radius: 5px;
 }
 
 .navbar-custom .nav-link {
@@ -61,9 +84,8 @@ h6 {
     color: var(--accent-color);
 }
 
-.btn-primary-custom {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
+.btn-primary-custom,
+.btn-secondary-custom {
     color: var(--text-light);
     font-family: var(--font-heading);
     padding: 12px 30px;
@@ -72,19 +94,36 @@ h6 {
     text-transform: uppercase;
     border-radius: 50px;
     transition: all 0.3s ease;
+    border: 2px solid var(--primary-color);
 }
 
+.btn-primary-custom {
+    background-color: var(--primary-color);
+}
 .btn-primary-custom:hover {
     background-color: #c2007b;
     border-color: #c2007b;
     transform: translateY(-3px);
     box-shadow: 0 4px 15px rgba(163, 0, 99, 0.4);
 }
+.btn-secondary-custom {
+    background-color: transparent;
+    border-color: var(--secondary-color);
+}
+.btn-secondary-custom:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(23, 149, 188, 0.4);
+}
+.btn-secondary-custom i {
+    margin-right: 8px;
+}
 
 .section {
     padding: 100px 0;
+    position: relative;
 }
-
 .section-title {
     font-size: 3rem;
     font-weight: 900;
@@ -93,7 +132,6 @@ h6 {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
 .section-subtitle {
     text-align: center;
     max-width: 700px;
@@ -102,16 +140,173 @@ h6 {
     color: #ccc;
 }
 
-/* Hero Section */
+/* Hero Section & Animated BG */
 .hero-section {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url("https://placeholder.com/1920x1080/1a1a1a/cccccc?text=Placeholder+Latar+Belakang")
-        no-repeat center center/cover;
     position: relative;
+    overflow: hidden;
+    background: radial-gradient(circle at center, #1a1a2e 0%, #000 80%);
+}
+
+.hero-section .bg-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* Time Portal/Vortex Animation */
+.lines {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2500px;
+    height: 2500px;
+}
+
+.line {
+    position: absolute;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    animation: vortex 8s linear infinite;
+}
+
+.line:nth-child(1) {
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-color: rgba(251, 204, 27, 0.8);
+    animation-delay: 0s;
+}
+
+.line:nth-child(2) {
+    width: 650px;
+    height: 650px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-color: rgba(23, 149, 188, 0.6);
+    animation-delay: -2s;
+}
+
+.line:nth-child(3) {
+    width: 1150px;
+    height: 1150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-color: rgba(163, 0, 99, 0.4);
+    animation-delay: -4s;
+}
+
+/* Energy particles */
+.line::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px var(--accent-color), 0 0 20px var(--accent-color),
+        0 0 30px var(--accent-color);
+    animation: particle-glow 2s ease-in-out infinite alternate;
+}
+
+.line:nth-child(2)::after {
+    background: var(--secondary-color);
+    box-shadow: 0 0 10px var(--secondary-color), 0 0 20px var(--secondary-color),
+        0 0 30px var(--secondary-color);
+    animation-delay: -0.5s;
+}
+
+.line:nth-child(3)::after {
+    background: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color),
+        0 0 30px var(--primary-color);
+    animation-delay: -1s;
+}
+
+/* Add floating time particles */
+.lines::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(
+            2px 2px at 20px 30px,
+            rgba(251, 204, 27, 0.8),
+            transparent
+        ),
+        radial-gradient(
+            2px 2px at 40px 70px,
+            rgba(23, 149, 188, 0.6),
+            transparent
+        ),
+        radial-gradient(
+            1px 1px at 90px 40px,
+            rgba(163, 0, 99, 0.7),
+            transparent
+        ),
+        radial-gradient(
+            1px 1px at 130px 80px,
+            rgba(251, 204, 27, 0.5),
+            transparent
+        ),
+        radial-gradient(
+            2px 2px at 160px 30px,
+            rgba(23, 149, 188, 0.4),
+            transparent
+        );
+    background-repeat: repeat;
+    background-size: 200px 100px;
+    animation: time-particles 20s linear infinite;
+}
+
+@keyframes vortex {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(180deg) scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes particle-glow {
+    0% {
+        opacity: 0.5;
+        transform: translateX(-50%) scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1.5);
+    }
+}
+
+@keyframes time-particles {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-1000px) rotate(360deg);
+    }
 }
 
 .hero-section::before {
@@ -121,39 +316,74 @@ h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: radial-gradient(
+            circle at 30% 20%,
+            rgba(251, 204, 27, 0.1) 0%,
+            transparent 50%
+        ),
+        radial-gradient(
+            circle at 70% 80%,
+            rgba(23, 149, 188, 0.1) 0%,
+            transparent 50%
+        ),
+        radial-gradient(
+            circle at center,
+            transparent 30%,
+            rgba(0, 0, 0, 0.4) 100%
+        );
+    z-index: 1;
 }
 
 .hero-content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     padding: 0 15px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
 }
-
 .hero-content h1 {
     font-size: 4.5rem;
     font-weight: 900;
     margin-bottom: 1rem;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
 }
-
 .hero-content .subtitle {
     font-size: 2rem;
     font-family: var(--font-body);
     font-weight: 300;
     color: var(--secondary-color);
     margin-bottom: 2rem;
+    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.8);
+}
+.hero-content .lead {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.hero-buttons .btn {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Filosofi Section */
+.trilogy-section {
+    padding: 3rem 0;
+    background-color: #111;
+    text-align: center;
+}
+.trilogy-section h3 {
+    font-size: 2rem;
+    color: var(--accent-color);
+    letter-spacing: 4px;
+}
+
 .filosofi-section {
     background-color: var(--light-bg);
     color: var(--text-dark);
 }
-
 .filosofi-section h2 {
     color: var(--primary-color);
 }
-
 .filosofi-item {
     background: var(--dark-bg);
     padding: 2rem;
@@ -162,14 +392,48 @@ h6 {
     color: var(--text-light);
     border-left: 5px solid var(--secondary-color);
 }
-
 .filosofi-item h3 {
     color: var(--secondary-color);
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 
-/* Misi Section */
+/* Logo Philosophy section */
+.logo-philosophy-section {
+    padding: 100px 0;
+}
+.logo-placeholder {
+    background-color: #333;
+    border: 3px dashed var(--primary-color);
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    color: var(--accent-color);
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.logo-philosophy-list ul {
+    list-style: none;
+    padding-left: 0;
+}
+.logo-philosophy-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+.logo-philosophy-list .icon {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-right: 1.5rem;
+    margin-top: 5px;
+}
+
+/* Other sections... */
 .misi-card {
     background-color: #2a2a2a;
     padding: 2rem;
@@ -177,34 +441,27 @@ h6 {
     height: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .misi-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 30px rgba(251, 204, 27, 0.2);
 }
-
 .misi-card .icon {
     font-size: 3rem;
     color: var(--accent-color);
     margin-bottom: 1rem;
 }
-
 .misi-card h3 {
     color: var(--accent-color);
     font-size: 1.4rem;
     margin-bottom: 1rem;
 }
-
-/* Maskot Section */
 .maskot-section {
     background-color: var(--light-bg);
     color: var(--text-dark);
 }
-
 .maskot-section .section-title {
     color: var(--primary-color);
 }
-
 .maskot-placeholder {
     background-color: #ccc;
     height: 300px;
@@ -218,7 +475,6 @@ h6 {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
-
 .nav-pills .nav-link {
     background-color: #e0e0e0;
     color: var(--text-dark);
@@ -227,17 +483,13 @@ h6 {
     border-radius: 50px;
     padding: 10px 20px;
 }
-
 .nav-pills .nav-link.active {
     background-color: var(--primary-color);
     color: var(--text-light);
 }
-
 .tab-pane h3 {
     color: var(--primary-color);
 }
-
-/* CTA Section */
 .cta-section {
     background: linear-gradient(
         45deg,
@@ -246,11 +498,9 @@ h6 {
     );
     text-align: center;
 }
-
 .cta-section h2 {
     color: var(--text-light);
 }
-
 .cta-section .btn-primary-custom {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
@@ -267,7 +517,6 @@ h6 {
     background-color: #111;
     padding: 4rem 0 2rem 0;
     color: #aaa;
-    text-align: center;
 }
 .footer-custom h5 {
     color: var(--accent-color);
@@ -283,14 +532,28 @@ h6 {
     color: var(--text-light);
 }
 .footer-custom .list-unstyled li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+.footer-custom .list-unstyled i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
 }
 .footer-custom .social-icons a {
     font-size: 1.5rem;
     margin: 0 0.5rem;
 }
-.footer-custom .row > div {
-    margin-bottom: 2rem;
+.footer-logo-placeholder {
+    background-color: #555;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    font-size: 0.8rem;
 }
 .copyright {
     border-top: 1px solid #444;
@@ -300,71 +563,88 @@ h6 {
     font-size: 0.9rem;
 }
 
-/* =============================================== */
-/* ====== RESPONSIVE STYLES FOR MOBILE =========== */
-/* =============================================== */
+/* RESPONSIVE STYLES */
+@media (max-width: 991px) {
+    .navbar-brand-placeholder {
+        margin: 0 auto;
+    }
+    .navbar-collapse {
+        background: rgba(26, 26, 26, 0.95);
+        padding: 1rem;
+        border-radius: 10px;
+        margin-top: 1rem;
+    }
+    .navbar-custom .nav-link {
+        margin: 0.5rem 0;
+        text-align: left;
+    }
+}
 
 @media (max-width: 768px) {
     .section {
         padding: 60px 0;
     }
-
     .section-title {
         font-size: 2.2rem;
     }
-
     .section-subtitle {
         margin-bottom: 2.5rem;
     }
-
-    .navbar-custom .nav-link {
-        margin: 0.5rem 0;
-        text-align: center;
-    }
-
-    /* Hero Section */
     .hero-section {
         height: 80vh;
         min-height: 500px;
     }
-
     .hero-content h1 {
         font-size: 2.8rem;
     }
-
     .hero-content .subtitle {
         font-size: 1.5rem;
     }
-
-    /* Filosofi Section */
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .trilogy-section h3 {
+        font-size: 1.5rem;
+    }
     .filosofi-item {
         margin-bottom: 1rem;
     }
     .filosofi-item h3 {
         font-size: 1.5rem;
     }
-
-    /* Misi Section */
+    .logo-philosophy-section .text-center {
+        margin-bottom: 2rem;
+    }
     .misi-card {
         text-align: center;
     }
-
-    /* Maskot Section */
     .maskot-placeholder {
         height: 250px;
         margin-bottom: 1rem;
     }
-
     .nav-pills {
         flex-wrap: wrap;
         justify-content: center;
     }
-
     .tab-pane .row > [class*="col-"] {
         text-align: center;
     }
-
     .tab-pane .col-md-7 {
         margin-top: 1.5rem;
+    }
+    .footer-custom {
+        text-align: center;
+    }
+    .footer-custom .row > div {
+        margin-bottom: 1rem;
+    }
+    .footer-custom .footer-nav-columns {
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+    }
+    .d-flex.mb-4 {
+        justify-content: center;
     }
 }

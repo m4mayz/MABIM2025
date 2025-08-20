@@ -1,36 +1,59 @@
+<?php
+// Ambil variabel bahasa dari scope global
+global $lang;
+
+// Teks Footer
+$footer_text = [
+  'id' => [
+    'title' => 'MABIM 2025',
+    'desc' => 'Time Travelling: Unlocking the Culture. Perjalanan menembus waktu untuk menyingkap, memahami, dan menghidupkan kembali nilai budaya.',
+    'nav_title' => 'Navigasi',
+    'social_title' => 'Media Sosial'
+  ],
+  'en' => [
+    'title' => 'MABIM 2025',
+    'desc' => 'Time Travelling: Unlocking the Culture. A journey through time to uncover, understand, and revive cultural values.',
+    'nav_title' => 'Navigation',
+    'social_title' => 'Social Media'
+  ]
+];
+$f_text = $footer_text[$lang];
+
+// Ambil menu dari header.php untuk konsistensi
+global $menu;
+?>
 </main>
 <footer class="footer-custom">
   <div class="container">
     <div class="row">
-      <div class="col-md-4 mb-4">
-        <h5>MABIM 2025</h5>
-        <p>Time Travelling: Unlocking the Culture. Perjalanan menembus waktu untuk menyingkap, memahami, dan
-          menghidupkan kembali nilai budaya.</p>
+      <div class="col-lg-5 col-md-12 mb-4">
+        <h5><?php echo $f_text['title']; ?></h5>
+        <p><?php echo $f_text['desc']; ?></p>
+        <div class="d-flex mb-4">
+          <div class="footer-logo-placeholder">Logo Kampus</div>
+          <div class="footer-logo-placeholder">Logo Lain</div>
+        </div>
       </div>
-      <div class="col-md-2 offset-md-1 mb-4">
-        <h5>Navigasi</h5>
-        <ul class="list-unstyled">
-          <li><a href="pedoman.php">Pedoman</a></li>
-          <li><a href="kegiatan.php">Kegiatan</a></li>
-          <li><a href="penugasan.php">Penugasan</a></li>
-          <li><a href="info.php">Info</a></li>
-        </ul>
-      </div>
-      <div class="col-md-2 mb-4">
-        <h5>Link Terkait</h5>
-        <ul class="list-unstyled">
-          <li><a href="https://nusaputra.ac.id" target="_blank">Universitas Nusa Putra</a></li>
-          <li><a href="#" target="_blank">BEM Nusa Putra</a></li>
-          <li><a href="#" target="_blank">DPM Nusa Putra</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3 mb-4">
-        <h5>Hubungi Kami</h5>
-        <p>Sekretariat MABIM 2025 <br> [Alamat Placeholder]</p>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-tiktok"></i></a>
+      <div class="col-lg-7 col-md-12 mb-4">
+        <div class="row footer-nav-columns">
+          <div class="col-6">
+            <h5><?php echo $f_text['nav_title']; ?></h5>
+            <ul class="list-unstyled">
+              <li><a href="index.php"><i class="fas fa-home"></i> <?php echo $menu['home']; ?></a></li>
+              <li><a href="pedoman.php"><i class="fas fa-book"></i> <?php echo $menu['pedoman']; ?></a></li>
+              <li><a href="kegiatan.php"><i class="fas fa-calendar-alt"></i> <?php echo $menu['kegiatan']; ?></a></li>
+              <li><a href="info.php"><i class="fas fa-info-circle"></i> <?php echo $menu['informasi']; ?></a></li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <h5><?php echo $f_text['social_title']; ?></h5>
+            <ul class="list-unstyled">
+              <li><a href="https://www.instagram.com/mabim_unsp/" target="_blank"><i class="fab fa-instagram"></i>
+                  Instagram</a></li>
+              <li><a href="https://www.youtube.com/c/MabimUnsp" target="_blank"><i class="fab fa-youtube"></i>
+                  YouTube</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
