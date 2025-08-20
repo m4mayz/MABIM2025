@@ -43,8 +43,8 @@ $content = [
     'mascot2_desc' => 'Nusalogi adalah penjaga peta waktu dan arsip pengetahuan.',
     'mascot3_name' => 'NUSARAGA (Pelindung Tangguh)',
     'mascot3_desc' => 'Nusaraga adalah pelindung nilai-nilai luhur budaya.',
-    'mascot4_name' => 'NUSAPEDIA (Ahli Teknologi)',
-    'mascot4_desc' => 'Nusapedia adalah jembatan antara masa lalu dan masa depan.',
+    'mascot4_name' => 'NUSAPEDI (Ahli Teknologi)',
+    'mascot4_desc' => 'Nusapedi adalah jembatan antara masa lalu dan masa depan.',
     'cta_title' => 'Tentukan Garis Waktumu!',
     'cta_desc' => 'Kelompokmu adalah tim penjelajah waktumu. Temukan timmu dan bersiaplah untuk memulai petualangan MABIM 2025!',
     'cta_button' => 'Lihat Pembagian Kelompok',
@@ -83,8 +83,8 @@ $content = [
     'mascot2_desc' => 'Nusalogi is the keeper of time maps and knowledge archives.',
     'mascot3_name' => 'NUSARAGA (The Protector)',
     'mascot3_desc' => 'Nusaraga is the guardian of noble cultural values.',
-    'mascot4_name' => 'NUSAPEDIA (The Technologist)',
-    'mascot4_desc' => 'Nusapedia is the bridge between the past and the future.',
+    'mascot4_name' => 'NUSAPEDI (The Technologist)',
+    'mascot4_desc' => 'Nusapedi is the bridge between the past and the future.',
     'cta_title' => 'Define Your Timeline!',
     'cta_desc' => 'Your group is your time-traveling team. Find your team and get ready to start the MABIM 2025 adventure!',
     'cta_button' => 'See Group Assignments',
@@ -123,7 +123,7 @@ $text = $content[$lang];
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-5 text-center">
-        <div class="logo-placeholder">LOGO</div>
+        <img src="assets/img/tp-logo-notext.png" alt="MABIM 2025 Logo" class="logo-image">
       </div>
       <div class="col-lg-7">
         <h2 class="section-title text-start"><?php echo $text['logo_philosophy_title']; ?></h2>
@@ -213,14 +213,14 @@ $text = $content[$lang];
         <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="pill"
             data-bs-target="#nusaraga" type="button" role="tab">NUSARAGA</button></li>
         <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="pill"
-            data-bs-target="#nusapedia" type="button" role="tab">NUSAPEDIA</button></li>
+            data-bs-target="#nusapedi" type="button" role="tab">NUSAPEDI</button></li>
       </ul>
     </div>
     <div class="tab-content" id="maskotTabContent">
       <div class="tab-pane fade show active" id="nusanesha" role="tabpanel">
         <div class="row align-items-center">
           <div class="col-md-5">
-            <div class="maskot-placeholder">Placeholder NUSANESHA</div>
+            <div class="maskot-placeholder">Coming Soon - NUSANESHA</div>
           </div>
           <div class="col-md-7">
             <h3><?php echo $text['mascot1_name']; ?></h3>
@@ -231,7 +231,7 @@ $text = $content[$lang];
       <div class="tab-pane fade" id="nusalogi" role="tabpanel">
         <div class="row align-items-center">
           <div class="col-md-5">
-            <div class="maskot-placeholder">Placeholder NUSALOGI</div>
+            <img src="assets/img/mascots/nusalogi.png" alt="NUSALOGI" class="maskot-image">
           </div>
           <div class="col-md-7">
             <h3><?php echo $text['mascot2_name']; ?></h3>
@@ -242,7 +242,7 @@ $text = $content[$lang];
       <div class="tab-pane fade" id="nusaraga" role="tabpanel">
         <div class="row align-items-center">
           <div class="col-md-5">
-            <div class="maskot-placeholder">Placeholder NUSARAGA</div>
+            <img src="assets/img/mascots/nusaraga.png" alt="NUSARAGA" class="maskot-image">
           </div>
           <div class="col-md-7">
             <h3><?php echo $text['mascot3_name']; ?></h3>
@@ -250,10 +250,10 @@ $text = $content[$lang];
           </div>
         </div>
       </div>
-      <div class="tab-pane fade" id="nusapedia" role="tabpanel">
+      <div class="tab-pane fade" id="nusapedi" role="tabpanel">
         <div class="row align-items-center">
           <div class="col-md-5">
-            <div class="maskot-placeholder">Placeholder NUSAPEDIA</div>
+            <img src="assets/img/mascots/nusapedi.png" alt="NUSAPEDI" class="maskot-image">
           </div>
           <div class="col-md-7">
             <h3><?php echo $text['mascot4_name']; ?></h3>

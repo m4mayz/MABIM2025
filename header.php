@@ -42,7 +42,7 @@ $menu = $menu_text[$lang];
   <link href="vendors/fontawesome/all.min.css" rel="stylesheet">
   <link href="assets/css/theme-timetraveler.css" rel="stylesheet">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/tp-logo-notext.png">
 </head>
 
 <body>
@@ -56,7 +56,7 @@ $menu = $menu_text[$lang];
         </button>
 
         <a class="navbar-brand" href="index.php">
-          <div class="navbar-brand-placeholder">LOGO MABIM</div>
+          <img src="assets/img/tp-logo_whitetext.png" alt="Logo MABIM 2025" class="navbar-logo">
         </a>
 
         <div class="collapse navbar-collapse" id="navbarNav">
