@@ -1,92 +1,175 @@
-<?php
-  $home ="active";
-  $pedoman="";
-  $atribut="";
-  $kegiatan="";
-  $penugasan="";
-  $absensi="";
-  $info="";
-
-  include 'header.php';
-?>
-
-      <section style="background-image: url('assets/img/newImage/background1.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center; height: 780px;" >
-        <div class="container">
-          <div class="row align-items-center">
-            <h1 class="fw-bold text-center" style="color: white; font-family: 'Roboto Slab', serif; font-size: 35pt; margin-bottom: 0px">- Selamat Datang Genusian -<br><span style="color: #CC4848; font-size: 50pt">Universitas Nusa Putra</span></h1>
-            
-            <div class="col-md-6 text-md-start text-center py-2">
-              <h1 class=" fs-9 fw-bold" style="color: white; font-family: 'Roboto Slab', serif;"><br>MABIM 2023</h1>
-              <p class="mb-6 lead" style="color: #CC4848; font-size: 14pt; font-family: 'Roboto Slab', serif;">
-                    <b>Masa Bimbingan Mahasiswa Baru 2023 </b><br>
-                    adalah periode di awal kepemimpinan mahasiswa <br>
-                    baru di Universitas Nusa Putra 2023.
-              </p>
-              <!--<div class="text-center text-md-start" style="margin-top: -20px"><a class="btn me-3 btn-lg" href="https://youtu.be/3xSZGBXgkzc?feature=shared" role="button" data-bs-toggle="modal" data-bs-target="#popupVideo" style="background-color: #CC4848; color: white;"><span class="fas fa-play me-2" style="color: white;"></span>Trailer Mabim 2023 </a></div>-->
-              <a class="btn me-3 btn-lg" href="https://www.youtube.com/watch?v=3xSZGBXgkzc"  target="_blank" style="background-color: #CC4848; color: white; "><span class="fas fa-play me-2" style="color: white;"></span>Trailer MABIM 2023</a>
-            </div>
-            <div class="col-md-6 text-end"><img class="animate__animated animate__tada" style="margin-top: 50px; width: 90%" src="assets/img/newImage/Logo3-Mabim2023.png" alt=""/></div>
-          </div>
-        </div>
-      </section>
-
-        <div style="background-image:url(assets/img/newImage/background2.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; height: 980px;">
-            <h1 class="fs-8 fw-bold mb-4 text-center" style="font-family: 'Roboto Slab', serif; color: white; font-size: 24px;"><br><br><br><br>
-            Unify the differences with<br>
-            Amor Deus, Parentium, Concervis</h1>
-        </div>
-
-      <section class="">
-        <div class="bg-holder z-index--1 bottom-0 d-none d-lg-block" style="background-image:url('assets/img/newImage/background5-2.jpg'); opacity:.1;">
-        </div>
-        <div class="container">
-          <div class="row">
-            <br>
-            <div class="col-lg-6">
-              <h1 class="fs-9 fw-bold" style="color: #CC4848; font-family: 'Roboto Slab', serif;">Tujuan Kegiatan</h1>
-              <br>
-              <div class="d-flex align-items-center mb-3"> <img class="me-sm-4 me-2" src="assets/img/newImage/checklist.png" width="35" alt="tick" />
-                <p class="fw-medium mb-0 text-secondary">Menanamkan kesadaran berbangsa, bernegara, bela negara, serta kepedulian terhadap lingkungan dan masyarakat sesuai dengan 4 (empat) pilar kebangsaan (Pancasila, UUD 1945, NKRI, dan Bhinneka Tunggal Ika).</p>
-              </div>
-              <div class="d-flex align-items-center mb-3"> <img class="me-sm-4 me-2" src="assets/img/newImage/checklist.png" width="35" alt="tick" />
-                <p class="fw-medium mb-0 text-secondary">Memperkenalkan sistem pembelajaran dan dinamika kehidupan kampus melalui Trilogi Nusa Putra dan tri dharma perguruan  tinggi.</p>
-              </div>
-              <div class="d-flex align-items-center mb-3"><img class="me-sm-4 me-2" src="assets/img/newImage/checklist.png" width="35" alt="tick" />
-                <p class="fw-medium mb-0 text-secondary">Memperkenalkan hak dan kewajiban sebagai mahasiswa, sebagai insan intelektual, bagi diri dan lingkungan sekitar.</p>
-              </div>
-              <div class="d-flex align-items-center mb-3"><img class="me-sm-4 me-2" src="assets/img/newImage/checklist.png" width="35" alt="tick" />
-                <p class="fw-medium mb-0 text-secondary">Mewujudkan kampus yang humanis, ramah (inklusif), toleran, aman dan sehat.</p>
-              </div>
-              <div class="d-flex align-items-center mb-3"><img class="me-sm-4 me-2" src="assets/img/newImage/checklist.png" width="35" alt="tick" />
-                <p class="fw-medium mb-0 text-secondary">Memperkenalkan kiat sukses belajar dan mengembangkan diri di perguruan tinggi melalui konsepsi dan praktik Merdeka Belajar - Kampus Merdeka.</p>
-              </div>
-              <div class="d-flex align-items-center mb-3"><img class="me-sm-4 me-2" src="assets/img/newImage/checklist.png" width="35" alt="tick" />
-                <p class="fw-medium mb-0 text-secondary">Membentuk karakter Genusian yaitu Generasi Nusa Putra Brilian  Berilmu dan Beriman melalui pengamalan trilogi nusa putra yaitu cinta kasih terhadap tuhan, cinta kasih terhadap orang tua dan cinta kasih terhadap sesame.</p>
-              </div>
-              <div class="d-flex align-items-center mb-3"><img class="me-sm-4 me-2" src="assets/img/newImage/checklist.png" width="35" alt="tick" />
-                <p class="fw-medium mb-0 text-secondary">Terciptanya generasi nusa putra brilian  berilmu dan ber iman atau Genusian.</p>
-              </div>
-            </div>
-            <div class="col-lg-6"><img class="animate__animated animate__tada" style="margin-top: 30px; width: 100%" src="assets/img/newImage/Maskot-Mabim2023.png" alt="" /></div>
-          </div>
-        </div><!-- end of .container-->
-      </section>
-      
-      <div class"container">
-          <section style="background-image: url('assets/img/newImage/background1.jpg');background-size: cover; height: 505px;" >
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6 text-md-start text-center">
-              <h1 class=" fs-9 fw-bold" style="color: white; font-family: 'Roboto Slab', serif;">Pembagian Kelompok</h1>
-              <p class="mb-6 lead" style="color: #CC4848; font-family: 'Roboto Slab', serif; font-size: 18pt"><strong>Masa Bimbingan Mahasiswa Baru<br>Universitas Nusa Putra tahun 2023</strong></p>
-              <a class="btn me-3 btn-lg" href="https://drive.google.com/file/d/1fZjS1QUsWkAQC7sYGy1Au4b99iQZg8DQ/view?usp=sharing" target="_blank" style="background-color: #CC4848; color: white;"><span class="fas fa-play me-2" style="color: white;"></span>Lihat Kelompok</a>
-            </div>
-            <!--<div class="col-md-6 text-end"><img class="animate__animated animate__tada" style="margin-top: 10px; width: 90%" src="assets/img/5498791-removebg-preview.png" alt="" /></div>-->
-          </div>
-        </div>
-      </section>
-      </div>
-      
-<?php
-  include 'footer.php';
+<?php
+  $home ="active";
+  $pedoman="";
+  $atribut="";
+  $kegiatan="";
+  $penugasan="";
+  $absensi="";
+  $info="";
+
+  include 'header.php';
+?>
+
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1 class="text-uppercase">Time Travelling</h1>
+          <p class="subtitle">Unlocking The Culture</p>
+          <p class="lead text-light mb-5">Selamat Datang Para Penjelajah Waktu Genusian 2025!</p>
+          <a class="btn btn-primary-custom" href="#filosofi">Mulai Perjalanan</a>
+        </div>
+      </section>
+
+      <section class="section filosofi-section" id="filosofi">
+        <div class="container">
+          <h2 class="section-title">Filosofi Tema</h2>
+          <p class="section-subtitle">“Perjalanan menembus waktu untuk menyingkap, memahami, dan menghidupkan kembali nilai budaya, sehingga warisan masa lalu dapat menjadi cahaya bagi masa depan.”</p>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="filosofi-item">
+                <h3>Time Travelling</h3>
+                <p>Menjelajahi masa lalu untuk memahami akar sejarah, tradisi, dan nilai-nilai yang membentuk identitas. Dengan menjelajahi jejak waktu, kita memetik pelajaran dari sejarah untuk menuntun langkah ke depan.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="filosofi-item">
+                <h3>Unlocking the Culture</h3>
+                <p>Mengungkap, membongkar, dan merevitalisasi unsur-unsur budaya yang terlupakan. Membuka kunci budaya adalah mengalirkan kembali nilai-nilai luhur agar hidup, beradaptasi, dan menginspirasi masa depan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Misi Perjalanan Waktu</h2>
+          <p class="section-subtitle">Tujuan dari ekspedisi MABIM 2025 adalah untuk membentuk Genusian yang berkarakter, intelektual, dan peduli terhadap warisan budaya bangsa.</p>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="misi-card">
+                <div class="icon"><i class="fas fa-flag"></i></div>
+                <h3>Menanamkan Jiwa Kebangsaan</h3>
+                <p>Memperkuat kesadaran berbangsa, bernegara, dan cinta tanah air sesuai dengan 4 pilar kebangsaan.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="misi-card">
+                <div class="icon"><i class="fas fa-university"></i></div>
+                <h3>Memahami Kehidupan Kampus</h3>
+                <p>Memperkenalkan sistem pembelajaran dan dinamika kehidupan kampus melalui Trilogi Nusa Putra.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="misi-card">
+                <div class="icon"><i class="fas fa-balance-scale"></i></div>
+                <h3>Hak & Kewajiban Mahasiswa</h3>
+                <p>Memperkenalkan hak dan kewajiban sebagai mahasiswa dan insan intelektual bagi lingkungan sekitar.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="misi-card">
+                <div class="icon"><i class="fas fa-users"></i></div>
+                <h3>Mewujudkan Kampus Humanis</h3>
+                <p>Menciptakan lingkungan kampus yang ramah, inklusif, toleran, aman, dan sehat bagi semua.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="misi-card">
+                <div class="icon"><i class="fas fa-lightbulb"></i></div>
+                <h3>Kiat Sukses Belajar</h3>
+                <p>Memperkenalkan strategi sukses belajar dan pengembangan diri melalui konsep Merdeka Belajar - Kampus Merdeka.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="misi-card">
+                <div class="icon"><i class="fas fa-gem"></i></div>
+                <h3>Membentuk Karakter Genusian</h3>
+                <p>Membentuk Generasi Nusa Putra Brilian (Berilmu dan Beriman) melalui pengamalan trilogi nusa putra.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="section maskot-section">
+        <div class="container">
+          <h2 class="section-title">Panduan Perjalanan Waktu</h2>
+          <p class="section-subtitle">Kenali para penjaga waktu yang akan memandu ekspedisi budaya Anda selama MABIM 2025.</p>
+
+          <div class="d-flex justify-content-center mb-4">
+            <ul class="nav nav-pills" id="maskotTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="nusanesha-tab" data-bs-toggle="pill" data-bs-target="#nusanesha" type="button" role="tab">NUSANESHA</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="nusalogi-tab" data-bs-toggle="pill" data-bs-target="#nusalogi" type="button" role="tab">NUSALOGI</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="nusaraga-tab" data-bs-toggle="pill" data-bs-target="#nusaraga" type="button" role="tab">NUSARAGA</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="nusapedia-tab" data-bs-toggle="pill" data-bs-target="#nusapedia" type="button" role="tab">NUSAPEDIA</button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-content" id="maskotTabContent">
+            <div class="tab-pane fade show active" id="nusanesha" role="tabpanel">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="maskot-placeholder">Placeholder NUSANESHA</div>
+                </div>
+                <div class="col-md-7">
+                  <h3>NUSANESHA (Maskot Utama)</h3>
+                  <p>Sebagai penjelajah waktu utama, Nusanesha memimpin ekspedisi untuk mengungkap kearifan budaya. Ia melambangkan semangat ingin tahu, keberanian menjelajahi masa lalu, dan visi untuk masa depan yang lebih baik.</p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nusalogi" role="tabpanel">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="maskot-placeholder">Placeholder NUSALOGI</div>
+                </div>
+                <div class="col-md-7">
+                  <h3>NUSALOGI (Ahli Strategi & Pengetahuan)</h3>
+                  <p>Nusalogi adalah penjaga peta waktu dan arsip pengetahuan. Dengan kebijaksanaannya, ia membantu menafsirkan hikmah dari masa lalu dan merancang strategi untuk menghadapi tantangan masa depan.</p>
+                </div>
+              </div>
+            </div>
+             <div class="tab-pane fade" id="nusaraga" role="tabpanel">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="maskot-placeholder">Placeholder NUSARAGA</div>
+                </div>
+                <div class="col-md-7">
+                  <h3>NUSARAGA (Pelindung yang Tangguh)</h3>
+                  <p>Nusaraga adalah pelindung nilai-nilai luhur budaya. Dengan ketangguhannya, ia memastikan bahwa warisan budaya tetap terjaga dan tidak lekang oleh waktu, siap menjadi benteng identitas generasi baru.</p>
+                </div>
+              </div>
+            </div>
+             <div class="tab-pane fade" id="nusapedia" role="tabpanel">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="maskot-placeholder">Placeholder NUSAPEDIA</div>
+                </div>
+                <div class="col-md-7">
+                  <h3>NUSAPEDIA (Ahli Teknologi & Informasi)</h3>
+                  <p>Nusapedia adalah jembatan antara masa lalu dan masa depan. Ia menggunakan teknologi untuk membuka akses terhadap informasi budaya, membuatnya relevan dan mudah diakses oleh Genusian di era digital.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-section">
+        <div class="container">
+          <h2 class="section-title">Tentukan Garis Waktumu!</h2>
+          <p class="section-subtitle text-light">Kelompokmu adalah tim penjelajah waktumu. Temukan timmu dan bersiaplah untuk memulai petualangan MABIM 2025!</p>
+          <a class="btn btn-primary-custom" href="#" target="_blank">Lihat Pembagian Kelompok</a>
+        </div>
+      </section>
+
+<?php
+  include 'footer.php';
 ?>

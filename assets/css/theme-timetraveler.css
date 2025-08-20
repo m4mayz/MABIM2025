@@ -1,0 +1,370 @@
+/* assets/css/theme-timetraveler.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap");
+
+:root {
+    --primary-color: #a30063; /* Magenta */
+    --secondary-color: #1795bc; /* Biru */
+    --accent-color: #fbcc1b; /* Kuning Mustard */
+    --dark-bg: #1a1a1a;
+    --light-bg: #f4f4f4;
+    --text-light: #ffffff;
+    --text-dark: #333333;
+
+    --font-heading: "Orbitron", sans-serif;
+    --font-body: "Roboto", sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.navbar-custom {
+    background-color: rgba(26, 26, 26, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-custom .navbar-brand {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    color: var(--text-light);
+    font-size: 1.8rem;
+}
+
+.navbar-custom .nav-link {
+    color: var(--text-light);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 1rem;
+    transition: color 0.3s;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+    color: var(--accent-color);
+}
+
+.btn-primary-custom {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-light);
+    font-family: var(--font-heading);
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    background-color: #c2007b;
+    border-color: #c2007b;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(163, 0, 99, 0.4);
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-subtitle {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 4rem auto;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url("https://placeholder.com/1920x1080/1a1a1a/cccccc?text=Placeholder+Latar+Belakang")
+        no-repeat center center/cover;
+    position: relative;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 0 15px;
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.hero-content .subtitle {
+    font-size: 2rem;
+    font-family: var(--font-body);
+    font-weight: 300;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+}
+
+/* Filosofi Section */
+.filosofi-section {
+    background-color: var(--light-bg);
+    color: var(--text-dark);
+}
+
+.filosofi-section h2 {
+    color: var(--primary-color);
+}
+
+.filosofi-item {
+    background: var(--dark-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+    border-left: 5px solid var(--secondary-color);
+}
+
+.filosofi-item h3 {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Misi Section */
+.misi-card {
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: 10px;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.misi-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(251, 204, 27, 0.2);
+}
+
+.misi-card .icon {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.misi-card h3 {
+    color: var(--accent-color);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+/* Maskot Section */
+.maskot-section {
+    background-color: var(--light-bg);
+    color: var(--text-dark);
+}
+
+.maskot-section .section-title {
+    color: var(--primary-color);
+}
+
+.maskot-placeholder {
+    background-color: #ccc;
+    height: 300px;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.nav-pills .nav-link {
+    background-color: #e0e0e0;
+    color: var(--text-dark);
+    font-family: var(--font-heading);
+    margin: 5px;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.tab-pane h3 {
+    color: var(--primary-color);
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(
+        45deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+    text-align: center;
+}
+
+.cta-section h2 {
+    color: var(--text-light);
+}
+
+.cta-section .btn-primary-custom {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--text-dark);
+}
+.cta-section .btn-primary-custom:hover {
+    background-color: #ffd633;
+    border-color: #ffd633;
+    box-shadow: 0 4px 15px rgba(251, 204, 27, 0.4);
+}
+
+/* Footer */
+.footer-custom {
+    background-color: #111;
+    padding: 4rem 0 2rem 0;
+    color: #aaa;
+    text-align: center;
+}
+.footer-custom h5 {
+    color: var(--accent-color);
+    font-family: var(--font-heading);
+    margin-bottom: 1.5rem;
+}
+.footer-custom a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer-custom a:hover {
+    color: var(--text-light);
+}
+.footer-custom .list-unstyled li {
+    margin-bottom: 0.5rem;
+}
+.footer-custom .social-icons a {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+}
+.footer-custom .row > div {
+    margin-bottom: 2rem;
+}
+.copyright {
+    border-top: 1px solid #444;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* =============================================== */
+/* ====== RESPONSIVE STYLES FOR MOBILE =========== */
+/* =============================================== */
+
+@media (max-width: 768px) {
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .section-subtitle {
+        margin-bottom: 2.5rem;
+    }
+
+    .navbar-custom .nav-link {
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        height: 80vh;
+        min-height: 500px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-content .subtitle {
+        font-size: 1.5rem;
+    }
+
+    /* Filosofi Section */
+    .filosofi-item {
+        margin-bottom: 1rem;
+    }
+    .filosofi-item h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Misi Section */
+    .misi-card {
+        text-align: center;
+    }
+
+    /* Maskot Section */
+    .maskot-placeholder {
+        height: 250px;
+        margin-bottom: 1rem;
+    }
+
+    .nav-pills {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tab-pane .row > [class*="col-"] {
+        text-align: center;
+    }
+
+    .tab-pane .col-md-7 {
+        margin-top: 1.5rem;
+    }
+}
