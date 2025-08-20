@@ -63,10 +63,95 @@ global $menu;
   </div>
 </footer>
 
+<div id="floating-mascot" class="floating-mascot-container">
+  <div id="mascot-bubble" class="mascot-chat-bubble"></div>
+  <img src="assets/img/newImage/Maskot-Mabim2023.png" alt="Mascot" class="mascot-image" id="mascot-image">
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 <script src="vendors/is/is.min.js"></script>
 <script src="assets/js/theme.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const mascotContainer = document.getElementById('floating-mascot');
+    const mascotBubble = document.getElementById('mascot-bubble');
+    const mascotImage = document.getElementById('mascot-image');
+    const currentLang = '<?php echo $lang; ?>';
+    let chatInterval;
+
+    // --- Kumpulan Teks untuk Bubble Chat ---
+    const chatMessages = {
+      id: {
+        greeting: "Halo, Penjelajah Waktu! Aku di sini untuk membantumu.",
+        random: [
+          "Sudah siap menjelajahi waktu?",
+          "Jangan lupa cek halaman pedoman ya!",
+          "Klik aku jika butuh sesuatu!",
+          "Semangat untuk MABIM 2025!",
+          "Apa kamu tahu? Sejarah itu keren!",
+          "Masa depan menantimu, Genusian!"
+        ]
+      },
+      en: {
+        greeting: "Hello, Time Traveler! I'm here to help you.",
+        random: [
+          "Ready to explore time?",
+          "Don't forget to check the guideline page!",
+          "Click me if you need anything!",
+          "Spirit for MABIM 2025!",
+          "Did you know? History is cool!",
+          "The future awaits, Genusian!"
+        ]
+      }
+    };
+
+    const messages = chatMessages[currentLang];
+
+    // Fungsi untuk menampilkan bubble chat
+    function showBubble(message) {
+      mascotBubble.textContent = message;
+      mascotBubble.classList.add('visible');
+      // Sembunyikan bubble setelah 4 detik
+      setTimeout(() => {
+        mascotBubble.classList.remove('visible');
+      }, 4000);
+    }
+
+    // Fungsi untuk menampilkan pesan acak
+    function showRandomMessage() {
+      const randomIndex = Math.floor(Math.random() * messages.random.length);
+      showBubble(messages.random[randomIndex]);
+    }
+
+    // Munculkan maskot setelah 3 detik
+    setTimeout(() => {
+      mascotContainer.classList.add('visible');
+      // Tampilkan sapaan pertama kali
+      setTimeout(() => {
+        showBubble(messages.greeting);
+      }, 500); // Sedikit jeda setelah maskot muncul
+    }, 3000);
+
+    // Event listener saat maskot diklik
+    mascotImage.addEventListener('click', function () {
+      // Hentikan interval sementara agar tidak tumpang tindih
+      clearInterval(chatInterval);
+      showRandomMessage();
+      // Mulai lagi interval setelah di-klik
+      startChatInterval();
+    });
+
+    // Fungsi untuk memulai interval chat
+    function startChatInterval() {
+      chatInterval = setInterval(showRandomMessage, 6000); // Munculkan chat setiap 6 detik
+    }
+
+    // Mulai interval otomatis setelah sapaan pertama selesai
+    setTimeout(startChatInterval, 10000); // 3s (muncul) + 0.5s (jeda) + 4s (tampil) + jeda
+  });
+</script>
 </body>
 
 </html>

@@ -208,7 +208,6 @@ h6 {
     animation-delay: -4s;
 }
 
-/* Energy particles */
 .line::after {
     content: "";
     position: absolute;
@@ -238,7 +237,6 @@ h6 {
     animation-delay: -1s;
 }
 
-/* Add floating time particles */
 .lines::before {
     content: "";
     position: absolute;
@@ -376,7 +374,6 @@ h6 {
     color: var(--accent-color);
     letter-spacing: 4px;
 }
-
 .filosofi-section {
     background-color: var(--light-bg);
     color: var(--text-dark);
@@ -397,8 +394,6 @@ h6 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
-
-/* Logo Philosophy section */
 .logo-philosophy-section {
     padding: 100px 0;
 }
@@ -432,8 +427,6 @@ h6 {
     margin-right: 1.5rem;
     margin-top: 5px;
 }
-
-/* Other sections... */
 .misi-card {
     background-color: #2a2a2a;
     padding: 2rem;
@@ -490,6 +483,10 @@ h6 {
 .tab-pane h3 {
     color: var(--primary-color);
 }
+.filosofi-section .section-subtitle,
+.maskot-section .section-subtitle {
+    color: var(--text-dark);
+}
 .cta-section {
     background: linear-gradient(
         45deg,
@@ -511,8 +508,6 @@ h6 {
     border-color: #ffd633;
     box-shadow: 0 4px 15px rgba(251, 204, 27, 0.4);
 }
-
-/* Footer */
 .footer-custom {
     background-color: #111;
     padding: 4rem 0 2rem 0;
@@ -563,6 +558,71 @@ h6 {
     font-size: 0.9rem;
 }
 
+/* ================== FLOATING MASCOT STYLES (UPDATED) ================== */
+.floating-mascot-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    transform: translateY(200%); /* Start off-screen */
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.floating-mascot-container.visible {
+    transform: translateY(0);
+}
+.mascot-image {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    animation: float-calm 6s ease-in-out infinite;
+    position: relative; /* Add relative positioning */
+    z-index: 1; /* Set z-index lower than bubble */
+}
+.mascot-chat-bubble {
+    position: absolute;
+    bottom: 140px;
+    left: 80px;
+    background-color: var(--primary-color); /* CHANGE: Use primary color */
+    color: var(--text-light); /* CHANGE: Use light text color */
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-family: var(--font-body);
+    width: 200px;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+    pointer-events: none;
+    z-index: 2; /* FIX: Ensure bubble is on top of mascot */
+}
+.mascot-chat-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: var(--primary-color) transparent; /* CHANGE: Match new bubble color */
+    display: block;
+    width: 0;
+}
+.mascot-chat-bubble.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+@keyframes float-calm {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 /* RESPONSIVE STYLES */
 @media (max-width: 991px) {
     .navbar-brand-placeholder {
@@ -579,7 +639,6 @@ h6 {
         text-align: left;
     }
 }
-
 @media (max-width: 768px) {
     .section {
         padding: 60px 0;
@@ -647,19 +706,30 @@ h6 {
     .d-flex.mb-4 {
         justify-content: center;
     }
-
     .line:nth-child(1) {
         width: 100px;
         height: 100px;
     }
-
     .line:nth-child(2) {
         width: 350px;
         height: 350px;
     }
-
     .line:nth-child(3) {
         width: 500px;
         height: 500px;
+    }
+
+    .floating-mascot-container {
+        bottom: 10px;
+        left: 10px;
+    }
+    .mascot-image {
+        width: 100px;
+    }
+    .mascot-chat-bubble {
+        bottom: 100px;
+        left: 50px;
+        width: 180px;
+        font-size: 0.8rem;
     }
 }
