@@ -954,7 +954,32 @@ h6 {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
-/* Remove base tooltip styling since we're using inline styles now
+/* Remove these base styling classes as they're now inline in the HTML
+.floating-whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.3s;
+}
+
+.whatsapp-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+*/
+
 .whatsapp-tooltip {
     position: absolute;
     right: 75px;
@@ -971,9 +996,7 @@ h6 {
     z-index: 1001;
     pointer-events: none;
 }
-*/
 
-/* Keep pseudo-element since it can't be done with inline styles */
 .whatsapp-tooltip:after {
     content: "";
     position: absolute;
@@ -985,7 +1008,6 @@ h6 {
     border-color: transparent transparent transparent #333;
 }
 
-/* Keep hover effects since they can't be done with inline styles */
 .floating-whatsapp-btn:hover .whatsapp-tooltip {
     opacity: 1;
     visibility: visible;

@@ -100,11 +100,7 @@ $whatsapp_message = urlencode($whatsapp_default_text[$lang]);
    border-radius: 50%; text-align: center; display: flex; align-items: center; justify-content: center; 
    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); z-index: 1000; transition: all 0.3s;" class="floating-whatsapp-btn"
   target="_blank">
-  <div class="whatsapp-tooltip" style="position: absolute; right: 75px; background-color: #333; color: white; 
-    padding: 8px 15px; border-radius: 5px; font-size: 14px; white-space: nowrap; opacity: 0; visibility: hidden; 
-    transform: translateX(20px); transition: all 0.3s ease; z-index: 1001; pointer-events: none;">
-    <?php echo $f_text['whatsapp_text']; ?>
-  </div>
+  <div class="whatsapp-tooltip"><?php echo $f_text['whatsapp_text']; ?></div>
   <img src="assets/img/icon/whatsapp.png" alt="WhatsApp" style="width: 30px; height: 30px; object-fit: contain;">
 </a>
 
