@@ -533,7 +533,7 @@ h6 {
     transition: color 0.3s;
 }
 .footer-custom a:hover {
-    color: var(--text-light);
+    color: var(--primary-color);
 }
 .footer-custom .list-unstyled li {
     margin-bottom: 0.8rem;
@@ -721,6 +721,140 @@ h6 {
     mask-repeat: no-repeat;
 }
 
+/* Trilogi Section Styles */
+.trilogi-section {
+    background-color: var(--dark-bg);
+    position: relative;
+    padding: 100px 0;
+}
+
+.trilogi-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(
+        90deg,
+        var(--primary-color),
+        var(--secondary-color),
+        var(--accent-color)
+    );
+}
+
+.trilogi-placeholder {
+    background-color: #2a2a2a;
+    height: 300px;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.trilogi-placeholder:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 30px rgba(163, 0, 99, 0.2);
+}
+
+.trilogi-placeholder i {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.trilogi-subtitle {
+    font-family: var(--font-body);
+    color: var(--secondary-color);
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Add margin to the tab content in the trilogi section */
+#trilogiTabContent {
+    margin-top: 30px;
+}
+
+/* Adjust spacing between the tab rows */
+#trilogiTabContent .row {
+    margin-top: 50px;
+}
+
+/* Floating WhatsApp Button */
+.floating-whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.3s;
+}
+
+.whatsapp-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.floating-whatsapp-btn:hover {
+    transform: scale(1.1);
+    color: white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.whatsapp-tooltip {
+    position: absolute;
+    right: 75px;
+    background-color: #333;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(20px);
+    transition: all 0.3s ease;
+    z-index: 1001;
+    pointer-events: none;
+}
+
+.whatsapp-tooltip:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    transform: translateY(-50%);
+    border-width: 8px 0 8px 8px;
+    border-style: solid;
+    border-color: transparent transparent transparent #333;
+}
+
+.floating-whatsapp-btn:hover .whatsapp-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-10px);
+    display: block;
+}
+
+/* Responsive adjustments */
 @media (max-width: 991px) {
     .navbar-custom {
         flex-direction: column;
@@ -822,14 +956,21 @@ h6 {
     .footer-custom {
         text-align: center;
     }
+
     .footer-custom .row > div {
         margin-bottom: 1rem;
     }
-    .footer-custom .footer-nav-columns {
+
+    .footer-nav-columns {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         text-align: left;
     }
+
+    .footer-nav-columns .col-6 {
+        padding: 0 20px;
+    }
+
     .d-flex.mb-4 {
         justify-content: center;
     }
@@ -870,4 +1011,106 @@ h6 {
     .document-preview-placeholder {
         height: 350px;
     }
+    .floating-mascot-container {
+        bottom: 10px;
+        left: 10px;
+    }
+    .floating-mascot-container .mascot-image {
+        width: 80px;
+        left: 15px;
+    }
+    .mascot-chat-bubble {
+        bottom: 130px;
+        left: 45px;
+        width: 160px;
+        font-size: 0.8rem;
+    }
+
+    .footer-logo {
+        height: 100px;
+    }
+
+    .page-header-title {
+        font-size: 2.5rem;
+    }
+    .document-preview-placeholder {
+        height: 350px;
+    }
+}
+
+/* Update the CSS for the new image containers */
+.trilogi-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.trilogi-image {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.trilogi-image:hover {
+    transform: scale(1.1);
+}
+
+/* Section Divider Styling */
+.section-divider {
+    padding: 0;
+    background-color: var(--dark-bg);
+}
+
+.section-separator {
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(
+        to right,
+        transparent,
+        var(--primary-color),
+        var(--secondary-color),
+        var(--accent-color),
+        transparent
+    );
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* Adjust Hero Section Circle Sizes for Mobile View */
+@media (max-width: 768px) {
+    /* ...existing code... */
+
+    /* Adjust hero circles for better mobile proportions */
+    .line:nth-child(1) {
+        width: 180px;
+        height: 180px;
+    }
+    .line:nth-child(2) {
+        width: 400px;
+        height: 400px;
+    }
+    .line:nth-child(3) {
+        width: 650px;
+        height: 650px;
+    }
+
+    /* ...existing code... */
+}
+
+/* Footer icon styling */
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.nav-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
 }

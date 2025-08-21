@@ -15,7 +15,6 @@ $content = [
     'hero_greeting' => 'Selamat Datang Para Penjelajah Waktu Genusian 2025!',
     'hero_button_main' => 'Mulai Perjalanan',
     'hero_button_trailer' => 'Trailer MABIM 2025',
-    'trilogy' => 'Amor Deus, Parentium, Concervis',
     'philosophy_title' => 'Filosofi Tema',
     'philosophy_desc' => '"Perjalanan menembus waktu untuk menyingkap, memahami, dan menghidupkan kembali nilai budaya, sehingga warisan masa lalu dapat menjadi cahaya bagi masa depan."',
     'philosophy_item1_title' => 'Time Travelling',
@@ -48,6 +47,18 @@ $content = [
     'cta_title' => 'Tentukan Garis Waktumu!',
     'cta_desc' => 'Kelompokmu adalah tim penjelajah waktumu. Temukan timmu dan bersiaplah untuk memulai petualangan MABIM 2025!',
     'cta_button' => 'Lihat Pembagian Kelompok',
+    // Tambahkan konten trilogi
+    'trilogi_title' => 'Mengenal Trilogi Nusa Putra',
+    'trilogi_desc' => 'Nilai-nilai luhur yang menjadi fondasi setiap Genusian di sepanjang perjalanan waktu.',
+    'amor_deus_title' => 'Amor Deus',
+    'amor_deus_subtitle' => 'Cinta Kasih Tuhan',
+    'amor_deus_desc' => 'Sebagai anugerah cahaya insan Nusa Putra untuk tetap menjalankan syariat agama, beragama merupakan kebutuhan dan cinta kita kepada Tuhan, bukan lagi sebagai kewajiban.',
+    'amor_parentium_title' => 'Amor Parentium',
+    'amor_parentium_subtitle' => 'Cinta Kasih Orang Tua',
+    'amor_parentium_desc' => 'Sebagai kekuatan insan Nusa Putra untuk menjaga ajaran dan nilai-nilai luhur rasul, leluhur, kedua orang tua dan guru-guru kita serta orang orang soleh sebelum kita.',
+    'amor_concervis_title' => 'Amor Concervis',
+    'amor_concervis_subtitle' => 'Cinta Kasih Sesama',
+    'amor_concervis_desc' => 'Sebagai pengikat insan Nusa Putra untuk menjalani hidup berdampingan secara damai dalam menyikapi setiap perbedaan, karena Tuhan berkehendak atas adanya perbedaan itu sendiri.',
   ],
   'en' => [
     'hero_title' => 'Time Travelling',
@@ -55,7 +66,6 @@ $content = [
     'hero_greeting' => 'Welcome, Genusian Time Travelers of 2025!',
     'hero_button_main' => 'Start the Journey',
     'hero_button_trailer' => 'MABIM 2025 Trailer',
-    'trilogy' => 'Amor Deus, Parentium, Concervis',
     'philosophy_title' => 'Theme Philosophy',
     'philosophy_desc' => '"A journey through time to uncover, understand, and revive cultural values, so that the heritage of the past can become a light for the future."',
     'philosophy_item1_title' => 'Time Travelling',
@@ -88,6 +98,18 @@ $content = [
     'cta_title' => 'Define Your Timeline!',
     'cta_desc' => 'Your group is your time-traveling team. Find your team and get ready to start the MABIM 2025 adventure!',
     'cta_button' => 'See Group Assignments',
+    // Tambahkan konten trilogi dalam bahasa Inggris
+    'trilogi_title' => 'Understanding Nusa Putra Trilogy',
+    'trilogi_desc' => 'Noble values that form the foundation of every Genusian throughout the journey of time.',
+    'amor_deus_title' => 'Amor Deus',
+    'amor_deus_subtitle' => 'Love of God',
+    'amor_deus_desc' => 'As a gift of light for Nusa Putra people to continue practicing religious law, religion is our need and love for God, no longer just an obligation.',
+    'amor_parentium_title' => 'Amor Parentium',
+    'amor_parentium_subtitle' => 'Love of Parents',
+    'amor_parentium_desc' => 'As the strength of Nusa Putra people to maintain the teachings and noble values of the apostle, ancestors, both parents and our teachers, and righteous people before us.',
+    'amor_concervis_title' => 'Amor Concervis',
+    'amor_concervis_subtitle' => 'Love of Others',
+    'amor_concervis_desc' => 'As a binder for Nusa Putra people to live peacefully side by side in addressing every difference, because God wills the existence of these differences themselves.',
   ]
 ];
 $text = $content[$lang];
@@ -113,11 +135,87 @@ $text = $content[$lang];
   </div>
 </section>
 
-<section class="trilogy-section">
+<!-- Tambahkan section trilogi baru -->
+<section class="section trilogi-section" id="trilogi-nusa-putra">
   <div class="container">
-    <h3><?php echo $text['trilogy']; ?></h3>
+    <h2 class="section-title"><?php echo $text['trilogi_title']; ?></h2>
+    <p class="section-subtitle"><?php echo $text['trilogi_desc']; ?></p>
+
+    <div class="d-flex justify-content-center mb-4">
+      <ul class="nav nav-pills" id="trilogiTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#amor-deus" type="button"
+            role="tab">Amor Deus</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#amor-parentium" type="button" role="tab">Amor
+            Parentium</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#amor-concervis" type="button" role="tab">Amor
+            Concervis</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="trilogiTabContent">
+      <!-- Amor Deus Tab -->
+      <div class="tab-pane fade show active" id="amor-deus" role="tabpanel">
+        <div class="row align-items-center">
+          <div class="col-md-5 text-center">
+            <div class="trilogi-image-container">
+              <img src="assets/img/trilogy/amor_deus.png" alt="Amor Deus" class="trilogi-image">
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h3><?php echo $text['amor_deus_title']; ?></h3>
+            <h4 class="trilogi-subtitle"><?php echo $text['amor_deus_subtitle']; ?></h4>
+            <p><?php echo $text['amor_deus_desc']; ?></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Amor Parentium Tab -->
+      <div class="tab-pane fade" id="amor-parentium" role="tabpanel">
+        <div class="row align-items-center">
+          <div class="col-md-5 text-center">
+            <div class="trilogi-image-container">
+              <img src="assets/img/trilogy/amor_parentium.png" alt="Amor Parentium" class="trilogi-image">
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h3><?php echo $text['amor_parentium_title']; ?></h3>
+            <h4 class="trilogi-subtitle"><?php echo $text['amor_parentium_subtitle']; ?></h4>
+            <p><?php echo $text['amor_parentium_desc']; ?></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Amor Concervis Tab -->
+      <div class="tab-pane fade" id="amor-concervis" role="tabpanel">
+        <div class="row align-items-center">
+          <div class="col-md-5 text-center">
+            <div class="trilogi-image-container">
+              <img src="assets/img/trilogy/amor_concervis.png" alt="Amor Concervis" class="trilogi-image">
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h3><?php echo $text['amor_concervis_title']; ?></h3>
+            <h4 class="trilogi-subtitle"><?php echo $text['amor_concervis_subtitle']; ?></h4>
+            <p><?php echo $text['amor_concervis_desc']; ?></p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
+
+<!-- Section Divider -->
+<div class="section-divider">
+  <div class="container">
+    <hr class="section-separator">
+  </div>
+</div>
 
 <section class="section logo-philosophy-section" id="filosofi-logo">
   <div class="container">

@@ -16,7 +16,8 @@ $menu_text = [
     'atribut' => 'Atribut',
     'kegiatan' => 'Kegiatan',
     'penugasan' => 'Penugasan',
-    'informasi' => 'Informasi'
+    'informasi' => 'Informasi',
+    'websiteuniv' => 'nusaputra.ac.id'
   ],
   'en' => [
     'home' => 'Home',
@@ -24,7 +25,8 @@ $menu_text = [
     'atribut' => 'Attributes',
     'kegiatan' => 'Activities',
     'penugasan' => 'Assignments',
-    'informasi' => 'Information'
+    'informasi' => 'Information',
+    'websiteuniv' => 'nusaputra.ac.id'
   ]
 ];
 $menu = $menu_text[$lang];
@@ -73,6 +75,11 @@ $menu = $menu_text[$lang];
                 href="penugasan.php"><?php echo $menu['penugasan']; ?></a></li>
             <li class="nav-item"><a class="nav-link <?php echo $info; ?>"
                 href="info.php"><?php echo $menu['informasi']; ?></a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://nusaputra.ac.id/" target="_blank">
+                <i class="fas fa-external-link-alt"></i> <?php echo $menu['websiteuniv']; ?>
+              </a>
+            </li>
           </ul>
         </div>
 

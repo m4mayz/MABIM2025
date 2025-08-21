@@ -8,26 +8,41 @@ $footer_text = [
     'title' => 'MABIM 2025',
     'desc' => 'Time Travelling: Unlocking the Culture. Perjalanan menembus waktu untuk menyingkap, memahami, dan menghidupkan kembali nilai budaya.',
     'nav_title' => 'Navigasi',
-    'social_title' => 'Media Sosial'
+    'social_title' => 'Media Sosial',
+    'whatsapp_text' => 'Ada pertanyaan? Chat kami!',
+    'univ_website' => 'Situs Universitas',
   ],
   'en' => [
     'title' => 'MABIM 2025',
     'desc' => 'Time Travelling: Unlocking the Culture. A journey through time to uncover, understand, and revive cultural values.',
     'nav_title' => 'Navigation',
-    'social_title' => 'Social Media'
+    'social_title' => 'Social Media',
+    'whatsapp_text' => 'Questions? Chat with us!',
+    'univ_website' => 'University Website',
   ]
 ];
 $f_text = $footer_text[$lang];
 
 // Ambil menu dari header.php untuk konsistensi
 global $menu;
+
+// Definisikan text untuk WhatsApp
+$whatsapp_default_text = [
+  'id' => 'Halo, saya ingin bertanya tentang MABIM 2025 Universitas Nusa Putra.',
+  'en' => 'Hello, I would like to ask about MABIM 2025 at Nusa Putra University.'
+];
+$whatsapp_number = "6281234567890"; // Ganti dengan nomor WhatsApp yang sebenarnya
+$whatsapp_message = urlencode($whatsapp_default_text[$lang]);
 ?>
 </main>
 <footer class="footer-custom">
   <div class="container">
     <div class="row">
       <div class="col-lg-5 col-md-12 mb-4">
-        <h5><i class="fas fa-clock"></i> <?php echo $f_text['title']; ?></h5>
+        <h5><img src="assets/img/tp-logo-notext.png" alt="Logo Mabim 2025"
+            style="height: 40px; width: auto; vertical-align: middle;" />
+          <?php echo $f_text['title']; ?>
+        </h5>
         <p><?php echo $f_text['desc']; ?></p>
         <div class="d-flex mb-4">
           <img src="assets/img/Logo_Universitas_Nusa_Putra.png" alt="Logo Universitas Nusa Putra" class="footer-logo">
@@ -37,21 +52,29 @@ global $menu;
       <div class="col-lg-7 col-md-12 mb-4">
         <div class="row footer-nav-columns">
           <div class="col-6">
-            <h5><i class="fas fa-sitemap"></i> <?php echo $f_text['nav_title']; ?></h5>
+            <h5><img src="assets/img/icon/sitemap.png" alt="Sitemap" class="footer-icon" />
+              <?php echo $f_text['nav_title']; ?></h5>
             <ul class="list-unstyled">
-              <li><a href="index.php"><i class="fas fa-home"></i> <?php echo $menu['home']; ?></a></li>
-              <li><a href="pedoman.php"><i class="fas fa-book"></i> <?php echo $menu['pedoman']; ?></a></li>
-              <li><a href="kegiatan.php"><i class="fas fa-calendar-alt"></i> <?php echo $menu['kegiatan']; ?></a></li>
-              <li><a href="info.php"><i class="fas fa-info-circle"></i> <?php echo $menu['informasi']; ?></a></li>
+              <li><a href="index.php"><img src="assets/img/icon/home.png" alt="Home" class="nav-icon" />
+                  <?php echo $menu['home']; ?></a></li>
+              <li><a href="pedoman.php"><img src="assets/img/icon/book.png" alt="Guideline" class="nav-icon" />
+                  <?php echo $menu['pedoman']; ?></a></li>
+              <li><a href="kegiatan.php"><img src="assets/img/icon/calendar.png" alt="Activities" class="nav-icon" />
+                  <?php echo $menu['kegiatan']; ?></a></li>
+              <li><a href="info.php"><img src="assets/img/icon/info.png" alt="Information" class="nav-icon" />
+                  <?php echo $menu['informasi']; ?></a></li>
+              <li><a href="https://nusaputra.ac.id/" target="_blank"><img src="assets/img/icon/link.png" alt="Website"
+                    class="nav-icon" /> <?php echo $f_text['univ_website']; ?></a></li>
             </ul>
           </div>
           <div class="col-6">
-            <h5><i class="fas fa-share-alt"></i> <?php echo $f_text['social_title']; ?></h5>
+            <h5><img src="assets/img/icon/share.png" alt="Social Media" class="footer-icon" />
+              <?php echo $f_text['social_title']; ?></h5>
             <ul class="list-unstyled">
-              <li><a href="https://www.instagram.com/mabim_unsp/" target="_blank"><i class="fab fa-instagram"></i>
-                  Instagram</a></li>
-              <li><a href="https://www.youtube.com/c/MabimUnsp" target="_blank"><i class="fab fa-youtube"></i>
-                  YouTube</a></li>
+              <li><a href="https://www.instagram.com/mabim_unsp/" target="_blank"><img
+                    src="assets/img/icon/instagram.png" alt="Instagram" class="nav-icon" /> Instagram</a></li>
+              <li><a href="https://www.youtube.com/c/MabimUnsp" target="_blank"><img src="assets/img/icon/youtube.png"
+                    alt="YouTube" class="nav-icon" /> YouTube</a></li>
             </ul>
           </div>
         </div>
@@ -62,6 +85,13 @@ global $menu;
     </div>
   </div>
 </footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/<?php echo $whatsapp_number; ?>?text=<?php echo $whatsapp_message; ?>"
+  class="floating-whatsapp-btn" target="_blank">
+  <div class="whatsapp-tooltip"><?php echo $f_text['whatsapp_text']; ?></div>
+  <img src="assets/img/icon/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+</a>
 
 <div id="floating-mascot" class="floating-mascot-container">
   <div id="mascot-bubble" class="mascot-chat-bubble"></div>
