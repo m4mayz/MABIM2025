@@ -1,79 +1,104 @@
 <?php
-  $home ="";
-  $pedoman="active";
-  $atribut="";
-  $kegiatan="";
-  $penugasan="";
-  $absensi="";
-  $info="";
+$home = "";
+$pedoman = "active"; // Set halaman ini sebagai yang aktif
+$atribut = "";
+$kegiatan = "";
+$penugasan = "";
+$absensi = "";
+$info = "";
+include 'header.php';
 
-  include 'header.php';
+// Teks untuk Multi-Bahasa
+$content = [
+  'id' => [
+    'title' => 'Peta Waktu & Aturan Perjalanan',
+    'subtitle' => 'Semua yang perlu Anda ketahui untuk memulai ekspedisi MABIM 2025 ada di sini. Unduh dan pelajari buku panduan resmi.',
+    'download_title' => 'Buku Panduan MABIM 2025',
+    'download_desc' => 'Buku panduan ini adalah kompas Anda. Di dalamnya terdapat informasi lengkap mengenai peraturan, tata tertib, jadwal kegiatan, dan semua detail penting lainnya untuk menuntun perjalanan Anda.',
+    'download_button' => 'Unduh Peta Waktu (.PDF)',
+    'preview_title' => 'Pratinjau Dokumen',
+    'rules_title' => 'Aturan Perjalanan Waktu'
+  ],
+  'en' => [
+    'title' => 'Time Map & Rules of Travel',
+    'subtitle' => 'Everything you need to know to start your MABIM 2025 expedition is here. Download and study the official guide.',
+    'download_title' => 'MABIM 2025 Guidebook',
+    'download_desc' => 'This guidebook is your compass. It contains complete information on regulations, rules of conduct, activity schedules, and all other important details to guide your journey.',
+    'download_button' => 'Download Time Map (.PDF)',
+    'preview_title' => 'Document Preview',
+    'rules_title' => 'Rules of Time Travel'
+  ]
+];
+$text = $content[$lang];
+
+// Fungsi untuk membaca dan mem-parsing file tata tertib
+function getRules($lang)
+{
+  $filePath = "tata-tertib-{$lang}.txt";
+  if (file_exists($filePath)) {
+    $lines = file($filePath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    $title = array_shift($lines); // Ambil baris pertama sebagai judul
+    $content = '<ul>';
+    foreach ($lines as $line) {
+      // Hilangkan tanda strip dan trim spasi
+      $clean_line = ltrim(trim($line), '- ');
+      $content .= '<li>' . htmlspecialchars($clean_line) . '</li>';
+    }
+    $content .= '</ul>';
+    return ['title' => htmlspecialchars($title), 'content' => $content];
+  }
+  return ['title' => 'Error', 'content' => '<p>File tata tertib tidak ditemukan.</p>'];
+}
+
+$rules = getRules($lang);
+
 ?>
-      <section style="background-image: url('assets/img/newImage/background4.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center; height: 330px;" >
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6 text-md-start text-center">
-              <h1 class=" fs-9 fw-bold" style="color: white; font-family: 'Roboto Slab', serif;">Pedoman</h1>
-              <p class="mb-6 lead" style="color: white; font-family: 'Roboto Slab', serif; font-size: 18pt"><strong>Masa Bimbingan Mahasiswa Baru<br>Universitas Nusa Putra tahun 2023</strong></p>
-              <div class="text-center text-md-start"><!-- <a class="btn btn-warning me-3 btn-lg" href="#!" role="button">Get started</a>  --></div>
-            </div>
-            <div class="col-md-6 text-end"></div>
+
+<section class="page-header">
+  <div class="container">
+    <h1 class="page-header-title"><?php echo $text['title']; ?></h1>
+    <p class="lead text-light"><?php echo $text['subtitle']; ?></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="document-preview-placeholder">
+          <i class="fas fa-file-pdf"></i>
+          <span><?php echo $text['preview_title']; ?></span>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h2 class="section-title text-start ps-0 ms-0"><?php echo $text['download_title']; ?></h2>
+        <p class="text-light"><?php echo $text['download_desc']; ?></p>
+        <a href="pendoman_mabim_nusaputra_2023.pdf" target="_blank" class="btn btn-primary-custom mt-3">
+          <i class="fas fa-download me-2"></i> <?php echo $text['download_button']; ?>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section pt-0">
+  <div class="container">
+    <h2 class="section-title"><?php echo $text['rules_title']; ?></h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="rules-card">
+          <div class="rules-card-header">
+            <i class="fas fa-scroll me-2"></i> <?php echo $rules['title']; ?>
+          </div>
+          <div class="rules-card-body">
+            <?php echo $rules['content']; ?>
           </div>
         </div>
-      </section>
-    <section class="pt-0">
-        <div class="bg-holder z-index--1 bottom-0 d-none d-lg-block" style="background-image: url('assets/img/newImage/background5-2.jpg'); background-repeat: repeat;opacity:.1; background-size: 80%;">
-        </div>
-      <div class="container">
-          <br>
-              <div class="card container" style="background-color: white; margin-top: 100px; border-left: solid 4px #CC4848; border-right: solid 4px #CC4848; height: auto;">
-                <div class="card-body ps-0">
-                  <h1 class=" fs-7 fw-bold" style="color: black; font-family: 'Roboto Slab', serif; ">Tata Tertib Peserta MABIM 2023</h1>
-                  <p class="text-secondary">
-                    1. Mematuhi Peraturan dan Tata Tertib Mabim <br>
-                    2. Hadir Tepat Waktu, 40 Menit Sebelum Acara Dimulai <br>
-                    3. Membawa peralatan dan perlengkapan yang sesuai ketentuan <br>
-                    4. Menjaga kebersihan selama kegiatan berlangsung <br>
-                    5. Memperhatikan materi yang disampaikan selama kegiatan MABIM berlangsung <br>
-                    6. Mengikuti petunjuk dan intruksi dari panitia dan Co-Fasilitator <br>
-                    7. Mengikuti seluruh rangkaian acara MABIM sebagai salah satu syarat untuk mendapatkan sertifikat MABIM <br>
-                    8. Menjaga kekondusifan selama materi berlangsung <br>
-                    9. Mematikan HP saat acara MABIM berlangsung dan masing masing kelompok akan diberikan nomor pendamping (Co-fasilitator) untuk memudahkan setiap peserta berkomunikasi dengan orang tua apabila terdapat hal yang penting. <br>
-                    10. Dilarang membawa peralatan yang berharga, dan aksesoris yang berlebihan. <br>
-                    11. Tidak diperkenankan meninggalkan MABIM tanpa seizin dari Co-Fasilitator kelompoknya masing-masing <br>
-                    12. Tidak diperkanankan makan ketika materi berlangsung dan di dalam ruangan <br>
-                    13. Diwajibkan membawa persyaratan yang telah ditentukan panitia. <br>
-                    14. Dilarang keras membawa dan menggunakan senjata tajam, senjata api, narkoba, dan minuman keras <br>
-                    15. Diilarang merokok serta melakukan perbuatan tidak sopan selama MABIM berlangsung. <br>
-                    16. Panitia dan co-fasilitator MABIM tidak bertanggung jawab atas kehilangan baarang-barang yang dibawa peserta MABIM <br>
-                    17. Peraturan atau tata tertib lain yang masih dianggap perlu akan ditentukan kemudian <br>
-                    18. Bagi Panitia, Peserta, dan Co-Fasilitator yang tidak mematuhi peraturan atau tata tertib akan mendapatkan reward <br>
-                  </p>
-                  <br>
-                  <h1 class=" fs-7 fw-bold" style="color: black; font-family: 'Roboto Slab', serif; ">Tata Tertib Peserta Kelas Blended learning </h1>
-                  <p class="text-secondary">
-                    1. Peserta wajib mengikuti seluruh rangkaian acara MABIM dari awal sampai Akhir, dengan selalu mengisi absensi yang telah disediakan panitia <br>
-                    2. Wajib mengisi link absensi. Link absen akan dikirim melalui grup WhasApps oleh mentor masing-masing <br>
-                    3. Link Absensi akan ditutup oleh panitia pada pukul 23.00 WIB <br>
-                    4. Wajib membuat resume setiap materinya, yang telah ditentukan <br>
-                    5. Wajib menyertakan foto diri peserta dengan layar tampilan YouTube MABIM untuk bukti absensi (foto berpakaian rapih) <br>
-                    6. Wajib menaati seluruh peraturan dan ketentuan MABIM <br>
-                    7. Link YouTube akan dishare oleh mentor digrup WhatsApps <br>
-                    8. Wajib mengikuti kegiatan Puncak Mabim, bila berhalangan sertakan surat dan alasan dari instansi/Perusahaan terkait. <br>
-                    9. Dinyatakan gugur dan tidak mendapatkan sertifikat apabila tidak mengikuti seluruh rangkaian kegiatan MABIM kecuali dengan alasan yang dibenar <br>
-                  </p>
-                </div>
-              </div>
-        
-        	<div class="card container" style="background-color: white; margin-top: 100px; border-left: solid 4px #CC4848; border-right: solid 4px #CC4848; height: auto;">
-                <div class="card-body ps-0">
-                  <h1 class=" fs-7 fw-bold" style="color: black; font-family: 'Roboto Slab', serif; ">Buku Pendoman</h1>
-                  <embed type="application/pdf" src="pendoman_mabim_nusaputra_2023.pdf" width="100%" height="800" />
-                </div>
-              </div>
-        
-        </div><!-- end of .container-->
-    </section>
-      <?php
-  include 'footer.php';
+      </div>
+    </div>
+  </div>
+</section>
+
+<?php
+include 'footer.php';
 ?>
