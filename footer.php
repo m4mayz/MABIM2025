@@ -10,7 +10,7 @@ $footer_text = [
     'nav_title' => 'Navigasi',
     'social_title' => 'Media Sosial',
     'whatsapp_text' => 'Ada pertanyaan? Chat kami!',
-    'univ_website' => 'Situs Universitas',
+    'univ_website' => 'nusaputra.ac.id',
   ],
   'en' => [
     'title' => 'MABIM 2025',
@@ -18,7 +18,7 @@ $footer_text = [
     'nav_title' => 'Navigation',
     'social_title' => 'Social Media',
     'whatsapp_text' => 'Questions? Chat with us!',
-    'univ_website' => 'University Website',
+    'univ_website' => 'nusaputra.ac.id',
   ]
 ];
 $f_text = $footer_text[$lang];
@@ -52,29 +52,38 @@ $whatsapp_message = urlencode($whatsapp_default_text[$lang]);
       <div class="col-lg-7 col-md-12 mb-4">
         <div class="row footer-nav-columns">
           <div class="col-6">
-            <h5><img src="assets/img/icon/sitemap.png" alt="Sitemap" class="footer-icon" />
+            <h5><img src="assets/img/icon/sitemap.png" alt="Sitemap"
+                style="width: 20px; height: 20px; margin-right: 10px; vertical-align: middle;" />
               <?php echo $f_text['nav_title']; ?></h5>
             <ul class="list-unstyled">
-              <li><a href="index.php"><img src="assets/img/icon/home.png" alt="Home" class="nav-icon" />
+              <li><a href="index.php"><img src="assets/img/icon/home.png" alt="Home"
+                    style="width: 16px; height: 16px; margin-right: 8px; vertical-align: middle;" />
                   <?php echo $menu['home']; ?></a></li>
-              <li><a href="pedoman.php"><img src="assets/img/icon/book.png" alt="Guideline" class="nav-icon" />
+              <li><a href="pedoman.php"><img src="assets/img/icon/book.png" alt="Guideline"
+                    style="width: 16px; height: 16px; margin-right: 8px; vertical-align: middle;" />
                   <?php echo $menu['pedoman']; ?></a></li>
-              <li><a href="kegiatan.php"><img src="assets/img/icon/calendar.png" alt="Activities" class="nav-icon" />
+              <li><a href="kegiatan.php"><img src="assets/img/icon/calendar.png" alt="Activities"
+                    style="width: 16px; height: 16px; margin-right: 8px; vertical-align: middle;" />
                   <?php echo $menu['kegiatan']; ?></a></li>
-              <li><a href="info.php"><img src="assets/img/icon/info.png" alt="Information" class="nav-icon" />
+              <li><a href="info.php"><img src="assets/img/icon/info.png" alt="Information"
+                    style="width: 16px; height: 16px; margin-right: 8px; vertical-align: middle;" />
                   <?php echo $menu['informasi']; ?></a></li>
               <li><a href="https://nusaputra.ac.id/" target="_blank"><img src="assets/img/icon/link.png" alt="Website"
-                    class="nav-icon" /> <?php echo $f_text['univ_website']; ?></a></li>
+                    style="width: 16px; height: 16px; margin-right: 8px; vertical-align: middle;" />
+                  <?php echo $f_text['univ_website']; ?></a></li>
             </ul>
           </div>
           <div class="col-6">
-            <h5><img src="assets/img/icon/share.png" alt="Social Media" class="footer-icon" />
+            <h5><img src="assets/img/icon/share.png" alt="Social Media"
+                style="width: 20px; height: 20px; margin-right: 10px; vertical-align: middle;" />
               <?php echo $f_text['social_title']; ?></h5>
             <ul class="list-unstyled">
               <li><a href="https://www.instagram.com/mabim_unsp/" target="_blank"><img
-                    src="assets/img/icon/instagram.png" alt="Instagram" class="nav-icon" /> Instagram</a></li>
+                    src="assets/img/icon/instagram.png" alt="Instagram"
+                    style="width: 16px; height: 16px; margin-right: 8px; vertical-align: middle;" /> Instagram</a></li>
               <li><a href="https://www.youtube.com/c/MabimUnsp" target="_blank"><img src="assets/img/icon/youtube.png"
-                    alt="YouTube" class="nav-icon" /> YouTube</a></li>
+                    alt="YouTube" style="width: 16px; height: 16px; margin-right: 8px; vertical-align: middle;" />
+                  YouTube</a></li>
             </ul>
           </div>
         </div>
@@ -87,10 +96,16 @@ $whatsapp_message = urlencode($whatsapp_default_text[$lang]);
 </footer>
 
 <!-- Floating WhatsApp Button -->
-<a href="https://wa.me/<?php echo $whatsapp_number; ?>?text=<?php echo $whatsapp_message; ?>"
-  class="floating-whatsapp-btn" target="_blank">
-  <div class="whatsapp-tooltip"><?php echo $f_text['whatsapp_text']; ?></div>
-  <img src="assets/img/icon/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+<a href="https://wa.me/<?php echo $whatsapp_number; ?>?text=<?php echo $whatsapp_message; ?>" style="position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background-color: #25d366; color: white; 
+   border-radius: 50%; text-align: center; display: flex; align-items: center; justify-content: center; 
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); z-index: 1000; transition: all 0.3s;" class="floating-whatsapp-btn"
+  target="_blank">
+  <div class="whatsapp-tooltip" style="position: absolute; right: 75px; background-color: #333; color: white; 
+    padding: 8px 15px; border-radius: 5px; font-size: 14px; white-space: nowrap; opacity: 0; visibility: hidden; 
+    transform: translateX(20px); transition: all 0.3s ease; z-index: 1001; pointer-events: none;">
+    <?php echo $f_text['whatsapp_text']; ?>
+  </div>
+  <img src="assets/img/icon/whatsapp.png" alt="WhatsApp" style="width: 30px; height: 30px; object-fit: contain;">
 </a>
 
 <div id="floating-mascot" class="floating-mascot-container">
