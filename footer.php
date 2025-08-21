@@ -84,25 +84,37 @@ global $menu;
     // --- Kumpulan Teks untuk Bubble Chat ---
     const chatMessages = {
       id: {
-        greeting: "Halo, Penjelajah Waktu! Aku di sini untuk membantumu.",
+        greeting: "Halo, Penjelajah Waktu! Aku Nusapedi, ahli teknologi masa depan!",
         random: [
-          "Sudah siap menjelajahi waktu?",
-          "Jangan lupa cek halaman pedoman ya!",
-          "Klik aku jika butuh sesuatu!",
-          "Semangat untuk MABIM 2025!",
-          "Apa kamu tahu? Sejarah itu keren!",
-          "Masa depan menantimu, Genusian!"
+          "Siap menjelajahi lintas waktu? Mari kita mulai petualangan!",
+          "Jangan lupa cek pedoman untuk persiapan perjalanan waktumu!",
+          "Sudah tau kelompokmu? Tim penjelajah menanti!",
+          "Semangat untuk MABIM 2025! Masa depan cerah menantimu!",
+          "Tahukah kamu? Teknologi bisa menjembatani masa lalu dan masa depan!",
+          "Trilogi Nusa Putra adalah kompasmu dalam perjalanan ini!",
+          "Penasaran dengan maskot lainnya? Klik tab maskot di atas!",
+          "Budaya kita adalah harta karun yang harus dijaga!",
+          "Setiap langkah dalam MABIM adalah bagian dari sejarahmu!",
+          "Klik aku jika butuh bantuan navigasi waktu!",
+          "Ingat, kamu adalah Genusian masa depan!",
+          "Kegiatan MABIM sudah menanti, siap bertualang?"
         ]
       },
       en: {
-        greeting: "Hello, Time Traveler! I'm here to help you.",
+        greeting: "Hello, Time Traveler! I'm Nusapedi, the future technologist!",
         random: [
-          "Ready to explore time?",
-          "Don't forget to check the guideline page!",
-          "Click me if you need anything!",
-          "Spirit for MABIM 2025!",
-          "Did you know? History is cool!",
-          "The future awaits, Genusian!"
+          "Ready to explore across time? Let's start the adventure!",
+          "Don't forget to check the guidelines for your time journey preparation!",
+          "Do you know your group? The explorer team awaits!",
+          "Spirit for MABIM 2025! A bright future awaits you!",
+          "Did you know? Technology can bridge the past and future!",
+          "Nusa Putra Trilogy is your compass in this journey!",
+          "Curious about other mascots? Click the mascot tab above!",
+          "Our culture is a treasure that must be preserved!",
+          "Every step in MABIM is part of your history!",
+          "Click me if you need time navigation help!",
+          "Remember, you are the Genusian of the future!",
+          "MABIM activities are waiting, ready for adventure?"
         ]
       }
     };
@@ -113,10 +125,10 @@ global $menu;
     function showBubble(message) {
       mascotBubble.textContent = message;
       mascotBubble.classList.add('visible');
-      // Sembunyikan bubble setelah 4 detik
+      // Sembunyikan bubble setelah 5 detik (lebih lama untuk pesan yang lebih panjang)
       setTimeout(() => {
         mascotBubble.classList.remove('visible');
-      }, 4000);
+      }, 5000);
     }
 
     // Fungsi untuk menampilkan pesan acak
@@ -145,11 +157,11 @@ global $menu;
 
     // Fungsi untuk memulai interval chat
     function startChatInterval() {
-      chatInterval = setInterval(showRandomMessage, 6000); // Munculkan chat setiap 6 detik
+      chatInterval = setInterval(showRandomMessage, 8000); // Munculkan chat setiap 8 detik (lebih jarang)
     }
 
     // Mulai interval otomatis setelah sapaan pertama selesai
-    setTimeout(startChatInterval, 10000); // 3s (muncul) + 0.5s (jeda) + 4s (tampil) + jeda
+    setTimeout(startChatInterval, 12000); // 3s (muncul) + 0.5s (jeda) + 5s (tampil) + jeda
   });
 </script>
 </body>

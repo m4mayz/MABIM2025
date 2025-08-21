@@ -713,6 +713,17 @@ h6 {
     .misi-card {
         text-align: center;
     }
+    .misi-card h3 {
+        text-align: center;
+    }
+    .misi-card .icon {
+        text-align: center;
+    }
+    .misi-card ul {
+        text-align: left;
+        margin: 0 auto;
+        display: inline-block;
+    }
     .maskot-placeholder {
         height: 250px;
         margin-bottom: 1rem;

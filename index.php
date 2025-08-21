@@ -17,7 +17,7 @@ $content = [
     'hero_button_trailer' => 'Trailer MABIM 2025',
     'trilogy' => 'Amor Deus, Parentium, Concervis',
     'philosophy_title' => 'Filosofi Tema',
-    'philosophy_desc' => '“Perjalanan menembus waktu untuk menyingkap, memahami, dan menghidupkan kembali nilai budaya, sehingga warisan masa lalu dapat menjadi cahaya bagi masa depan.”',
+    'philosophy_desc' => '"Perjalanan menembus waktu untuk menyingkap, memahami, dan menghidupkan kembali nilai budaya, sehingga warisan masa lalu dapat menjadi cahaya bagi masa depan."',
     'philosophy_item1_title' => 'Time Travelling',
     'philosophy_item1_desc' => 'Menjelajahi masa lalu untuk memahami akar sejarah, tradisi, dan nilai-nilai yang membentuk identitas.',
     'philosophy_item2_title' => 'Unlocking the Culture',
@@ -29,12 +29,12 @@ $content = [
     'logo_point3' => '<strong>3 Lapisan Objek:</strong> Gambaran pembabakan 3 masa: klasik, kebangkitan, dan kekinian.',
     'mission_title' => 'Misi Perjalanan Waktu',
     'mission_desc' => 'Tujuan ekspedisi MABIM 2025 adalah membentuk Genusian yang berkarakter, intelektual, dan peduli terhadap warisan budaya bangsa.',
-    'mission_item1' => 'Menanamkan Jiwa Kebangsaan',
-    'mission_item1_desc' => 'Memperkuat kesadaran berbangsa, bernegara, dan cinta tanah air sesuai dengan 4 pilar kebangsaan.',
-    'mission_item2' => 'Memahami Kehidupan Kampus',
-    'mission_item2_desc' => 'Memperkenalkan sistem pembelajaran dan dinamika kehidupan kampus melalui Trilogi Nusa Putra.',
-    'mission_item3' => 'Hak & Kewajiban Mahasiswa',
-    'mission_item3_desc' => 'Memperkenalkan hak dan kewajiban sebagai mahasiswa dan insan intelektual bagi lingkungan sekitar.',
+    'mission_item1' => 'Kesadaran Kebangsaan dan Kepedulian Sosial',
+    'mission_item1_desc' => '<ul><li>Menanamkan kesadaran berbangsa, bernegara, bela negara, serta kepedulian terhadap lingkungan dan masyarakat sesuai dengan 4 (empat) pilar kebangsaan (Pancasila, UUD 1945, NKRI, dan Bhinneka Tunggal Ika).</li><li>Memperkenalkan hak dan kewajiban sebagai mahasiswa, sebagai insan intelektual, bagi diri dan lingkungan sekitar.</li><li>Mewujudkan kampus yang humanis, ramah (inklusif), toleran, aman dan sehat.</li></ul>',
+    'mission_item2' => 'Pengenalan Sistem Pembelajaran dan Kehidupan Kampus',
+    'mission_item2_desc' => '<ul><li>Memperkenalkan sistem pembelajaran dan dinamika kehidupan kampus melalui Trilogi Nusa Putra dan tri dharma perguruan tinggi.</li><li>Memperkenalkan kiat sukses belajar dan mengembangkan diri di perguruan tinggi melalui konsepsi dan praktik Merdeka Belajar - Kampus Merdeka.</li></ul>',
+    'mission_item3' => 'Pembentukan Karakter dan Pengembangan Diri',
+    'mission_item3_desc' => '<ul><li>Membentuk karakter Genusian yaitu Generasi Nusa Putra Brilian Berilmu dan Beriman melalui pengamalan trilogi nusa putra yaitu cinta kasih terhadap tuhan, cinta kasih terhadap orang tua dan cinta kasih terhadap sesama.</li><li>Terciptanya generasi nusa putra brilian berilmu dan ber iman atau Genusian.</li></ul>',
     'mascot_title' => 'Panduan Perjalanan Waktu',
     'mascot_desc' => 'Kenali para penjaga waktu yang akan memandu ekspedisi budaya Anda selama MABIM 2025.',
     'mascot1_name' => 'NUSANESHA (Maskot Utama)',
@@ -69,12 +69,12 @@ $content = [
     'logo_point3' => '<strong>3 Object Layers:</strong> Represents the three eras: classic, revival, and contemporary.',
     'mission_title' => 'Time Travel Mission',
     'mission_desc' => 'The objective of the MABIM 2025 expedition is to shape Genusians who are characterized, intellectual, and care about the nation\'s cultural heritage.',
-    'mission_item1' => 'Instilling National Spirit',
-    'mission_item1_desc' => 'Strengthening national consciousness, statehood, and love for the homeland according to the 4 national pillars.',
-    'mission_item2' => 'Understanding Campus Life',
-    'mission_item2_desc' => 'Introducing the learning system and dynamics of campus life through the Nusa Putra Trilogy.',
-    'mission_item3' => 'Student Rights & Obligations',
-    'mission_item3_desc' => 'Introducing the rights and obligations as students and intellectual beings for the surrounding environment.',
+    'mission_item1' => 'National Awareness and Social Care',
+    'mission_item1_desc' => '<ul><li>Instilling national consciousness, statehood, national defense, and care for the environment and society according to the 4 national pillars (Pancasila, UUD 1945, NKRI, and Bhinneka Tunggal Ika).</li><li>Introducing rights and obligations as students, as intellectual beings, for themselves and the surrounding environment.</li><li>Creating a humanistic, friendly (inclusive), tolerant, safe and healthy campus.</li></ul>',
+    'mission_item2' => 'Introduction to Learning Systems and Campus Life',
+    'mission_item2_desc' => '<ul><li>Introducing the learning system and dynamics of campus life through the Nusa Putra Trilogy and tri dharma of higher education.</li><li>Introducing tips for successful learning and self-development in higher education through the conception and practice of Merdeka Belajar - Kampus Merdeka.</li></ul>',
+    'mission_item3' => 'Character Building and Self Development',
+    'mission_item3_desc' => '<ul><li>Forming the character of Genusian, namely the Brilliant, Knowledgeable and Faithful Nusa Putra Generation through the practice of the nusa putra trilogy: love for God, love for parents and love for fellow beings.</li><li>The creation of a brilliant, knowledgeable and faithful nusa putra generation or Genusian.</li></ul>',
     'mascot_title' => 'Time Travel Guides',
     'mascot_desc' => 'Meet the timekeepers who will guide your cultural expedition during MABIM 2025.',
     'mascot1_name' => 'NUSANESHA (Main Mascot)',
@@ -179,21 +179,21 @@ $text = $content[$lang];
         <div class="misi-card">
           <div class="icon"><i class="fas fa-flag"></i></div>
           <h3><?php echo $text['mission_item1']; ?></h3>
-          <p><?php echo $text['mission_item1_desc']; ?></p>
+          <div><?php echo $text['mission_item1_desc']; ?></div>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="misi-card">
           <div class="icon"><i class="fas fa-university"></i></div>
           <h3><?php echo $text['mission_item2']; ?></h3>
-          <p><?php echo $text['mission_item2_desc']; ?></p>
+          <div><?php echo $text['mission_item2_desc']; ?></div>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="misi-card">
           <div class="icon"><i class="fas fa-balance-scale"></i></div>
           <h3><?php echo $text['mission_item3']; ?></h3>
-          <p><?php echo $text['mission_item3_desc']; ?></p>
+          <div><?php echo $text['mission_item3_desc']; ?></div>
         </div>
       </div>
     </div>
