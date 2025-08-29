@@ -7,13 +7,13 @@
 
 /* ===== CSS VARIABLES ===== */
 :root {
-    --primary-color: #a30063;
-    --secondary-color: #1795bc;
-    --accent-color: #fbcc1b;
-    --dark-bg: #1a1a1a;
-    --light-bg: #f4f4f4;
-    --text-light: #ffffff;
-    --text-dark: #333333;
+    --primary-color: #a30063; /* Magenta Nusa Putra */
+    --secondary-color: #1795bc; /* Biru */
+    --accent-color: #fbcc1b; /* Kuning Mustard */
+    --white-bg: #ffffff; /* Background putih */
+    --light-gray: #f8f9fa; /* Light gray untuk kontras minimal */
+    --dark-text: #333333; /* Teks gelap untuk background putih */
+    --light-text: #ffffff; /* Teks putih */
     --font-heading: "Orbitron", sans-serif;
     --font-body: "Roboto", sans-serif;
 }

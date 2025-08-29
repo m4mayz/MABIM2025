@@ -42,7 +42,7 @@ $menu = $menu_text[$lang];
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="vendors/fontawesome/all.min.css" rel="stylesheet">
-  <link href="assets/css/theme-mabim2025.css" rel="stylesheet">
+  <link href="assets/css/theme-1.css" rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/tp-logo-notext.png">
 </head>
