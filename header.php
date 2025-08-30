@@ -50,17 +50,18 @@ $menu = $menu_text[$lang];
 <body>
   <main class="main" id="top">
     <nav class="navbar navbar-expand-lg navbar-custom">
-      <div class="container">
-        <a class="navbar-brand" href="index.php">
-          <img src="assets/img/tp-logo_whitetext.png" alt="MABIM 2025 - Time Travelling" class="navbar-logo">
-        </a>
+      <div class="container d-flex justify-content-between">
 
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span style="color: var(--accent-yellow); font-size: 1.5rem;">
+          <span style="color: var(--primary-magenta); font-size: 1.5rem;">
             <i class="fas fa-bars"></i>
           </span>
         </button>
+
+        <a class="navbar-brand" href="index.php">
+          <img src="assets/img/tp-logo_text.png" alt="MABIM 2025 - Time Travelling" class="navbar-logo">
+        </a>
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
@@ -102,9 +103,9 @@ $menu = $menu_text[$lang];
           </ul>
         </div>
 
-        <div class="lang-switcher">
+        <div class="lang-switcher d-flex align-items-center">
           <a href="?lang=id" class="<?php echo ($lang == 'id') ? 'active' : ''; ?>">ID</a>
-          <span style="color: var(--accent-yellow);">|</span>
+          <span class="text-primary mx-1">/</span>
           <a href="?lang=en" class="<?php echo ($lang == 'en') ? 'active' : ''; ?>">EN</a>
         </div>
       </div>
