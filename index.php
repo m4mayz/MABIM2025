@@ -318,7 +318,7 @@ $text = $content[$lang];
       <div class="tab-pane fade show active" id="nusanesha" role="tabpanel">
         <div class="row align-items-center">
           <div class="col-md-5">
-            <div class="maskot-placeholder">Coming Soon - NUSANESHA</div>
+            <img src="assets/img/mascots/nusanesha.png" alt="NUSANESHA" class="maskot-image">
           </div>
           <div class="col-md-7">
             <h3><?php echo $text['mascot1_name']; ?></h3>
