@@ -116,55 +116,67 @@ $text = $content[$lang];
 ?>
 
 <section class="hero-section">
-  <div class="bg-animation">
-    <div class="lines">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
+  <div class="time-portal">
+    <div class="portal-ring"></div>
+    <div class="portal-ring"></div>
+    <div class="portal-ring"></div>
+    <div class="portal-center"></div>
   </div>
+
+  <div class="time-particles">
+    <!-- Particles akan ditambahkan via JavaScript -->
+  </div>
+
   <div class="hero-content">
-    <h1 class="text-uppercase"><?php echo $text['hero_title']; ?></h1>
-    <p class="subtitle"><?php echo $text['hero_subtitle']; ?></p>
-    <p class="lead text-light mb-4"><?php echo $text['hero_greeting']; ?></p>
+    <h1><?php echo $text['hero_title']; ?></h1>
+    <p class="hero-subtitle"><?php echo $text['hero_subtitle']; ?></p>
+    <p class="hero-description"><?php echo $text['hero_greeting']; ?></p>
     <div class="hero-buttons">
-      <a class="btn btn-secondary-custom" href="#"><i class="fab fa-youtube"></i>
-        <?php echo $text['hero_button_trailer']; ?></a>
-      <a class="btn btn-primary-custom" href="#filosofi-logo"><?php echo $text['hero_button_main']; ?></a>
+      <a class="btn btn-primary-custom" href="#trilogi-nusa-putra">
+        <i class="fas fa-rocket me-2"></i><?php echo $text['hero_button_main']; ?>
+      </a>
+      <a class="btn btn-secondary-custom" href="#" target="_blank">
+        <i class="fab fa-youtube me-2"></i><?php echo $text['hero_button_trailer']; ?>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- Tambahkan section trilogi baru -->
 <section class="section trilogi-section" id="trilogi-nusa-putra">
   <div class="container">
     <h2 class="section-title"><?php echo $text['trilogi_title']; ?></h2>
     <p class="section-subtitle"><?php echo $text['trilogi_desc']; ?></p>
 
-    <div class="d-flex justify-content-center mb-4">
+    <div class="d-flex justify-content-center mb-5">
       <ul class="nav nav-pills" id="trilogiTab" role="tablist">
         <li class="nav-item" role="presentation">
-          <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#amor-deus" type="button"
-            role="tab">Amor Deus</button>
+          <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#amor-deus" type="button" role="tab">
+            Amor Deus
+          </button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#amor-parentium" type="button" role="tab">Amor
-            Parentium</button>
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#amor-parentium" type="button" role="tab">
+            Amor Parentium
+          </button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#amor-concervis" type="button" role="tab">Amor
-            Concervis</button>
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#amor-concervis" type="button" role="tab">
+            Amor Concervis
+          </button>
         </li>
       </ul>
     </div>
 
     <div class="tab-content" id="trilogiTabContent">
-      <!-- Amor Deus Tab -->
       <div class="tab-pane fade show active" id="amor-deus" role="tabpanel">
         <div class="row align-items-center">
           <div class="col-md-5 text-center">
             <div class="trilogi-image-container">
-              <img src="assets/img/trilogy/amor_deus.png" alt="Amor Deus" class="trilogi-image">
+              <div class="trilogi-placeholder">
+                <i class="fas fa-hands-praying"></i><br>
+                Amor Deus<br>
+                <small>Coming Soon</small>
+              </div>
             </div>
           </div>
           <div class="col-md-7">
@@ -175,12 +187,15 @@ $text = $content[$lang];
         </div>
       </div>
 
-      <!-- Amor Parentium Tab -->
       <div class="tab-pane fade" id="amor-parentium" role="tabpanel">
         <div class="row align-items-center">
           <div class="col-md-5 text-center">
             <div class="trilogi-image-container">
-              <img src="assets/img/trilogy/amor_parentium.png" alt="Amor Parentium" class="trilogi-image">
+              <div class="trilogi-placeholder">
+                <i class="fas fa-heart"></i><br>
+                Amor Parentium<br>
+                <small>Coming Soon</small>
+              </div>
             </div>
           </div>
           <div class="col-md-7">
@@ -191,12 +206,15 @@ $text = $content[$lang];
         </div>
       </div>
 
-      <!-- Amor Concervis Tab -->
       <div class="tab-pane fade" id="amor-concervis" role="tabpanel">
         <div class="row align-items-center">
           <div class="col-md-5 text-center">
             <div class="trilogi-image-container">
-              <img src="assets/img/trilogy/amor_concervis.png" alt="Amor Concervis" class="trilogi-image">
+              <div class="trilogi-placeholder">
+                <i class="fas fa-users"></i><br>
+                Amor Concervis<br>
+                <small>Coming Soon</small>
+              </div>
             </div>
           </div>
           <div class="col-md-7">
@@ -370,6 +388,23 @@ $text = $content[$lang];
     <a class="btn btn-primary-custom" href="#" target="_blank"><?php echo $text['cta_button']; ?></a>
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Generate floating particles
+    const particleContainer = document.querySelector('.time-particles');
+    const particleCount = 50;
+
+    for (let i = 0; i < particleCount; i++) {
+      const particle = document.createElement('div');
+      particle.className = 'particle';
+      particle.style.left = Math.random() * 100 + '%';
+      particle.style.animationDelay = Math.random() * 20 + 's';
+      particle.style.animationDuration = (Math.random() * 10 + 15) + 's';
+      particleContainer.appendChild(particle);
+    }
+  });
+</script>
 
 <?php
 include 'footer.php';

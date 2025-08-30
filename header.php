@@ -38,7 +38,7 @@ $menu = $menu_text[$lang];
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MABIM 2025 | Universitas Nusa Putra</title>
+  <title>MABIM 2025 | Time Travelling: Unlocking the Culture</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="vendors/fontawesome/all.min.css" rel="stylesheet">
@@ -49,43 +49,62 @@ $menu = $menu_text[$lang];
 
 <body>
   <main class="main" id="top">
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
-      <div class="container d-flex justify-content-between">
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
         <a class="navbar-brand" href="index.php">
-          <img src="assets/img/tp-logo_whitetext.png" alt="Logo MABIM 2025" class="navbar-logo">
+          <img src="assets/img/tp-logo_whitetext.png" alt="MABIM 2025 - Time Travelling" class="navbar-logo">
         </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span style="color: var(--accent-yellow); font-size: 1.5rem;">
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item"><a class="nav-link <?php echo $home; ?>"
-                href="index.php"><?php echo $menu['home']; ?></a></li>
-            <li class="nav-item"><a class="nav-link <?php echo $pedoman; ?>"
-                href="pedoman.php"><?php echo $menu['pedoman']; ?></a></li>
-            <li class="nav-item"><a class="nav-link <?php echo $atribut; ?>"
-                href="atribut.php"><?php echo $menu['atribut']; ?></a></li>
-            <li class="nav-item"><a class="nav-link <?php echo $kegiatan; ?>"
-                href="kegiatan.php"><?php echo $menu['kegiatan']; ?></a></li>
-            <li class="nav-item"><a class="nav-link <?php echo $penugasan; ?>"
-                href="penugasan.php"><?php echo $menu['penugasan']; ?></a></li>
-            <li class="nav-item"><a class="nav-link <?php echo $info; ?>"
-                href="info.php"><?php echo $menu['informasi']; ?></a></li>
+            <li class="nav-item">
+              <a class="nav-link <?php echo $home; ?>" href="index.php">
+                <i class="fas fa-home me-1"></i><?php echo $menu['home']; ?>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link <?php echo $pedoman; ?>" href="pedoman.php">
+                <i class="fas fa-scroll me-1"></i><?php echo $menu['pedoman']; ?>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link <?php echo $atribut; ?>" href="atribut.php">
+                <i class="fas fa-tshirt me-1"></i><?php echo $menu['atribut']; ?>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link <?php echo $kegiatan; ?>" href="kegiatan.php">
+                <i class="fas fa-calendar-alt me-1"></i><?php echo $menu['kegiatan']; ?>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link <?php echo $penugasan; ?>" href="penugasan.php">
+                <i class="fas fa-tasks me-1"></i><?php echo $menu['penugasan']; ?>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link <?php echo $info; ?>" href="info.php">
+                <i class="fas fa-info-circle me-1"></i><?php echo $menu['informasi']; ?>
+              </a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="https://nusaputra.ac.id/" target="_blank">
-                <i class="fas fa-external-link-alt"></i> <?php echo $menu['websiteuniv']; ?>
+                <i class="fas fa-external-link-alt me-1"></i><?php echo $menu['websiteuniv']; ?>
               </a>
             </li>
           </ul>
         </div>
 
-        <div class="lang-switcher d-flex align-items-center">
+        <div class="lang-switcher">
           <a href="?lang=id" class="<?php echo ($lang == 'id') ? 'active' : ''; ?>">ID</a>
-          <span class="text-light mx-1">/</span>
+          <span style="color: var(--accent-yellow);">|</span>
           <a href="?lang=en" class="<?php echo ($lang == 'en') ? 'active' : ''; ?>">EN</a>
         </div>
       </div>
