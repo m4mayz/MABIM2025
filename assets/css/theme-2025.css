@@ -68,11 +68,16 @@ h6 {
     right: 0;
     z-index: 1030;
     height: 80px;
-    padding: 0 2rem;
-    background: var(--pure-white);
+    padding: 0 5rem; /* Increased horizontal padding */
+    background: rgba(255, 255, 255, 0.85); /* White with slight transparency */
     backdrop-filter: blur(15px);
     border-bottom: 3px solid var(--accent-yellow);
     box-shadow: 0 4px 30px rgba(163, 0, 99, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.navbar-custom:hover {
+    background: rgba(255, 255, 255, 0.95);
 }
 
 .navbar-brand {
@@ -83,6 +88,13 @@ h6 {
 
 .navbar-brand:hover {
     transform: scale(1.05);
+}
+
+/* This will make the navigation menu container grow to fill the space */
+@media (min-width: 992px) {
+    .navbar-collapse {
+        flex-grow: 1;
+    }
 }
 
 .navbar-logo {
@@ -107,36 +119,34 @@ h6 {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    border: 2px solid transparent;
 }
 
 .nav-link::before {
     content: "";
     position: absolute;
     top: 0;
-    left: -100%;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
     height: 100%;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        var(--primary-magenta),
-        transparent
-    );
-    transition: left 0.5s ease;
+    background: var(--primary-magenta);
+    transition: width 0.4s ease;
     z-index: -1;
+    border-radius: 25px;
 }
 
 .nav-link:hover::before,
 .nav-link.active::before {
-    left: 100%;
+    width: 100%;
 }
 
 .nav-link:hover,
 .nav-link.active {
     color: var(--pure-white) !important;
-    background-color: var(--primary-magenta);
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(163, 0, 99, 0.3);
+    border-color: var(--primary-magenta);
 }
 
 .nav-link i {
@@ -169,15 +179,35 @@ h6 {
 
 .lang-switcher a:hover,
 .lang-switcher a.active {
-    border-color: var(--primary-magenta);
-    background-color: var(--primary-magenta);
+    background-color: var(--secondary-blue);
     color: var(--pure-white);
-    transform: scale(1.1);
 }
 
-.lang-switcher span {
+/* External Link & Side Controls */
+.navbar-side-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-link-external {
     color: var(--secondary-blue);
-    font-weight: bold;
+    text-decoration: none;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    padding: 0.2rem 0.5rem;
+    border: 2px solid var(--accent-yellow);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link-external:hover {
+    background-color: var(--accent-yellow);
+    color: var(--primary-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 10px rgba(255, 193, 7, 0.3);
 }
 
 /* ===== BUTTONS ===== */
@@ -920,12 +950,7 @@ h6 {
 
 .mission-section {
     position: relative;
-    background: linear-gradient(
-        135deg,
-        var(--magenta-dark) 0%,
-        var(--blue-dark) 50%,
-        var(--primary-magenta) 100%
-    );
+    background: linear-gradient(135deg, #0d0d1a, #1a0d1a);
     overflow: hidden;
 }
 
@@ -976,20 +1001,66 @@ h6 {
     transform: scale(1.1) rotate(5deg);
 }
 
+/* ===== Animated Background Particles ===== */
+.animated-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+.particle-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    background-color: var(--accent-yellow);
+    border-radius: 50%;
+    opacity: 0;
+    animation: particle-float 15s infinite linear;
+}
+
+@keyframes particle-float {
+    0% {
+        transform: translateY(0) scale(0.5);
+        opacity: 0;
+    }
+    10%,
+    90% {
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(-100vh) scale(1);
+        opacity: 0;
+    }
+}
+
 /* Philosophy Section */
 .filosofi-section {
-    background-color: var(--magenta-dark);
-    color: var(--text-dark);
+    background-color: #110f1a;
+    position: relative;
+    overflow: hidden;
 }
 
-.filosofi-section h2 {
-    color: var(--primary-color);
+.filosofi-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(
+        90deg,
+        var(--accent-yellow),
+        var(--secondary-blue),
+        var(--primary-magenta)
+    );
 }
-
-.filosofi-section .section-subtitle {
-    color: var(--text-dark);
-}
-
 .filosofi-item {
     background: linear-gradient(
         -135deg,
@@ -1148,14 +1219,9 @@ h6 {
     text-align: left;
 }
 
-.misi-card ul li {
-    margin-bottom: 0.5rem;
-}
-
 /* Mascot Section */
 .maskot-section {
-    background-color: var(--light-bg);
-    color: var(--text-dark);
+    background-color: #110f1a;
 }
 
 .maskot-section .section-title {
@@ -2093,7 +2159,7 @@ h6 {
     position: absolute;
     bottom: 210px;
     left: 50px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
     color: var(--pure-white);
     padding: 10px 15px;
     border-radius: 20px;
@@ -2152,12 +2218,12 @@ h6 {
 
 .whatsapp-tooltip {
     position: absolute;
-    right: 75px;
-    background-color: #333;
+    right: 50px;
+    background-color: rgba(0, 0, 0, 0.4);
     color: white;
     padding: 8px 15px;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 10px;
     white-space: nowrap;
     opacity: 0;
     visibility: hidden;
@@ -2321,28 +2387,35 @@ h6 {
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 991px) {
     .navbar-custom {
-        flex-direction: column;
+        padding: 1rem;
         height: auto;
-        padding: 0.5rem 1rem;
+        min-height: 70px;
     }
 
     .navbar-brand {
         margin: 0;
-        margin-bottom: 0.5rem;
     }
 
     .navbar-collapse {
         background: var(--pure-white);
         padding: 1rem;
-        border-radius: 10px;
-        margin-top: 0.5rem;
-        width: 100%;
+        border-radius: 15px;
+        margin-top: 1rem;
         border: 2px solid var(--secondary-blue);
+        box-shadow: 0 5px 20px rgba(23, 149, 188, 0.15);
     }
 
     .navbar-custom .nav-link {
         margin: 0.5rem 0;
-        text-align: left;
+        text-align: center;
+        display: block;
+    }
+
+    .navbar-side-controls {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
     }
 
     /* Hero Animation Circles - Fixed sizes */
@@ -2370,9 +2443,7 @@ h6 {
     }
 
     .navbar-custom {
-        height: auto;
-        min-height: 70px;
-        padding: 1rem;
+        padding: 0.5rem 1rem;
     }
 
     .navbar-collapse {
@@ -2385,12 +2456,19 @@ h6 {
     }
 
     .navbar-toggler {
-        border: none;
+        border: 2px solid var(--primary-magenta);
         padding: 0.25rem 0.5rem;
+        border-radius: 8px;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(163, 0, 99, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        width: 1.2em;
+        height: 1.2em;
     }
 
     .navbar-toggler:focus {
-        box-shadow: none;
+        box-shadow: 0 0 5px var(--primary-magenta);
     }
 
     /* Section Adjustments */
@@ -2500,7 +2578,7 @@ h6 {
     .nav-pills {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 0.5rem 0.75rem;
+        gap: 1rem 0.75rem;
         /* margin-bottom: 1rem; jarak ke bawah */
     }
 

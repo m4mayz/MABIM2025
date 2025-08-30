@@ -215,7 +215,30 @@ $text = $content[$lang];
   </div>
 </section>
 
-<section class="section logo-philosophy-section" id="filosofi-logo">
+<section class="section filosofi-section animated-bg" id="filosofi-tema">
+  <div class="particle-container"></div>
+  <div class="container">
+    <h2 class="section-title"><?php echo $text['philosophy_title']; ?></h2>
+    <p class="section-subtitle"><?php echo $text['philosophy_desc']; ?></p>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="filosofi-item">
+          <h3><?php echo $text['philosophy_item1_title']; ?></h3>
+          <p><?php echo $text['philosophy_item1_desc']; ?></p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="filosofi-item">
+          <h3><?php echo $text['philosophy_item2_title']; ?></h3>
+          <p><?php echo $text['philosophy_item2_desc']; ?></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section logo-philosophy-section animated-bg" id="filosofi-logo">
+  <div class="particle-container"></div>
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-5 text-center">
@@ -247,28 +270,8 @@ $text = $content[$lang];
   </div>
 </section>
 
-<section class="section filosofi-section" id="filosofi-tema">
-  <div class="container">
-    <h2 class="section-title"><?php echo $text['philosophy_title']; ?></h2>
-    <p class="section-subtitle"><?php echo $text['philosophy_desc']; ?></p>
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="filosofi-item">
-          <h3><?php echo $text['philosophy_item1_title']; ?></h3>
-          <p><?php echo $text['philosophy_item1_desc']; ?></p>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="filosofi-item">
-          <h3><?php echo $text['philosophy_item2_title']; ?></h3>
-          <p><?php echo $text['philosophy_item2_desc']; ?></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section mission-section">
+<section class="section mission-section animated-bg" id="misi">
+  <div class="particle-container"></div>
   <div class="container">
     <h2 class="section-title"><?php echo $text['mission_title']; ?></h2>
     <p class="section-subtitle"><?php echo $text['mission_desc']; ?></p>
@@ -298,7 +301,8 @@ $text = $content[$lang];
   </div>
 </section>
 
-<section class="section maskot-section">
+<section class="section maskot-section animated-bg">
+  <div class="particle-container"></div>
   <div class="container">
     <h2 class="section-title"><?php echo $text['mascot_title']; ?></h2>
     <p class="section-subtitle"><?php echo $text['mascot_desc']; ?></p>
@@ -363,11 +367,18 @@ $text = $content[$lang];
   </div>
 </section>
 
-<section class="section cta-section">
+<section class="section cta-section animated-bg">
+  <div class="particle-container"></div>
   <div class="container">
-    <h2 class="section-title"><?php echo $text['cta_title']; ?></h2>
-    <p class="section-subtitle text-light"><?php echo $text['cta_desc']; ?></p>
-    <a class="btn btn-primary-custom" href="#" target="_blank"><?php echo $text['cta_button']; ?></a>
+    <div class="row align-items-center">
+      <div class="col-lg-9 text-center text-lg-start">
+        <h2 class="section-title"><?php echo $text['cta_title']; ?></h2>
+        <p class="section-subtitle text-light"><?php echo $text['cta_desc']; ?></p>
+      </div>
+      <div class="col-lg-3 text-center">
+        <a class="btn btn-primary-custom" href="#" target="_blank"><?php echo $text['cta_button']; ?></a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -407,6 +418,38 @@ $text = $content[$lang];
       spark.style.animationDelay = Math.random() * 8 + 's';
       heroSection.appendChild(spark);
     }
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const animatedSections = document.querySelectorAll('.animated-bg');
+    const numParticles = 15; // Jumlah partikel per seksi
+
+    animatedSections.forEach(section => {
+      const container = section.querySelector('.particle-container');
+      if (container) {
+        for (let i = 0; i < numParticles; i++) {
+          const particle = document.createElement('div');
+          particle.classList.add('particle');
+
+          const size = Math.random() * 3 + 1; // Ukuran partikel 1px - 4px
+          particle.style.width = `${size}px`;
+          particle.style.height = `${size}px`;
+
+          particle.style.left = Math.random() * 100 + 'vw'; // Posisi horizontal acak
+          particle.style.top = Math.random() * 100 + 'vh'; // Posisi vertikal acak
+
+          const duration = Math.random() * 10 + 10; // Durasi animasi 10-20 detik
+          particle.style.animationDuration = `${duration}s`;
+
+          const delay = Math.random() * 15; // Delay animasi acak
+          particle.style.animationDelay = `-${delay}s`;
+
+          container.appendChild(particle);
+        }
+      }
+    });
   });
 </script>
 

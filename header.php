@@ -50,18 +50,16 @@ $menu = $menu_text[$lang];
 <body>
   <main class="main" id="top">
     <nav class="navbar navbar-expand-lg navbar-custom">
-      <div class="container d-flex justify-content-between">
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span style="color: var(--primary-magenta); font-size: 1.5rem;">
-            <i class="fas fa-bars"></i>
-          </span>
-        </button>
+      <div class="container-fluid d-flex justify-content-between">
 
         <a class="navbar-brand" href="index.php">
           <img src="assets/img/tp-logo_text.png" alt="MABIM 2025 - Time Travelling" class="navbar-logo">
         </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
@@ -95,18 +93,30 @@ $menu = $menu_text[$lang];
                 <i class="fas fa-info-circle me-1"></i><?php echo $menu['informasi']; ?>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://nusaputra.ac.id/" target="_blank">
-                <i class="fas fa-external-link-alt me-1"></i><?php echo $menu['websiteuniv']; ?>
-              </a>
-            </li>
           </ul>
+          <!-- Moved side controls here for mobile view -->
+          <div class="navbar-side-controls d-lg-none mt-3">
+            <a class="nav-link-external" href="https://nusaputra.ac.id/" target="_blank">
+              <i class="fas fa-external-link-alt me-1"></i><?php echo $menu['websiteuniv']; ?>
+            </a>
+            <div class="lang-switcher">
+              <a href="?lang=id" class="<?php echo ($lang == 'id') ? 'active' : ''; ?>">ID</a>
+              <span class="text-primary mx-1">/</span>
+              <a href="?lang=en" class="<?php echo ($lang == 'en') ? 'active' : ''; ?>">EN</a>
+            </div>
+          </div>
         </div>
 
-        <div class="lang-switcher d-flex align-items-center">
-          <a href="?lang=id" class="<?php echo ($lang == 'id') ? 'active' : ''; ?>">ID</a>
-          <span class="text-primary mx-1">/</span>
-          <a href="?lang=en" class="<?php echo ($lang == 'en') ? 'active' : ''; ?>">EN</a>
+        <!-- Side controls for desktop view -->
+        <div class="navbar-side-controls d-none d-lg-flex">
+          <div class="lang-switcher">
+            <a href="?lang=id" class="<?php echo ($lang == 'id') ? 'active' : ''; ?>">ID</a>
+            <span class="text-primary mx-1">/</span>
+            <a href="?lang=en" class="<?php echo ($lang == 'en') ? 'active' : ''; ?>">EN</a>
+          </div>
+          <a class="nav-link-external" href="https://nusaputra.ac.id/" target="_blank">
+            <i class="fas fa-external-link-alt me-1"></i><?php echo $menu['websiteuniv']; ?>
+          </a>
         </div>
       </div>
     </nav>
