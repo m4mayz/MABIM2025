@@ -161,7 +161,7 @@ h6 {
     text-decoration: none;
     font-family: var(--font-heading);
     font-weight: 700;
-    padding: 0.4rem 0.8rem;
+    padding: 0.2rem 0.5rem;
     border: 2px solid var(--secondary-blue);
     border-radius: 15px;
     transition: all 0.3s ease;
@@ -297,27 +297,6 @@ h6 {
     opacity: 0.9;
 }
 
-/* Section Divider */
-.section-divider {
-    padding: 0;
-    background-color: var(--dark-bg);
-}
-
-.section-separator {
-    border: 0;
-    height: 3px;
-    background-image: linear-gradient(
-        to right,
-        transparent,
-        var(--primary-color),
-        var(--secondary-color),
-        var(--accent-color),
-        transparent
-    );
-    margin: 0 auto;
-    width: 80%;
-}
-
 /* ===== HERO SECTION ===== */
 .hero-section {
     height: 100vh;
@@ -387,68 +366,41 @@ h6 {
     pointer-events: none;
 }
 
+/* Portal Ring Enhancement */
 .portal-ring {
     position: absolute;
-    border: 3px solid;
     border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.7;
+    border: none;
+    background: linear-gradient(
+        rgba(251, 204, 27, 0.4),
+        rgba(23, 149, 188, 0.2),
+        rgba(163, 0, 99, 0.3)
+    );
+    filter: blur(10px);
+    opacity: 0.6;
+    mix-blend-mode: screen;
+    box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.4);
 }
 
 .portal-ring:nth-child(1) {
-    width: 200px;
-    height: 200px;
-    border-color: var(--accent-yellow);
-    animation: rotate-clockwise 8s linear infinite,
-        pulse-ring 4s ease-in-out infinite;
-    box-shadow: 0 0 30px var(--accent-yellow),
-        inset 0 0 20px rgba(251, 204, 27, 0.5);
+    width: 350px;
+    height: 350px;
+    animation: rotate-clockwise 20s linear infinite,
+        pulse-ring 8s ease-in-out infinite;
 }
 
 .portal-ring:nth-child(2) {
-    width: 350px;
-    height: 350px;
-    border-color: var(--secondary-blue);
-    animation: rotate-counter 12s linear infinite,
-        pulse-ring 5s ease-in-out infinite 0.5s;
-    box-shadow: 0 0 40px var(--secondary-blue),
-        inset 0 0 25px rgba(23, 149, 188, 0.5);
+    width: 550px;
+    height: 550px;
+    animation: rotate-counter 25s linear infinite,
+        pulse-ring 12s ease-in-out infinite;
 }
 
 .portal-ring:nth-child(3) {
-    width: 500px;
-    height: 500px;
-    border-color: var(--primary-magenta);
-    animation: rotate-clockwise 16s linear infinite,
-        pulse-ring 6s ease-in-out infinite 1s;
-    box-shadow: 0 0 50px var(--primary-magenta),
-        inset 0 0 30px rgba(163, 0, 99, 0.5);
-}
-
-.portal-ring:nth-child(4) {
-    width: 650px;
-    height: 650px;
-    border-color: rgba(255, 255, 255, 0.3);
-    animation: rotate-counter 20s linear infinite,
-        pulse-ring 7s ease-in-out infinite 1.5s;
-    box-shadow: 0 0 60px rgba(255, 255, 255, 0.3),
-        inset 0 0 35px rgba(255, 255, 255, 0.2);
-}
-
-.portal-center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(circle, var(--accent-yellow), transparent);
-    border-radius: 50%;
-    animation: pulse-glow 2s ease-in-out infinite alternate,
-        energy-core 5s linear infinite;
-    box-shadow: 0 0 50px var(--accent-yellow), 0 0 100px var(--accent-yellow);
+    width: 750px;
+    height: 750px;
+    animation: rotate-clockwise 30s linear infinite,
+        pulse-ring 15s ease-in-out infinite;
 }
 
 .time-particles {
@@ -510,7 +462,8 @@ h6 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-shadow: 0 0 30px rgba(251, 204, 27, 0.5);
+    text-shadow: 0 0 30px rgba(251, 204, 27, 0.8),
+        0 0 50px rgba(251, 204, 27, 0.5), 0 5px 15px rgba(0, 0, 0, 0.8);
     animation: glow-text 3s ease-in-out infinite alternate,
         text-shift 8s ease-in-out infinite;
 }
@@ -521,7 +474,8 @@ h6 {
     font-weight: 300;
     color: var(--secondary-blue);
     margin-bottom: 2rem;
-    text-shadow: 0 0 20px rgba(23, 149, 188, 0.5);
+    text-shadow: 0 0 20px rgba(23, 149, 188, 0.8),
+        0 0 40px rgba(23, 149, 188, 0.5), 0 3px 10px rgba(0, 0, 0, 0.7);
     animation: subtitle-glow 4s ease-in-out infinite alternate;
 }
 
@@ -530,6 +484,7 @@ h6 {
     margin-bottom: 3rem;
     opacity: 0.9;
     line-height: 1.8;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
     animation: fade-in 2s ease-out;
 }
 
@@ -597,6 +552,65 @@ h6 {
         transparent 90%
     );
     animation: distortion-pulse 8s ease-in-out infinite;
+}
+
+/* Additional Particles */
+.time-dust {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: radial-gradient(circle, rgba(251, 204, 27, 0.9), transparent);
+    border-radius: 50%;
+    filter: blur(2px);
+    z-index: 1;
+    animation: dust-float 15s linear infinite;
+}
+
+.energy-spark {
+    position: absolute;
+    width: 3px;
+    height: 10px;
+    background: linear-gradient(to bottom, var(--accent-yellow), transparent);
+    filter: blur(1px) brightness(1.5);
+    transform-origin: center;
+    z-index: 1;
+    animation: spark-float 8s ease-in-out infinite;
+}
+
+@keyframes dust-float {
+    0% {
+        transform: translate(0, 100vh) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    90% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(50px, -100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes spark-float {
+    0% {
+        transform: translateY(100vh) rotate(45deg) scale(1);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+        transform: translateY(70vh) rotate(60deg) scale(1.5);
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(30vh) rotate(120deg) scale(1);
+    }
+    100% {
+        transform: translateY(-20vh) rotate(180deg) scale(0.5);
+        opacity: 0;
+    }
 }
 
 /* ===== HERO ANIMATIONS ===== */
@@ -861,6 +875,60 @@ h6 {
     );
 }
 
+.logo-philosophy-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(
+        90deg,
+        var(--accent-yellow),
+        var(--secondary-blue),
+        var(--primary-magenta)
+    );
+}
+.filosofi-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(
+        90deg,
+        var(--accent-yellow),
+        var(--secondary-blue),
+        var(--primary-magenta)
+    );
+}
+.section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(
+        90deg,
+        var(--accent-yellow),
+        var(--secondary-blue),
+        var(--primary-magenta)
+    );
+}
+
+.mission-section {
+    position: relative;
+    background: linear-gradient(
+        135deg,
+        var(--magenta-dark) 0%,
+        var(--blue-dark) 50%,
+        var(--primary-magenta) 100%
+    );
+    overflow: hidden;
+}
+
 .trilogi-subtitle {
     font-family: var(--font-body);
     color: var(--secondary-color);
@@ -910,7 +978,7 @@ h6 {
 
 /* Philosophy Section */
 .filosofi-section {
-    background-color: var(--light-bg);
+    background-color: var(--magenta-dark);
     color: var(--text-dark);
 }
 
@@ -923,18 +991,55 @@ h6 {
 }
 
 .filosofi-item {
-    background: var(--dark-bg);
-    padding: 2rem;
+    background: linear-gradient(
+        -135deg,
+        var(--blue-dark) 0%,
+        var(--magenta-light) 100%
+    );
+    padding: 2.5rem;
     border-radius: 15px;
     margin-bottom: 1.5rem;
     color: var(--text-light);
     border-left: 5px solid var(--secondary-color);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.filosofi-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        transparent 0%,
+        rgba(251, 204, 27, 0.05) 100%
+    );
+    z-index: 0;
 }
 
 .filosofi-item h3 {
-    color: var(--secondary-color);
+    color: var(--accent-yellow);
     font-size: 1.8rem;
     margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.filosofi-item p {
+    position: relative;
+    z-index: 1;
+    line-height: 1.6;
+}
+
+.filosofi-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    border-left: 5px solid var(--accent-yellow);
 }
 
 /* Logo Philosophy Section */
@@ -986,28 +1091,65 @@ h6 {
 
 /* Mission Cards */
 .misi-card {
-    background-color: #2a2a2a;
-    padding: 2rem;
-    border-radius: 10px;
+    position: relative;
     height: 100%;
+    padding: 2.5rem 1.5rem 1.5rem;
+    background: linear-gradient(
+        135deg,
+        var(--magenta-dark),
+        var(--magenta-light)
+    );
+    border-radius: 12px;
+    margin-bottom: 2rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.misi-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(
+        90deg,
+        var(--accent-yellow) 0%,
+        var(--secondary-blue) 50%,
+        var(--primary-magenta) 100%
+    );
+    border-radius: 0 0 2px 2px;
 }
 
 .misi-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(251, 204, 27, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .misi-card .icon {
     font-size: 3rem;
     color: var(--accent-color);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    position: relative;
 }
 
 .misi-card h3 {
     color: var(--accent-color);
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+}
+
+.misi-card ul {
+    margin-left: 1rem;
+    padding-left: 1rem;
+    text-align: left;
+}
+
+.misi-card ul li {
+    margin-bottom: 0.5rem;
 }
 
 /* Mascot Section */
@@ -1831,11 +1973,11 @@ h6 {
 }
 
 .accordion-button::after {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fbcc1b'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fbcc1b'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3C/svg%3E");
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fbcc1b'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fbcc1b'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3C/svg%3E");
 }
 
 .accordion-body {
@@ -1849,7 +1991,7 @@ h6 {
 .cta-section {
     background: linear-gradient(
         45deg,
-        var(--primary-magenta),
+        rgb(0, 0, 0, 0.2),
         var(--secondary-blue)
     );
     text-align: center;
@@ -1951,8 +2093,8 @@ h6 {
     position: absolute;
     bottom: 210px;
     left: 50px;
-    background-color: var(--primary-color);
-    color: var(--text-light);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: var(--pure-white);
     padding: 10px 15px;
     border-radius: 20px;
     font-family: var(--font-body);
@@ -1973,7 +2115,7 @@ h6 {
     left: 20px;
     border-width: 10px 10px 0;
     border-style: solid;
-    border-color: var(--primary-color) transparent;
+    border-color: rgba(0, 0, 0, 0.2) transparent;
     display: block;
     width: 0;
 }
@@ -2177,7 +2319,6 @@ h6 {
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
-/* Large Screens (991px and below) */
 @media (max-width: 991px) {
     .navbar-custom {
         flex-direction: column;
@@ -2202,6 +2343,22 @@ h6 {
     .navbar-custom .nav-link {
         margin: 0.5rem 0;
         text-align: left;
+    }
+
+    /* Hero Animation Circles - Fixed sizes */
+    .portal-ring:nth-child(1) {
+        width: 350px;
+        height: 350px;
+    }
+
+    .portal-ring:nth-child(2) {
+        width: 550px;
+        height: 550px;
+    }
+
+    .portal-ring:nth-child(3) {
+        width: 750px;
+        height: 750px;
     }
 }
 
@@ -2241,11 +2398,20 @@ h6 {
         padding: 60px 0;
     }
 
+    .logo-philosophy-section .section-title {
+        text-align: center !important;
+    }
+
+    .logo-philosophy-section .section-subtitle {
+        text-align: center !important;
+    }
+
     .section-title {
-        font-size: 2.5rem;
+        font-size: 36px;
     }
 
     .section-subtitle {
+        font-size: 16px;
         margin-bottom: 2.5rem;
     }
 
@@ -2254,9 +2420,14 @@ h6 {
         height: auto;
         min-height: 90vh;
     }
-
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+    .hero-description {
+        font-size: 1rem;
+    }
     .hero-content h1 {
-        font-size: 3rem;
+        font-size: 36px;
     }
 
     .hero-content .subtitle {
@@ -2329,6 +2500,8 @@ h6 {
     .nav-pills {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 0.5rem 0.75rem;
+        /* margin-bottom: 1rem; jarak ke bawah */
     }
 
     .tab-pane .row > [class*="col-"] {
@@ -2392,6 +2565,22 @@ h6 {
         width: 160px;
         font-size: 0.8rem;
     }
+}
+
+/* Logo Philosophy Section Improvements */
+.logo-philosophy-section .logo-image {
+    max-width: 80%;
+    height: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10%;
+    box-shadow: 0 0 30px rgba(122, 0, 74, 0.3);
+    transition: all 0.3s ease;
+}
+
+.logo-philosophy-section .logo-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(122, 0, 74, 0.5);
 }
 
 /* ===== END OF CSS ===== */

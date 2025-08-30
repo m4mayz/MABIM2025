@@ -120,7 +120,6 @@ $text = $content[$lang];
     <div class="portal-ring"></div>
     <div class="portal-ring"></div>
     <div class="portal-ring"></div>
-    <div class="portal-center"></div>
   </div>
 
   <div class="time-particles">
@@ -172,11 +171,7 @@ $text = $content[$lang];
         <div class="row align-items-center">
           <div class="col-md-5 text-center">
             <div class="trilogi-image-container">
-              <div class="trilogi-placeholder">
-                <i class="fas fa-hands-praying"></i><br>
-                Amor Deus<br>
-                <small>Coming Soon</small>
-              </div>
+              <img src="assets/img/trilogy/amor_deus.png" alt="Amor Deus" class="trilogi-image img-fluid">
             </div>
           </div>
           <div class="col-md-7">
@@ -191,11 +186,7 @@ $text = $content[$lang];
         <div class="row align-items-center">
           <div class="col-md-5 text-center">
             <div class="trilogi-image-container">
-              <div class="trilogi-placeholder">
-                <i class="fas fa-heart"></i><br>
-                Amor Parentium<br>
-                <small>Coming Soon</small>
-              </div>
+              <img src="assets/img/trilogy/amor_parentium.png" alt="Amor Parentium" class="trilogi-image img-fluid">
             </div>
           </div>
           <div class="col-md-7">
@@ -210,11 +201,7 @@ $text = $content[$lang];
         <div class="row align-items-center">
           <div class="col-md-5 text-center">
             <div class="trilogi-image-container">
-              <div class="trilogi-placeholder">
-                <i class="fas fa-users"></i><br>
-                Amor Concervis<br>
-                <small>Coming Soon</small>
-              </div>
+              <img src="assets/img/trilogy/amor_concervis.png" alt="Amor Concervis" class="trilogi-image img-fluid">
             </div>
           </div>
           <div class="col-md-7">
@@ -228,13 +215,6 @@ $text = $content[$lang];
   </div>
 </section>
 
-<!-- Section Divider -->
-<div class="section-divider">
-  <div class="container">
-    <hr class="section-separator">
-  </div>
-</div>
-
 <section class="section logo-philosophy-section" id="filosofi-logo">
   <div class="container">
     <div class="row align-items-center">
@@ -242,8 +222,10 @@ $text = $content[$lang];
         <img src="assets/img/tp-logo-notext.png" alt="MABIM 2025 Logo" class="logo-image">
       </div>
       <div class="col-lg-7">
-        <h2 class="section-title text-start"><?php echo $text['logo_philosophy_title']; ?></h2>
-        <p class="section-subtitle text-start ps-0 ms-0"><?php echo $text['logo_philosophy_desc']; ?></p>
+        <h2 class="section-title"><?php echo $text['logo_philosophy_title']; ?></h2>
+        <p class="section-subtitle">
+          <?php echo $text['logo_philosophy_desc']; ?>
+        </p>
         <div class="logo-philosophy-list">
           <ul>
             <li>
@@ -286,7 +268,7 @@ $text = $content[$lang];
   </div>
 </section>
 
-<section class="section">
+<section class="section mission-section">
   <div class="container">
     <h2 class="section-title"><?php echo $text['mission_title']; ?></h2>
     <p class="section-subtitle"><?php echo $text['mission_desc']; ?></p>
@@ -403,8 +385,31 @@ $text = $content[$lang];
       particle.style.animationDuration = (Math.random() * 10 + 15) + 's';
       particleContainer.appendChild(particle);
     }
+
+    const heroSection = document.querySelector('.hero-section');
+
+    // Add time dust particles
+    for (let i = 0; i < 25; i++) {
+      const dust = document.createElement('div');
+      dust.classList.add('time-dust');
+      dust.style.left = Math.random() * 100 + 'vw';
+      dust.style.animationDuration = 10 + Math.random() * 15 + 's';
+      dust.style.animationDelay = Math.random() * 5 + 's';
+      heroSection.appendChild(dust);
+    }
+
+    // Add energy sparks
+    for (let i = 0; i < 15; i++) {
+      const spark = document.createElement('div');
+      spark.classList.add('energy-spark');
+      spark.style.left = Math.random() * 100 + 'vw';
+      spark.style.animationDuration = 5 + Math.random() * 10 + 's';
+      spark.style.animationDelay = Math.random() * 8 + 's';
+      heroSection.appendChild(spark);
+    }
   });
 </script>
+
 
 <?php
 include 'footer.php';
