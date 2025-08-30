@@ -31,7 +31,7 @@ $whatsapp_default_text = [
   'id' => 'Halo, saya ingin bertanya tentang MABIM 2025 Universitas Nusa Putra.',
   'en' => 'Hello, I would like to ask about MABIM 2025 at Nusa Putra University.'
 ];
-$whatsapp_number = "6281234567890"; // Ganti dengan nomor WhatsApp yang sebenarnya
+$whatsapp_number = "6282311239142"; // Ganti dengan nomor WhatsApp yang sebenarnya
 $whatsapp_message = urlencode($whatsapp_default_text[$lang]);
 ?>
 </main>

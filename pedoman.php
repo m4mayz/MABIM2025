@@ -52,21 +52,8 @@ $content = [
       'Peraturan tambahan dapat ditetapkan kemudian apabila dianggap perlu.'
     ],
 
-    // Section 3: Perlengkapan
-    'equipment_title' => 'Artefak Wajib Penjelajah',
-    'equipment_subtitle' => 'Selama rangkaian ekspedisi MABIM (8, 9, 10 dan 13 September 2025), setiap penjelajah diwajibkan membawa artefak berikut:',
-    'equipment_list' => [
-      'Id Card + Lanyard',
-      'Alat Tulis',
-      'Botol Minum Pribadi',
-      'Perlengkapan Ibadah',
-      'Alas Duduk',
-      'Obat Pribadi',
-      'Makan Berat (Ishoma)',
-      'Jas Hujan/Ponco (Puncak)',
-      'Pakaian Ganti (Puncak)',
-      'Topi (Puncak)'
-    ]
+    // Section 3: Perlengkapan (INI AKAN DIHAPUS)
+    // 'equipment_title' => 'Artefak Wajib Penjelajah', ...
   ],
   'en' => [
     'page_title' => 'Time Map & Travel Protocols',
@@ -110,21 +97,8 @@ $content = [
       'Additional regulations may be established later if deemed necessary.'
     ],
 
-    // Section 3: Equipment
-    'equipment_title' => 'Mandatory Traveler Artifacts',
-    'equipment_subtitle' => 'During the MABIM expedition series (September 8, 9, 10 and 13, 2025), all travelers are required to bring the following artifacts:',
-    'equipment_list' => [
-      'Id Card + Lanyard',
-      'Writing Tools',
-      'Personal Water Bottle',
-      'Worship Equipment',
-      'Sitting Mat',
-      'Personal Medicine',
-      'Heavy Meal (for break time)',
-      'Raincoat/Poncho (Peak Event)',
-      'Change of Clothes (Peak Event)',
-      'Hat (Peak Event)'
-    ]
+    // Section 3: Equipment (THIS WILL BE DELETED)
+    // 'equipment_title' => 'Mandatory Traveler Artifacts', ...
   ]
 ];
 $text = $content[$lang];
@@ -188,26 +162,8 @@ $text = $content[$lang];
   </div>
 </section>
 
-<!-- Section 3: Perlengkapan -->
-<section class="section animated-bg" id="perlengkapan">
-  <div class="particle-container"></div>
-  <div class="container">
-    <h2 class="section-title"><?php echo $text['equipment_title']; ?></h2>
-    <p class="section-subtitle"><?php echo $text['equipment_subtitle']; ?></p>
-    <div class="row justify-content-center mt-5">
-      <div class="col-lg-8">
-        <ul class="equipment-list">
-          <?php foreach ($text['equipment_list'] as $item): ?>
-            <li>
-              <i class="fas fa-check-circle me-3"></i>
-              <span><?php echo $item; ?></span>
-            </li>
-          <?php endforeach; ?>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- Section 3: Perlengkapan (BAGIAN INI DIHAPUS SELURUHNYA) -->
+<!-- <section class="section animated-bg" id="perlengkapan"> ... </section> -->
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
