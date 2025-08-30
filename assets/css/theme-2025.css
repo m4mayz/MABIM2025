@@ -859,18 +859,37 @@ h6 {
 
 /* ===== PAGE HEADER ===== */
 .page-header {
-    padding: 60px 0;
+    padding: 100px 0;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url("assets/img/background-texture.png");
-    background-size: cover;
-    background-position: center;
-    border-bottom: 3px solid var(--primary-color);
+    background-color: #0a0a1a; /* Dark background for plexus effect */
+    position: relative;
+    overflow: hidden;
+    border-bottom: 3px solid var(--accent-yellow);
+}
+
+#plexus-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.page-header .container {
+    position: relative;
+    z-index: 1;
 }
 
 .page-header-title {
-    font-size: 3rem;
-    color: var(--accent-color);
+    font-size: 3.5rem;
+    color: var(--accent-yellow);
+    text-shadow: 0 0 15px rgba(251, 204, 27, 0.5);
+}
+
+.page-header .lead {
+    font-size: 1.3rem;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 /* ===== CONTENT SECTIONS ===== */
@@ -1285,6 +1304,75 @@ h6 {
     box-shadow: 0 0 15px var(--primary-magenta);
 }
 
+/* ===== PEDOMAN PAGE STYLES ===== */
+.peraturan-section {
+    background-color: #110f1a;
+}
+
+.rules-card {
+    background: rgba(13, 13, 26, 0.7);
+    border: 2px solid var(--secondary-blue);
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.rules-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(23, 149, 188, 0.2);
+    border-color: var(--accent-yellow);
+}
+
+.rules-card h3 {
+    color: var(--accent-yellow);
+    font-family: var(--font-heading);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--secondary-blue);
+    padding-bottom: 0.5rem;
+}
+
+.rules-card ol {
+    padding-left: 1.5rem;
+    color: var(--pure-white);
+}
+
+.rules-card ol li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+.equipment-list {
+    list-style: none;
+    padding: 0;
+}
+
+.equipment-list li {
+    background: rgba(13, 13, 26, 0.7);
+    border: 1px solid var(--secondary-blue);
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    color: var(--pure-white);
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.equipment-list li:hover {
+    transform: translateX(10px);
+    border-left: 5px solid var(--accent-yellow);
+    background: rgba(23, 149, 188, 0.2);
+}
+
+.equipment-list li i {
+    color: var(--accent-yellow);
+    font-size: 1.5rem;
+}
+
 /* Mascot Section */
 .maskot-section {
     background-color: #110f1a;
@@ -1472,7 +1560,11 @@ h6 {
 
 /* Rules Card */
 .rules-card {
-    background-color: #2a2a2a;
+    background: linear-gradient(
+        -135deg,
+        var(--blue-dark) 0%,
+        var(--magenta-light) 100%
+    );
     border-radius: 15px;
     border: 1px solid var(--secondary-color);
     box-shadow: 0 5px 25px rgba(23, 149, 188, 0.1);
@@ -2658,7 +2750,12 @@ h6 {
 
     /* Page Elements Mobile */
     .page-header-title {
-        font-size: 2.5rem;
+        font-size: 30px;
+    }
+
+    .page-header .lead {
+        font-size: 16px;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
     }
 
     .document-preview-placeholder {

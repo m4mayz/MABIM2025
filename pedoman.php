@@ -11,221 +11,328 @@ include 'header.php';
 // Teks untuk Multi-Bahasa
 $content = [
   'id' => [
-    'title' => 'Peta Waktu & Aturan Perjalanan',
-    'subtitle' => 'Semua yang perlu Anda ketahui untuk memulai ekspedisi MABIM 2025 ada di sini. Unduh dan pelajari buku panduan resmi.',
-    'download_title' => 'Buku Panduan MABIM 2025',
-    'download_desc' => 'Buku panduan ini adalah kompas Anda. Di dalamnya terdapat informasi lengkap mengenai peraturan, tata tertib, jadwal kegiatan, dan semua detail penting lainnya untuk menuntun perjalanan Anda.',
-    'download_button' => 'Unduh Peta Waktu (.PDF)',
-    'preview_title' => 'Pratinjau Dokumen',
-    'rules_title' => 'Aturan Perjalanan Waktu',
-    'timeline_title' => 'Garis Waktu Perjalanan',
-    'timeline_subtitle' => 'Persiapkan dirimu dalam ekspedisi lintas waktu ini dengan mengikuti tahapan berikut',
-    'timeline_steps' => [
-      [
-        'date' => '09-10 September 2024',
-        'title' => 'Orientasi Waktu',
-        'desc' => 'Pengenalan konsep perjalanan waktu dan filosofi budaya yang akan dieksplorasi.'
-      ],
-      [
-        'date' => '11-12 September 2024',
-        'title' => 'Pembukaan Portal',
-        'desc' => 'Pembukaan gerbang waktu dan pengenalan dengan tim penjelajah waktu lainnya.'
-      ],
-      [
-        'date' => '13 September 2024',
-        'title' => 'Eksplorasi Artefak',
-        'desc' => 'Mengidentifikasi dan mempelajari artefak budaya dari berbagai masa.'
-      ],
-      [
-        'date' => '14 September 2024',
-        'title' => 'Puncak Sinkronisasi',
-        'desc' => 'Puncak kegiatan dimana semua lintas waktu terhubung dalam satu momen kebersamaan.'
-      ]
+    'page_title' => 'Peta Waktu & Protokol Perjalanan',
+    'page_subtitle' => 'Semua arsip dan dekrit penting untuk ekspedisi MABIM 2025 telah tercatat di sini.',
+
+    // Section 1: Download
+    'download_title' => 'Buku Saku Panduan Penjelajah Waktu',
+    'download_desc' => 'Unduh arsip lengkap berisi peta, jadwal, dan semua protokol perjalanan waktu. Buku saku ini adalah kompas utamamu.',
+    'download_button' => 'Unduh Buku Saku (.PDF)',
+
+    // Section 2: Peraturan
+    'rules_title' => 'Dekrit Lintas Waktu',
+    'rules_subtitle' => 'Patuhi setiap dekrit ini untuk menjaga keharmonisan dan kelancaran perjalanan menembus zaman.',
+    'rules_general_title' => 'Peraturan Umum',
+    'rules_general_list' => [
+      'Mahasiswa baru wajib mengikuti seluruh rangkaian kegiatan MABIM sesuai jadwal yang telah ditentukan.',
+      'Menggunakan tanda pengenal (ID Card) selama kegiatan berlangsung.',
+      'Mematuhi arahan panitia, mentor, dan pihak kampus dengan sopan.',
+      'Menggunakan pakaian sesuai ketentuan dress code yang telah ditentukan.',
+      'Menjaga ketertiban, kebersihan, dan keamanan lingkungan kegiatan.',
+      'Dilarang membawa dan menggunakan barang terlarang seperti senjata tajam, narkoba, minuman keras, dan sejenisnya.',
+      'Menggunakan bahasa yang sopan dan menghargai sesama peserta, panitia, maupun pemateri.',
+      'Dilarang melakukan tindakan diskriminatif, perundungan (bullying), atau kekerasan dalam bentuk apapun.',
+      'Mengikuti seluruh aturan kampus dan ketentuan tambahan dari panitia.',
+      'Peserta wajib menjaga kerapian rambut, dengan panjang rambut tidak melebihi alis.'
     ],
-    'faq_title' => 'Pertanyaan Umum',
-    'faq_items' => [
-      [
-        'question' => 'Apa yang harus dibawa pada hari pertama?',
-        'answer' => 'Perlengkapan standar yang harus dibawa adalah kartu identitas, alat tulis, dan perlengkapan ibadah sesuai keyakinan masing-masing. Pastikan juga membawa atribut sesuai ketentuan.'
-      ],
-      [
-        'question' => 'Bagaimana jika tidak bisa hadir secara offline?',
-        'answer' => 'Kehadiran offline sangat direkomendasikan untuk pengalaman optimal. Namun, jika berhalangan karena alasan yang dapat dipertanggungjawabkan, hubungi panitia untuk informasi akses daring.'
-      ],
-      [
-        'question' => 'Apakah boleh membawa perangkat elektronik?',
-        'answer' => 'Perangkat elektronik seperti ponsel diperbolehkan, namun penggunaannya dibatasi pada waktu-waktu tertentu sesuai arahan panitia.'
-      ]
+    'rules_specific_title' => 'Peraturan Khusus',
+    'rules_specific_list' => [
+      'Mahasiswa baru wajib hadir tepat waktu pada setiap sesi kegiatan (40 menit sebelum acara dimulai).',
+      'Dilarang menggunakan ponsel selama kegiatan, kecuali untuk keperluan yang diizinkan panitia.',
+      'Wajib membawa perlengkapan yang telah ditentukan panitia setiap harinya.',
+      'Setiap peserta wajib aktif bertanya, berdiskusi, dan berpartisipasi dalam setiap sesi.',
+      'Dilarang meninggalkan lokasi kegiatan tanpa izin dari panitia atau mentor.',
+      'Mengikuti kode etik berpakaian sesuai tema atau konsep kegiatan di hari tertentu.',
+      'Wajib menjaga rahasia dan integritas jalannya kegiatan, termasuk materi internal yang bersifat terbatas.',
+      'Tidak diperkenankan makan saat materi berlangsung, kecuali waktu yang ditentukan panitia.',
+      'Dilarang membawa barang berharga, aksesoris, atau make-up berlebihan.',
+      'Dilarang merokok serta melakukan perbuatan tidak sopan selama kegiatan.',
+      'Mengikuti seluruh rangkaian acara MABIM sebagai syarat untuk mendapatkan sertifikat MABIM.',
+      'Panitia tidak bertanggung jawab atas kehilangan barang bawaan peserta.',
+      'Peraturan tambahan dapat ditetapkan kemudian apabila dianggap perlu.'
+    ],
+
+    // Section 3: Perlengkapan
+    'equipment_title' => 'Artefak Wajib Penjelajah',
+    'equipment_subtitle' => 'Selama rangkaian ekspedisi MABIM (8, 9, 10 dan 13 September 2025), setiap penjelajah diwajibkan membawa artefak berikut:',
+    'equipment_list' => [
+      'Id Card + Lanyard',
+      'Alat Tulis',
+      'Botol Minum Pribadi',
+      'Perlengkapan Ibadah',
+      'Alas Duduk',
+      'Obat Pribadi',
+      'Makan Berat (Ishoma)',
+      'Jas Hujan/Ponco (Puncak)',
+      'Pakaian Ganti (Puncak)',
+      'Topi (Puncak)'
     ]
   ],
   'en' => [
-    'title' => 'Time Map & Rules of Travel',
-    'subtitle' => 'Everything you need to know to start your MABIM 2025 expedition is here. Download and study the official guide.',
-    'download_title' => 'MABIM 2025 Guidebook',
-    'download_desc' => 'This guidebook is your compass. It contains complete information on regulations, rules of conduct, activity schedules, and all other important details to guide your journey.',
-    'download_button' => 'Download Time Map (.PDF)',
-    'preview_title' => 'Document Preview',
-    'rules_title' => 'Rules of Time Travel',
-    'timeline_title' => 'Journey Timeline',
-    'timeline_subtitle' => 'Prepare yourself for this cross-time expedition by following these stages',
-    'timeline_steps' => [
-      [
-        'date' => 'September 09-10, 2024',
-        'title' => 'Time Orientation',
-        'desc' => 'Introduction to the concept of time travel and the cultural philosophy to be explored.'
-      ],
-      [
-        'date' => 'September 11-12, 2024',
-        'title' => 'Portal Opening',
-        'desc' => 'Opening of the time gate and introduction to other time explorer teams.'
-      ],
-      [
-        'date' => 'September 13, 2024',
-        'title' => 'Artifact Exploration',
-        'desc' => 'Identifying and studying cultural artifacts from various periods.'
-      ],
-      [
-        'date' => 'September 14, 2024',
-        'title' => 'Synchronization Peak',
-        'desc' => 'Peak of activities where all timelines connect in one moment of togetherness.'
-      ]
+    'page_title' => 'Time Map & Travel Protocols',
+    'page_subtitle' => 'All essential archives and decrees for the MABIM 2025 expedition are recorded here.',
+
+    // Section 1: Download
+    'download_title' => 'Time Traveler\'s Pocket Guide',
+    'download_desc' => 'Download the complete archive containing maps, schedules, and all time travel protocols. This guide is your primary compass.',
+    'download_button' => 'Download Guide (.PDF)',
+
+    // Section 2: Rules
+    'rules_title' => 'Temporal Decrees',
+    'rules_subtitle' => 'Adhere to these decrees to maintain harmony and the smooth flow of your journey through the ages.',
+    'rules_general_title' => 'General Rules',
+    'rules_general_list' => [
+      'New students are required to participate in all MABIM activities according to the specified schedule.',
+      'Wear an ID card during the activity.',
+      'Politely comply with the directions of the committee, mentors, and campus officials.',
+      'Wear clothing according to the specified dress code.',
+      'Maintain order, cleanliness, and security of the activity environment.',
+      'It is forbidden to bring and use prohibited items such as sharp weapons, drugs, alcoholic beverages, and the like.',
+      'Use polite language and respect fellow participants, committee members, and speakers.',
+      'It is forbidden to engage in discriminatory acts, bullying, or violence in any form.',
+      'Follow all campus rules and additional provisions from the committee.',
+      'Participants must maintain neat hair, with hair length not exceeding the eyebrows.'
     ],
-    'faq_title' => 'Frequently Asked Questions',
-    'faq_items' => [
-      [
-        'question' => 'What should I bring on the first day?',
-        'answer' => 'Standard equipment to bring includes an identity card, stationery, and worship equipment according to your respective beliefs. Also make sure to bring attributes according to the provisions.'
-      ],
-      [
-        'question' => 'What if I cannot attend offline?',
-        'answer' => 'Offline attendance is highly recommended for optimal experience. However, if you are unable to attend due to justifiable reasons, contact the committee for online access information.'
-      ],
-      [
-        'question' => 'Are electronic devices allowed?',
-        'answer' => 'Electronic devices such as mobile phones are allowed, but their use is limited to certain times as directed by the committee.'
-      ]
+    'rules_specific_title' => 'Specific Rules',
+    'rules_specific_list' => [
+      'New students must arrive on time for each activity session (40 minutes before the event begins).',
+      'Cell phone use is prohibited during the activity, except for purposes permitted by the committee.',
+      'Must bring the equipment specified by the committee each day.',
+      'Each participant must actively ask questions, discuss, and participate in each session.',
+      'Leaving the activity location without permission from the committee or mentor is prohibited.',
+      'Follow the dress code according to the theme or concept of the activity on a particular day.',
+      'Must maintain the confidentiality and integrity of the activity, including restricted internal materials.',
+      'Eating is not permitted during sessions, except at times specified by the committee.',
+      'Bringing valuables, accessories, or excessive make-up is prohibited.',
+      'Smoking and engaging in impolite behavior during the activity are prohibited.',
+      'Attending the entire MABIM series of events is a requirement to obtain the MABIM certificate.',
+      'The committee is not responsible for the loss of participants\' belongings.',
+      'Additional regulations may be established later if deemed necessary.'
+    ],
+
+    // Section 3: Equipment
+    'equipment_title' => 'Mandatory Traveler Artifacts',
+    'equipment_subtitle' => 'During the MABIM expedition series (September 8, 9, 10 and 13, 2025), all travelers are required to bring the following artifacts:',
+    'equipment_list' => [
+      'Id Card + Lanyard',
+      'Writing Tools',
+      'Personal Water Bottle',
+      'Worship Equipment',
+      'Sitting Mat',
+      'Personal Medicine',
+      'Heavy Meal (for break time)',
+      'Raincoat/Poncho (Peak Event)',
+      'Change of Clothes (Peak Event)',
+      'Hat (Peak Event)'
     ]
   ]
 ];
 $text = $content[$lang];
-
-// Fungsi untuk membaca dan mem-parsing file tata tertib
-function getRules($lang)
-{
-  $filePath = "tata-tertib-{$lang}.txt";
-  if (file_exists($filePath)) {
-    $lines = file($filePath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-    $title = array_shift($lines); // Ambil baris pertama sebagai judul
-    $content = '<ul>';
-    foreach ($lines as $line) {
-      // Hilangkan tanda strip dan trim spasi
-      $clean_line = ltrim(trim($line), '- ');
-      $content .= '<li>' . htmlspecialchars($clean_line) . '</li>';
-    }
-    $content .= '</ul>';
-    return ['title' => htmlspecialchars($title), 'content' => $content];
-  }
-  return ['title' => 'Error', 'content' => '<p>File tata tertib tidak ditemukan.</p>'];
-}
-
-$rules = getRules($lang);
 ?>
 
+<!-- Page Header -->
 <section class="page-header">
-  <div class="container">
-    <h1 class="page-header-title"><?php echo $text['title']; ?></h1>
-    <p class="lead text-light"><?php echo $text['subtitle']; ?></p>
+  <canvas id="plexus-canvas"></canvas>
+  <div class="container text-center">
+    <h1 class="page-header-title"><?php echo $text['page_title']; ?></h1>
+    <p class="lead text-light"><?php echo $text['page_subtitle']; ?></p>
   </div>
 </section>
 
-<section class="section">
+<!-- Section 1: Download Buku Saku -->
+<section class="section animated-bg" id="buku-saku">
+  <div class="particle-container"></div>
   <div class="container">
-    <div class="row align-items-center justify-content-center">
+    <div class="row justify-content-center text-center">
       <div class="col-lg-8">
-        <div class="pedoman-content text-center">
-          <h2 class="section-title"><?php echo $text['download_title']; ?></h2>
-          <p class="mb-5"><?php echo $text['download_desc']; ?></p>
-
-          <a href="pendoman_mabim_nusaputra_2023.pdf" target="_blank" class="btn btn-primary-custom btn-lg">
-            <i class="fas fa-download me-2"></i> <?php echo $text['download_button']; ?>
-          </a>
-        </div>
+        <h2 class="section-title"><?php echo $text['download_title']; ?></h2>
+        <p class="section-subtitle mb-5"><?php echo $text['download_desc']; ?></p>
+        <a href="assets/pdf/buku-saku-mabim-2025.pdf" target="_blank" class="btn btn-primary-custom btn-lg">
+          <i class="fas fa-download me-2"></i> <?php echo $text['download_button']; ?>
+        </a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section timeline-section">
-  <div class="container">
-    <h2 class="section-title"><?php echo $text['timeline_title']; ?></h2>
-    <p class="section-subtitle"><?php echo $text['timeline_subtitle']; ?></p>
-
-    <div class="time-journey">
-      <?php foreach ($text['timeline_steps'] as $index => $step): ?>
-        <div class="time-point <?php echo $index % 2 == 0 ? 'left' : 'right'; ?>">
-          <div class="time-point-content">
-            <div class="time-date"><?php echo $step['date']; ?></div>
-            <h3 class="time-title"><?php echo $step['title']; ?></h3>
-            <p class="time-desc"><?php echo $step['desc']; ?></p>
-          </div>
-          <div class="time-connector">
-            <div class="time-dot"></div>
-            <div class="time-line"></div>
-          </div>
-        </div>
-      <?php endforeach; ?>
-    </div>
-  </div>
-</section>
-
-<section class="section rules-section">
+<!-- Section 2: Peraturan -->
+<section class="section peraturan-section animated-bg" id="peraturan">
+  <div class="particle-container"></div>
   <div class="container">
     <h2 class="section-title"><?php echo $text['rules_title']; ?></h2>
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
+    <p class="section-subtitle"><?php echo $text['rules_subtitle']; ?></p>
+    <div class="row mt-5 g-4">
+      <!-- Peraturan Umum -->
+      <div class="col-lg-6">
         <div class="rules-card">
-          <div class="rules-card-header">
-            <i class="fas fa-scroll me-2"></i> <?php echo $rules['title']; ?>
-          </div>
-          <div class="rules-card-body">
-            <?php echo $rules['content']; ?>
-          </div>
+          <h3><?php echo $text['rules_general_title']; ?></h3>
+          <ol>
+            <?php foreach ($text['rules_general_list'] as $rule): ?>
+              <li><?php echo $rule; ?></li>
+            <?php endforeach; ?>
+          </ol>
+        </div>
+      </div>
+      <!-- Peraturan Khusus -->
+      <div class="col-lg-6">
+        <div class="rules-card">
+          <h3><?php echo $text['rules_specific_title']; ?></h3>
+          <ol>
+            <?php foreach ($text['rules_specific_list'] as $rule): ?>
+              <li><?php echo $rule; ?></li>
+            <?php endforeach; ?>
+          </ol>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section faq-section">
+<!-- Section 3: Perlengkapan -->
+<section class="section animated-bg" id="perlengkapan">
+  <div class="particle-container"></div>
   <div class="container">
-    <h2 class="section-title"><?php echo $text['faq_title']; ?></h2>
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-        <div class="accordion" id="faqAccordion">
-          <?php foreach ($text['faq_items'] as $index => $faq): ?>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="heading<?php echo $index; ?>">
-                <button class="accordion-button <?php echo $index > 0 ? 'collapsed' : ''; ?>" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapse<?php echo $index; ?>"
-                  aria-expanded="<?php echo $index === 0 ? 'true' : 'false'; ?>"
-                  aria-controls="collapse<?php echo $index; ?>">
-                  <?php echo $faq['question']; ?>
-                </button>
-              </h2>
-              <div id="collapse<?php echo $index; ?>"
-                class="accordion-collapse collapse <?php echo $index === 0 ? 'show' : ''; ?>"
-                aria-labelledby="heading<?php echo $index; ?>" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                  <?php echo $faq['answer']; ?>
-                </div>
-              </div>
-            </div>
+    <h2 class="section-title"><?php echo $text['equipment_title']; ?></h2>
+    <p class="section-subtitle"><?php echo $text['equipment_subtitle']; ?></p>
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-8">
+        <ul class="equipment-list">
+          <?php foreach ($text['equipment_list'] as $item): ?>
+            <li>
+              <i class="fas fa-check-circle me-3"></i>
+              <span><?php echo $item; ?></span>
+            </li>
           <?php endforeach; ?>
-        </div>
+        </ul>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const animatedSections = document.querySelectorAll('.animated-bg');
+    const numParticles = 15; // Jumlah partikel per seksi
+
+    animatedSections.forEach(section => {
+      const container = section.querySelector('.particle-container');
+      if (container) {
+        for (let i = 0; i < numParticles; i++) {
+          const particle = document.createElement('div');
+          particle.classList.add('particle');
+
+          const size = Math.random() * 3 + 1; // Ukuran partikel 1px - 4px
+          particle.style.width = `${size}px`;
+          particle.style.height = `${size}px`;
+
+          particle.style.left = Math.random() * 100 + 'vw'; // Posisi horizontal acak
+          particle.style.top = Math.random() * 100 + 'vh'; // Posisi vertikal acak
+
+          const duration = Math.random() * 10 + 10; // Durasi animasi 10-20 detik
+          particle.style.animationDuration = `${duration}s`;
+
+          const delay = Math.random() * 15; // Delay animasi acak
+          particle.style.animationDelay = `-${delay}s`;
+
+          container.appendChild(particle);
+        }
+      }
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const canvas = document.getElementById('plexus-canvas');
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      let particles = [];
+      const numParticles = window.innerWidth < 768 ? 40 : 80;
+      const connectDistance = window.innerWidth < 768 ? 100 : 150;
+
+      // Get colors from CSS variables
+      const styles = getComputedStyle(document.documentElement);
+      const colors = [
+        styles.getPropertyValue('--primary-magenta').trim(),
+        styles.getPropertyValue('--secondary-blue').trim(),
+        styles.getPropertyValue('--accent-yellow').trim()
+      ];
+
+      const resizeCanvas = () => {
+        canvas.width = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
+        createParticles();
+      };
+
+      class Particle {
+        constructor() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.vx = (Math.random() - 0.5) * 0.5; // Slow movement
+          this.vy = (Math.random() - 0.5) * 0.5; // Slow movement
+          this.radius = Math.random() * 2 + 1;
+          this.color = colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        update() {
+          this.x += this.vx;
+          this.y += this.vy;
+
+          if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+          if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+        }
+
+        draw() {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+          ctx.fillStyle = this.color;
+          ctx.fill();
+        }
+      }
+
+      const createParticles = () => {
+        particles = [];
+        for (let i = 0; i < numParticles; i++) {
+          particles.push(new Particle());
+        }
+      };
+
+      const connectParticles = () => {
+        for (let i = 0; i < particles.length; i++) {
+          for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < connectDistance) {
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              // Use accent yellow for lines with opacity based on distance
+              ctx.strokeStyle = `rgba(251, 204, 27, ${1 - distance / connectDistance})`;
+              ctx.lineWidth = 0.5;
+              ctx.stroke();
+            }
+          }
+        }
+      };
+
+      const animate = () => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => {
+          p.update();
+          p.draw();
+        });
+        connectParticles();
+        requestAnimationFrame(animate);
+      };
+
+      window.addEventListener('resize', resizeCanvas);
+      resizeCanvas();
+      animate();
+    }
+  });
+</script>
 
 <?php
 include 'footer.php';
