@@ -90,7 +90,7 @@ $whatsapp_message = urlencode($whatsapp_default_text[$lang]);
       </div>
     </div>
     <div class="copyright">
-      &copy; <?php echo date("Y"); ?> Panitia MABIM 2025 Universitas Nusa Putra. All Rights Reserved.
+      &copy; <?php echo date("Y"); ?> Divisi Media IT MABIM 2025 Universitas Nusa Putra.
     </div>
   </div>
 </footer>

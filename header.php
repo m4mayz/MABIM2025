@@ -50,16 +50,24 @@ $menu = $menu_text[$lang];
 <body>
   <main class="main" id="top">
     <nav class="navbar navbar-expand-lg navbar-custom">
-      <div class="container-fluid d-flex justify-content-between">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
 
         <a class="navbar-brand" href="index.php">
           <img src="assets/img/tp-logo_text.png" alt="MABIM 2025 - Time Travelling" class="navbar-logo">
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <!-- Mobile Controls: Lang Switcher + Burger Menu -->
+        <div class="mobile-controls d-lg-none">
+          <div class="lang-switcher">
+            <a href="?lang=id" class="<?php echo ($lang == 'id') ? 'active' : ''; ?>">ID</a>
+            <span class="text-primary mx-1">/</span>
+            <a href="?lang=en" class="<?php echo ($lang == 'en') ? 'active' : ''; ?>">EN</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
@@ -99,11 +107,7 @@ $menu = $menu_text[$lang];
             <a class="nav-link-external" href="https://nusaputra.ac.id/" target="_blank">
               <i class="fas fa-external-link-alt me-1"></i><?php echo $menu['websiteuniv']; ?>
             </a>
-            <div class="lang-switcher">
-              <a href="?lang=id" class="<?php echo ($lang == 'id') ? 'active' : ''; ?>">ID</a>
-              <span class="text-primary mx-1">/</span>
-              <a href="?lang=en" class="<?php echo ($lang == 'en') ? 'active' : ''; ?>">EN</a>
-            </div>
+            <!-- Language switcher is removed from here for mobile -->
           </div>
         </div>
 

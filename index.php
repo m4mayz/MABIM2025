@@ -26,14 +26,16 @@ $content = [
     'logo_point1' => '<strong>Tetesan Air & Lubang Kunci:</strong> Melambangkan proses membuka lapisan sejarah dan pengetahuan budaya yang terkubur.',
     'logo_point2' => '<strong>Akar & Riak Air:</strong> Cikal pohon kehidupan, perpaduan budaya, dan kelanjutan generasi dari masa ke masa.',
     'logo_point3' => '<strong>3 Lapisan Objek:</strong> Gambaran pembabakan 3 masa: klasik, kebangkitan, dan kekinian.',
-    'mission_title' => 'Misi Perjalanan Waktu',
-    'mission_desc' => 'Tujuan ekspedisi MABIM 2025 adalah membentuk Genusian yang berkarakter, intelektual, dan peduli terhadap warisan budaya bangsa.',
-    'mission_item1' => 'Kesadaran Kebangsaan dan Kepedulian Sosial',
-    'mission_item1_desc' => '<ul><li>Menanamkan kesadaran berbangsa, bernegara, bela negara, serta kepedulian terhadap lingkungan dan masyarakat sesuai dengan 4 (empat) pilar kebangsaan (Pancasila, UUD 1945, NKRI, dan Bhinneka Tunggal Ika).</li><li>Memperkenalkan hak dan kewajiban sebagai mahasiswa, sebagai insan intelektual, bagi diri dan lingkungan sekitar.</li><li>Mewujudkan kampus yang humanis, ramah (inklusif), toleran, aman dan sehat.</li></ul>',
-    'mission_item2' => 'Pengenalan Sistem Pembelajaran dan Kehidupan Kampus',
-    'mission_item2_desc' => '<ul><li>Memperkenalkan sistem pembelajaran dan dinamika kehidupan kampus melalui Trilogi Nusa Putra dan tri dharma perguruan tinggi.</li><li>Memperkenalkan kiat sukses belajar dan mengembangkan diri di perguruan tinggi melalui konsepsi dan praktik Merdeka Belajar - Kampus Merdeka.</li></ul>',
-    'mission_item3' => 'Pembentukan Karakter dan Pengembangan Diri',
-    'mission_item3_desc' => '<ul><li>Membentuk karakter Genusian yaitu Generasi Nusa Putra Brilian Berilmu dan Beriman melalui pengamalan trilogi nusa putra yaitu cinta kasih terhadap tuhan, cinta kasih terhadap orang tua dan cinta kasih terhadap sesama.</li><li>Terciptanya generasi nusa putra brilian berilmu dan ber iman atau Genusian.</li></ul>',
+    'mission_title' => 'Tujuan MABIM',
+    'mission_desc' => 'Memberikan pembekalan kepada mahasiswa baru agar dapat lebih cepat beradaptasi di Universitas Nusa Putra.',
+    'mission_points' => [
+      'Menanamkan kesadaran berbangsa, bernegara, bela negara, serta kepedulian terhadap lingkungan dan masyarakat sesuai dengan 4 (empat) pilar kebangsaan (Pancasila, UUD 1945, NKRI, dan Bhinneka Tunggal Ika);',
+      'Memperkenalkan sistem pembelajaran dan dinamika kehidupan kampus melalui Trilogi Nusa Putra dan tri dharma perguruan tinggi;',
+      'Memperkenalkan hak dan kewajiban sebagai mahasiswa, sebagai insan intelektual, bagi diri dan lingkungan sekitar;',
+      'Mewujudkan kampus yang humanis, ramah (inklusif), toleran, aman dan sehat;',
+      'Memperkenalkan kiat sukses belajar dan mengembangkan diri di perguruan tinggi melalui konsepsi dan praktik Merdeka Belajar - Kampus Merdeka;',
+      'Membentuk karakter Genusian yaitu Generasi Nusa Putra Brilian – Berilmu dan Beriman melalui pengamalan trilogi nusa putra yaitu cinta kasih terhadap tuhan, cinta kasih terhadap orang tua dan cinta kasih terhadap sesama.'
+    ],
     'mascot_title' => 'Panduan Perjalanan Waktu',
     'mascot_desc' => 'Kenali para penjaga waktu yang akan memandu ekspedisi budaya Anda selama MABIM 2025.',
     'mascot1_name' => 'NUSANESHA (Maskot Utama)',
@@ -77,14 +79,16 @@ $content = [
     'logo_point1' => '<strong>Water Drop & Keyhole:</strong> Symbolizes the process of unlocking buried layers of history and cultural knowledge.',
     'logo_point2' => '<strong>Roots & Water Ripples:</strong> The seed of the tree of life, a blend of culture, and the continuation of generations.',
     'logo_point3' => '<strong>3 Object Layers:</strong> Represents the three eras: classic, revival, and contemporary.',
-    'mission_title' => 'Time Travel Mission',
-    'mission_desc' => 'The objective of the MABIM 2025 expedition is to shape Genusians who are characterized, intellectual, and care about the nation\'s cultural heritage.',
-    'mission_item1' => 'National Awareness and Social Care',
-    'mission_item1_desc' => '<ul><li>Instilling national consciousness, statehood, national defense, and care for the environment and society according to the 4 national pillars (Pancasila, UUD 1945, NKRI, and Bhinneka Tunggal Ika).</li><li>Introducing rights and obligations as students, as intellectual beings, for themselves and the surrounding environment.</li><li>Creating a humanistic, friendly (inclusive), tolerant, safe and healthy campus.</li></ul>',
-    'mission_item2' => 'Introduction to Learning Systems and Campus Life',
-    'mission_item2_desc' => '<ul><li>Introducing the learning system and dynamics of campus life through the Nusa Putra Trilogy and tri dharma of higher education.</li><li>Introducing tips for successful learning and self-development in higher education through the conception and practice of Merdeka Belajar - Kampus Merdeka.</li></ul>',
-    'mission_item3' => 'Character Building and Self Development',
-    'mission_item3_desc' => '<ul><li>Forming the character of Genusian, namely the Brilliant, Knowledgeable and Faithful Nusa Putra Generation through the practice of the nusa putra trilogy: love for God, love for parents and love for fellow beings.</li><li>The creation of a brilliant, knowledgeable and faithful nusa putra generation or Genusian.</li></ul>',
+    'mission_title' => 'Objectives of MABIM',
+    'mission_desc' => 'To provide new students with the necessary preparation to adapt more quickly at Nusa Putra University.',
+    'mission_points' => [
+      'To instill awareness of nationhood, statehood, national defense, and care for the environment and society in accordance with the 4 national pillars (Pancasila, UUD 1945, NKRI, and Bhinneka Tunggal Ika);',
+      'To introduce the learning system and the dynamics of campus life through the Nusa Putra Trilogy and the tri dharma of higher education;',
+      'To introduce the rights and obligations as students, as intellectual beings, for themselves and their surrounding environment;',
+      'To create a campus that is humane, friendly (inclusive), tolerant, safe, and healthy;',
+      'To introduce tips for successful learning and self-development in higher education through the conception and practice of Merdeka Belajar - Kampus Merdeka;',
+      'To form the character of Genusian, namely the Brilliant, Knowledgeable, and Faithful Nusa Putra Generation through the practice of the Nusa Putra trilogy: love for God, love for parents, and love for others.'
+    ],
     'mascot_title' => 'Time Travel Guides',
     'mascot_desc' => 'Meet the timekeepers who will guide your cultural expedition during MABIM 2025.',
     'mascot1_name' => 'NUSANESHA (Main Mascot)',
@@ -275,26 +279,15 @@ $text = $content[$lang];
   <div class="container">
     <h2 class="section-title"><?php echo $text['mission_title']; ?></h2>
     <p class="section-subtitle"><?php echo $text['mission_desc']; ?></p>
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-4">
-        <div class="misi-card">
-          <div class="icon"><i class="fas fa-flag"></i></div>
-          <h3><?php echo $text['mission_item1']; ?></h3>
-          <div><?php echo $text['mission_item1_desc']; ?></div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="misi-card">
-          <div class="icon"><i class="fas fa-university"></i></div>
-          <h3><?php echo $text['mission_item2']; ?></h3>
-          <div><?php echo $text['mission_item2_desc']; ?></div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="misi-card">
-          <div class="icon"><i class="fas fa-balance-scale"></i></div>
-          <h3><?php echo $text['mission_item3']; ?></h3>
-          <div><?php echo $text['mission_item3_desc']; ?></div>
+
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-10">
+        <div class="mission-list-container">
+          <ol class="mission-list">
+            <?php foreach ($text['mission_points'] as $point): ?>
+              <li><?php echo $point; ?></li>
+            <?php endforeach; ?>
+          </ol>
         </div>
       </div>
     </div>
