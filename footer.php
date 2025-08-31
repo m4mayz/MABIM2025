@@ -68,9 +68,6 @@ $whatsapp_message = urlencode($whatsapp_default_text[$lang]);
               <li><a href="info.php"><img src="assets/img/icon/info.png" alt="Information"
                     style="width: 16px; height: 16px; margin-right: 8px; vertical-align: middle;" />
                   <?php echo $menu['informasi']; ?></a></li>
-              <li><a href="https://nusaputra.ac.id/" target="_blank"><img src="assets/img/icon/link.png" alt="Website"
-                    style="width: 16px; height: 16px; margin-right: 8px; vertical-align: middle;" />
-                  <?php echo $f_text['univ_website']; ?></a></li>
             </ul>
           </div>
           <div class="col-6">
@@ -84,6 +81,12 @@ $whatsapp_message = urlencode($whatsapp_default_text[$lang]);
               <li><a href="https://www.youtube.com/c/MabimUnsp" target="_blank"><img src="assets/img/icon/youtube.png"
                     alt="YouTube" style="width: 16px; height: 16px; margin-right: 8px; vertical-align: middle;" />
                   YouTube</a></li>
+              <li><a href="https://www.tiktok.com/@mabim.unsp" target="_blank"><img src="assets/img/icon/tiktok.png"
+                    alt="TikTok" style="width: 16px; height: 16px; margin-right: 8px; vertical-align: middle;" />
+                  TikTok</a></li>
+              <li><a href="https://nusaputra.ac.id/" target="_blank"><img src="assets/img/icon/campuss.png"
+                    alt="Website" style="width: 16px; height: 16px; margin-right: 8px; vertical-align: middle;" />
+                  <?php echo $f_text['univ_website']; ?></a></li>
             </ul>
           </div>
         </div>

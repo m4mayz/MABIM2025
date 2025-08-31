@@ -117,7 +117,12 @@ $content = [
   ]
 ];
 $text = $content[$lang];
+
+// Link pembagian kelompok
+$cta_link = 'https://docs.google.com/spreadsheets/d/1FXAdRNxKhRVnteOrbnoJ5OJP12KkkTeV/edit?gid=166098861#gid=166098861';
 ?>
+
+
 
 <section class="hero-section">
   <div class="time-portal">
@@ -369,7 +374,8 @@ $text = $content[$lang];
         <p class="section-subtitle text-light"><?php echo $text['cta_desc']; ?></p>
       </div>
       <div class="col-lg-3 text-center">
-        <a class="btn btn-primary-custom" href="#" target="_blank"><?php echo $text['cta_button']; ?></a>
+        <a class="btn btn-primary-custom" href="<?php echo $cta_link; ?>"
+          target="_blank"><?php echo $text['cta_button']; ?></a>
       </div>
     </div>
   </div>
