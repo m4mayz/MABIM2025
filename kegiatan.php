@@ -14,6 +14,9 @@ include 'header.php';
 
 $kegiatan_data = [
   'id' => [
+    'rundown_time' => 'Waktu',
+    'rundown_activity' => 'Kegiatan',
+    'rundown_facilitator' => 'Fasilitator',
     'page_title' => 'Linimasa Ekspedisi',
     'page_subtitle' => 'Jadwal, absensi, dan semua informasi teknis kegiatan MABIM 2025.',
     'location_title' => 'Peta & Koordinat Waktu',
@@ -131,7 +134,9 @@ $kegiatan_data = [
     ]
   ],
   'en' => [
-    // ... (Konten Bahasa Inggris disederhanakan untuk keringkasan, namun akan diterjemahkan sepenuhnya)
+    'rundown_time' => 'Time',
+    'rundown_activity' => 'Activity',
+    'rundown_facilitator' => 'Facilitator',
     'page_title' => 'Expedition Timeline',
     'page_subtitle' => 'Schedule, attendance, and all technical information for MABIM 2025.',
     'location_title' => 'Time Map & Coordinates',
@@ -141,10 +146,10 @@ $kegiatan_data = [
     'location_button' => 'View Map',
     'labels' => ['date' => 'Day/Date', 'time' => 'Time', 'place' => 'Location'],
     'attendance_list' => [
-      ['title' => 'Attendance Day 1 (Sep 8)', 'link' => '#'],
-      ['title' => 'Attendance Day 2 (Sep 9)', 'link' => '#'],
-      ['title' => 'Attendance Day 3 (Sep 10)', 'link' => '#'],
-      ['title' => 'Attendance Day 4 (Sep 13)', 'link' => '#'],
+      ['title' => 'Attendance Day 1 (Sep 8)', 'link' => ''],
+      ['title' => 'Attendance Day 2 (Sep 9)', 'link' => ''],
+      ['title' => 'Attendance Day 3 (Sep 10)', 'link' => ''],
+      ['title' => 'Attendance Day 4 (Sep 13)', 'link' => ''],
     ],
     'location_sessions' => [
       [
@@ -333,9 +338,9 @@ $text = $kegiatan_data[$lang];
                 <table class="table table-rundown-compact">
                   <thead>
                     <tr>
-                      <th scope="col">Waktu</th>
-                      <th scope="col">Kegiatan</th>
-                      <th scope="col">Fasilitator</th>
+                      <th scope="col"><?php echo $text['rundown_time']; ?></th>
+                      <th scope="col"><?php echo $text['rundown_activity']; ?></th>
+                      <th scope="col"><?php echo $text['rundown_facilitator']; ?></th>
                     </tr>
                   </thead>
                   <tbody>
