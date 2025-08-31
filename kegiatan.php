@@ -185,7 +185,7 @@ $text = $kegiatan_data[$lang];
     <div class="row justify-content-center g-4">
       <?php foreach ($text['location_sessions'] as $session): ?>
         <div class="col-lg-5 col-md-6">
-          <div class="location-card">
+          <div class="location-card-modern">
             <h3><?php echo $session['title']; ?></h3>
             <ul>
               <li><i class="fas fa-calendar-alt"></i>

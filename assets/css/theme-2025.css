@@ -3285,6 +3285,15 @@ h6 {
         box-shadow: 0 5px 20px rgba(163, 0, 99, 0.15);
     }
 
+    .location-card-modern ul li div {
+        flex-direction: column;
+    }
+
+    .location-card-modern ul li div strong {
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+
     .navbar-toggler {
         border: 2px solid var(--primary-magenta);
         padding: 0.25rem 0.5rem;
@@ -3499,5 +3508,74 @@ h6 {
     transform: scale(1.05);
     box-shadow: 0 0 40px rgba(122, 0, 74, 0.5);
 }
+/* New Modern Location Card Style */
+.location-card-modern {
+    background: rgba(13, 13, 26, 0.7);
+    border: 2px solid var(--secondary-blue);
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
 
+.location-card-modern:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-yellow);
+    box-shadow: 0 0 25px rgba(251, 204, 27, 0.3);
+}
+
+.location-card-modern h3 {
+    color: var(--accent-yellow);
+    font-family: var(--font-heading);
+    margin: 0 0 1.5rem 0;
+    font-size: 1.8rem;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(251, 204, 27, 0.5);
+    border-bottom: 2px solid var(--secondary-blue);
+    padding-bottom: 0.5rem;
+}
+
+.location-card-modern ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    flex-grow: 1;
+}
+
+.location-card-modern ul li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+}
+
+.location-card-modern ul li i {
+    color: var(--accent-yellow);
+    font-size: 1.25rem;
+    margin-right: 1rem;
+    width: 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.location-card-modern ul li div {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.location-card-modern ul li div strong {
+    color: var(--secondary-blue);
+    font-weight: 700;
+    margin-right: 0.5rem;
+    width: 90px; /* Fixed width for labels to align content */
+    flex-shrink: 0;
+}
+
+.location-card-modern .btn {
+    margin-top: auto;
+}
 /* ===== END OF CSS ===== */
