@@ -53,7 +53,7 @@ $menu = $menu_text[$lang];
       <div class="container-fluid d-flex justify-content-between align-items-center">
 
         <a class="navbar-brand" href="index.php">
-          <img src="assets/img/tp-logo_text.png" alt="MABIM 2025 - Time Travelling" class="navbar-logo">
+          <img src="assets/img/logo_black.png" alt="MABIM 2025 - Time Travelling" class="navbar-logo">
         </a>
 
         <!-- Mobile Controls: Lang Switcher + Burger Menu -->

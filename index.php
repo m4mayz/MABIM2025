@@ -246,7 +246,7 @@ $text = $content[$lang];
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-5 text-center">
-        <img src="assets/img/tp-logo-notext.png" alt="MABIM 2025 Logo" class="logo-image">
+        <img src="assets/img/tp-logo.png" alt="MABIM 2025 Logo" class="logo-image">
       </div>
       <div class="col-lg-7">
         <h2 class="section-title"><?php echo $text['logo_philosophy_title']; ?></h2>
@@ -348,7 +348,7 @@ $text = $content[$lang];
       <div class="tab-pane fade" id="nusapedi" role="tabpanel">
         <div class="row align-items-center">
           <div class="col-md-5">
-            <img src="assets/img/mascots/nusapedi.png" alt="NUSAPEDI" class="maskot-image">
+            <img src="assets/img/mascots/nusapedi2.png" alt="NUSAPEDI" class="maskot-image">
           </div>
           <div class="col-md-7">
             <h3><?php echo $text['mascot4_name']; ?></h3>

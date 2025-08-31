@@ -39,7 +39,7 @@ $whatsapp_message = urlencode($whatsapp_default_text[$lang]);
   <div class="container">
     <div class="row">
       <div class="col-lg-5 col-md-12 mb-4">
-        <h5><img src="assets/img/tp-logo-notext.png" alt="Logo Mabim 2025"
+        <h5><img src="assets/img/logo_white.png" alt="Logo Mabim 2025"
             style="height: 40px; width: auto; vertical-align: middle;" />
           <?php echo $f_text['title']; ?>
         </h5>
@@ -106,7 +106,7 @@ $whatsapp_message = urlencode($whatsapp_default_text[$lang]);
 
 <div id="floating-mascot" class="floating-mascot-container">
   <div id="mascot-bubble" class="mascot-chat-bubble"></div>
-  <img src="assets/img/mascots/Nusapedi.png" alt="Mascot" class="mascot-image" id="mascot-image">
+  <img src="assets/img/mascots/nusapedi2.png" alt="Mascot" class="mascot-image" id="mascot-image">
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
