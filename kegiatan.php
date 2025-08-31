@@ -163,7 +163,85 @@ $kegiatan_data = [
       ]
     ],
     'rundown_days' => [
-      // Data rundown bahasa Inggris akan mengikuti struktur yang sama
+      [
+        'title' => 'Day 1: The Time Gate Opens',
+        'date' => 'Monday, September 8, 2025',
+        'schedule' => [
+          ['time' => '06:00-06:35', 'activity' => 'Committee Preparation', 'facilitator' => 'OC', 'action' => ''],
+          ['time' => '06:35-07:35', 'activity' => 'Participant Check-In', 'facilitator' => 'Mentors & Security', 'action' => '#'],
+          ['time' => '07:35-07:55', 'activity' => 'Mineral Water Distribution', 'facilitator' => 'Consumption Division', 'action' => ''],
+          ['time' => '07:55-08:10', 'activity' => 'Participant Task Briefing', 'facilitator' => 'Event Division', 'action' => ''],
+          ['time' => '08:10-08:20', 'activity' => 'Opening Ceremony', 'facilitator' => 'MC', 'action' => ''],
+          ['time' => '08:20-08:40', 'activity' => 'Rector Welcoming Procession with Traditional Dance', 'facilitator' => 'UKM Lisensi', 'action' => ''],
+          ['time' => '08:40-08:50', 'activity' => 'Indonesia Raya & Nusa Putra March', 'facilitator' => 'GHC', 'action' => ''],
+          ['time' => '08:50-09:00', 'activity' => 'Speech by MABIM 2025 Steering Committee Chair', 'facilitator' => 'Muhammad Rido Sinaga, SH., MH.', 'action' => ''],
+          ['time' => '09:00-09:25', 'activity' => 'Rector\'s Speech & Official Opening', 'facilitator' => 'Dr. Ir. Kurniawan, ST. M.Si. MM', 'action' => ''],
+          ['time' => '09:25-09:40', 'activity' => 'International Student Parade', 'facilitator' => 'Ceremonial Division', 'action' => ''],
+          ['time' => '09:40-10:00', 'activity' => 'Symbolic Pinning for Committee & Participants', 'facilitator' => 'Dr.Ir. Kurniawan, ST. M.Si. MM', 'action' => ''],
+          ['time' => '10:00-10:10', 'activity' => 'Group Photo', 'facilitator' => 'PDD Division', 'action' => ''],
+          ['time' => '10:10-10:30', 'activity' => 'Ormawa Collaboration', 'facilitator' => 'Ceremonial Division', 'action' => ''],
+          ['time' => '10:30-11:30', 'activity' => 'Session 1: Higher Education System in the Digital Era', 'facilitator' => 'Vice Rector I (ARCI)', 'action' => ''],
+          ['time' => '11:30-12:30', 'activity' => 'Session 2: Administration and Finance', 'facilitator' => 'Vice Rector II (ORF)', 'action' => ''],
+          ['time' => '12:30-13:30', 'activity' => 'ISHOMA (Break)', 'facilitator' => '-', 'action' => ''],
+          ['time' => '13:30-14:30', 'activity' => 'Session 3: Talkshow Strengthening Nationalism', 'facilitator' => 'Prof Dewi', 'action' => ''],
+          ['time' => '14:30-15:30', 'activity' => 'Session 4: Talkshow Building a Creative Generation', 'facilitator' => 'Entrepreneurship Unit & Alumni', 'action' => ''],
+          ['time' => '15:30-15:40', 'activity' => 'Closing', 'facilitator' => 'MC', 'action' => ''],
+        ]
+      ],
+      [
+        'title' => 'Day 2: Character Building',
+        'date' => 'Tuesday, September 9, 2025',
+        'schedule' => [
+          ['time' => '06:00-06:30', 'activity' => 'Committee Preparation', 'facilitator' => 'OC', 'action' => ''],
+          ['time' => '06:30-07:30', 'activity' => 'Participant Check-In', 'facilitator' => 'Mentors & Security', 'action' => ''],
+          ['time' => '07:30-07:50', 'activity' => 'Mineral Water Distribution', 'facilitator' => 'Consumption Division', 'action' => ''],
+          ['time' => '07:50-08:50', 'activity' => 'Session 5: Student Affairs', 'facilitator' => 'Vice Rector III (SAAC)', 'action' => ''],
+          ['time' => '08:50-09:50', 'activity' => 'Session 6: Introduction to DPM', 'facilitator' => 'DPM Chair', 'action' => ''],
+          ['time' => '09:50-10:50', 'activity' => 'Session 7: Introduction to BEM', 'facilitator' => 'BEM Chair', 'action' => ''],
+          ['time' => '10:50-11:50', 'activity' => 'ISHOMA (Break)', 'facilitator' => '-', 'action' => ''],
+          ['time' => '11:50-13:50', 'activity' => 'Session 8: Talkshow on Health & HIV/AIDS Legal Policy', 'facilitator' => 'Rida Ista Sitepu, SH., MH. & Dr. Heri', 'action' => ''],
+          ['time' => '13:50-14:05', 'activity' => 'Day 3 Information Briefing', 'facilitator' => 'Event Division', 'action' => ''],
+          ['time' => '14:05-14:15', 'activity' => 'Closing', 'facilitator' => 'MC', 'action' => ''],
+        ]
+      ],
+      [
+        'title' => 'Day 3: Faculty & Ormawa Introduction',
+        'date' => 'Wednesday, September 10, 2025',
+        'schedule' => [
+          ['time' => '06:00-07:00', 'activity' => 'Committee Preparation', 'facilitator' => 'OC', 'action' => ''],
+          ['time' => '07:00-08:00', 'activity' => 'Participant Check-In', 'facilitator' => 'Mentors & Security', 'action' => ''],
+          ['time' => '08:00-08:20', 'activity' => 'Ice Breaking', 'facilitator' => 'Event Division', 'action' => ''],
+          ['time' => '08:20-09:20', 'activity' => 'Participant Guidance to Rooms', 'facilitator' => 'Korlap & Security Division', 'action' => ''],
+          ['time' => '09:20-10:50', 'activity' => 'Session 10: Introduction to 6 Study Programs (FECD)', 'facilitator' => 'FECD Faculty', 'action' => ''],
+          ['time' => '09:20-10:50', 'activity' => 'Genusian People\'s Market (Ormawa)', 'facilitator' => 'FBH Faculty', 'action' => ''],
+          ['time' => '10:50-11:20', 'activity' => 'Mobility', 'facilitator' => 'Korlap & Security Division', 'action' => ''],
+          ['time' => '11:20-11:40', 'activity' => 'Drinking Water Distribution', 'facilitator' => 'Consumption Division', 'action' => ''],
+          ['time' => '11:40-12:40', 'activity' => 'ISHOMA (Break)', 'facilitator' => '-', 'action' => ''],
+          ['time' => '12:40-13:10', 'activity' => 'Mobility', 'facilitator' => 'Korlap & Security Division', 'action' => ''],
+          ['time' => '13:10-14:40', 'activity' => 'Session 11: Introduction to 4 Study Programs (FBH)', 'facilitator' => 'FBH Faculty', 'action' => ''],
+          ['time' => '13:10-14:40', 'activity' => 'Genusian People\'s Market (Ormawa)', 'facilitator' => 'FECD Faculty', 'action' => ''],
+          ['time' => '14:40-14:50', 'activity' => 'Closing', 'facilitator' => 'MC', 'action' => ''],
+        ]
+      ],
+      [
+        'title' => 'Day 4: Expedition Peak',
+        'date' => 'Saturday, September 13, 2025',
+        'schedule' => [
+          ['time' => '04:00-05:00', 'activity' => 'Committee Preparation', 'facilitator' => 'OC', 'action' => ''],
+          ['time' => '05:00-06:00', 'activity' => 'Participant Check-In', 'facilitator' => 'Mentors & Security', 'action' => ''],
+          ['time' => '06:00-07:30', 'activity' => 'Breakfast', 'facilitator' => 'Consumption Division', 'action' => ''],
+          ['time' => '07:30-09:30', 'activity' => 'Debate Olympiad & Relay/Sports', 'facilitator' => 'Event & Ceremonial Division', 'action' => ''],
+          ['time' => '09:30-11:00', 'activity' => 'Session 12: Kenusaputraan', 'facilitator' => 'Dr.Ir. Kurniawan, ST. M.Si. MM', 'action' => ''],
+          ['time' => '11:00-12:00', 'activity' => 'Lunch Distribution', 'facilitator' => 'Consumption Division', 'action' => ''],
+          ['time' => '12:00-13:00', 'activity' => 'ISHOMA (Break)', 'facilitator' => '-', 'action' => ''],
+          ['time' => '13:00-13:30', 'activity' => 'Prize Distribution', 'facilitator' => 'Ceremonial Division', 'action' => ''],
+          ['time' => '13:30-13:50', 'activity' => 'MABIM Closing Preparation', 'facilitator' => 'Event Division', 'action' => ''],
+          ['time' => '13:50-13:55', 'activity' => 'MABIM Closing Opening', 'facilitator' => 'MC', 'action' => ''],
+          ['time' => '13:55-14:10', 'activity' => 'Rector\'s Speech & Official Closing', 'facilitator' => 'Dr.Ir. Kurniawan, ST. M.Si. MM', 'action' => ''],
+          ['time' => '14:10-14:15', 'activity' => 'Group Photo', 'facilitator' => 'PDD Division', 'action' => ''],
+          ['time' => '14:15-15:15', 'activity' => 'Closing and Entertainment', 'facilitator' => 'MC', 'action' => ''],
+        ]
+      ],
     ]
   ]
 ];
