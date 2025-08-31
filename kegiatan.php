@@ -208,7 +208,7 @@ $text = $kegiatan_data[$lang];
   </div>
 </section>
 
-<section class="section animated-bg" id="absensi">
+<section class="section absensi-section animated-bg" id="absensi">
   <div class="particle-container"></div>
   <div class="container">
     <h2 class="section-title"><?php echo $text['attendance_title']; ?></h2>
@@ -218,8 +218,15 @@ $text = $kegiatan_data[$lang];
           <div class="attendance-card">
             <i class="fas fa-qrcode"></i>
             <h4><?php echo $item['title']; ?></h4>
-            <a href="<?php echo $item['link']; ?>" target="_blank"
-              class="btn btn-primary-custom mt-3"><?php echo $text['attendance_button']; ?></a>
+            <?php if (empty($item['link'])): ?>
+              <button class="btn btn-primary-custom mt-3 btn-disabled" disabled>
+                <i class="fas fa-lock-alt me-2"></i><?php echo $text['attendance_button']; ?>
+              </button>
+            <?php else: ?>
+              <a href="<?php echo $item['link']; ?>" target="_blank" class="btn btn-primary-custom mt-3">
+                <i class="fas fa-qrcode me-2"></i><?php echo $text['attendance_button']; ?>
+              </a>
+            <?php endif; ?>
           </div>
         </div>
       <?php endforeach; ?>
@@ -245,7 +252,7 @@ $text = $kegiatan_data[$lang];
                echo 'show'; ?>" data-bs-parent="#rundownAccordion">
             <div class="accordion-body">
               <div class="table-responsive">
-                <table class="table table-rundown">
+                <table class="table table-rundown-compact">
                   <thead>
                     <tr>
                       <th scope="col">Waktu</th>
