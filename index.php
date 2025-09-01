@@ -10,8 +10,8 @@ include 'header.php';
 
 $content = [
   'id' => [
-    'hero_title' => 'Time Travelling',
-    'hero_subtitle' => 'Unlocking The Culture',
+    'hero_title' => 'Time Travelling: Unlocking The Future',
+    // 'hero_subtitle' => 'Unlocking The Culture',
     'hero_greeting' => 'Selamat Datang Para Penjelajah Waktu Genusian 2025!',
     'hero_button_main' => 'Mulai Perjalanan',
     'hero_button_trailer' => 'Trailer MABIM 2025',
@@ -19,7 +19,7 @@ $content = [
     'philosophy_desc' => '"Perjalanan menembus waktu untuk menyingkap, memahami, dan menghidupkan kembali nilai budaya, sehingga warisan masa lalu dapat menjadi cahaya bagi masa depan."',
     'philosophy_item1_title' => 'Time Travelling',
     'philosophy_item1_desc' => 'Menjelajahi masa lalu untuk memahami akar sejarah, tradisi, dan nilai-nilai yang membentuk identitas.',
-    'philosophy_item2_title' => 'Unlocking the Culture',
+    'philosophy_item2_title' => 'Unlocking the Future',
     'philosophy_item2_desc' => 'Mengungkap, membongkar, dan merevitalisasi unsur-unsur budaya yang terlupakan untuk menginspirasi masa depan.',
     'logo_philosophy_title' => 'Filosofi Logo',
     'logo_philosophy_desc' => 'Visualisasi logo mengacu pada simbolik sifat yang relevan dengan kehidupan, waktu, perubahan, dan kemanfaatan.',
@@ -63,8 +63,8 @@ $content = [
     'amor_concervis_desc' => 'Sebagai pengikat insan Nusa Putra untuk menjalani hidup berdampingan secara damai dalam menyikapi setiap perbedaan, karena Tuhan berkehendak atas adanya perbedaan itu sendiri.',
   ],
   'en' => [
-    'hero_title' => 'Time Travelling',
-    'hero_subtitle' => 'Unlocking The Culture',
+    'hero_title' => 'Time Travelling: Unlocking The Future',
+    // 'hero_subtitle' => 'Unlocking The Culture',
     'hero_greeting' => 'Welcome, Genusian Time Travelers of 2025!',
     'hero_button_main' => 'Start the Journey',
     'hero_button_trailer' => 'MABIM 2025 Trailer',
@@ -72,7 +72,7 @@ $content = [
     'philosophy_desc' => '"A journey through time to uncover, understand, and revive cultural values, so that the heritage of the past can become a light for the future."',
     'philosophy_item1_title' => 'Time Travelling',
     'philosophy_item1_desc' => 'Exploring the past to understand the historical roots, traditions, and values that shape identity.',
-    'philosophy_item2_title' => 'Unlocking the Culture',
+    'philosophy_item2_title' => 'Unlocking the Future',
     'philosophy_item2_desc' => 'Uncovering, dismantling, and revitalizing forgotten cultural elements to inspire the future.',
     'logo_philosophy_title' => 'Logo Philosophy',
     'logo_philosophy_desc' => 'The logo visualization refers to symbolic properties relevant to life, time, change, and usefulness.',
@@ -137,7 +137,7 @@ $cta_link = 'https://docs.google.com/spreadsheets/d/1FXAdRNxKhRVnteOrbnoJ5OJP12K
 
   <div class="hero-content">
     <h1><?php echo $text['hero_title']; ?></h1>
-    <p class="hero-subtitle"><?php echo $text['hero_subtitle']; ?></p>
+    <!-- <p class="hero-subtitle"><?php echo $text['hero_subtitle']; ?></p> -->
     <p class="hero-description"><?php echo $text['hero_greeting']; ?></p>
     <div class="hero-buttons">
       <a class="btn btn-primary-custom" href="#trilogi-nusa-putra">
