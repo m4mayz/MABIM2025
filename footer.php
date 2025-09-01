@@ -6,7 +6,7 @@ global $lang;
 $footer_text = [
   'id' => [
     'title' => 'MABIM 2025',
-    'desc' => 'Time Travelling: Unlocking the Culture. Perjalanan menembus waktu untuk menyingkap, memahami, dan menghidupkan kembali nilai budaya.',
+    'desc' => 'Time Travelling: Unlocking the Future. Perjalanan menembus waktu untuk menyingkap, memahami, dan menghidupkan kembali nilai budaya.',
     'nav_title' => 'Navigasi',
     'social_title' => 'Media Sosial',
     'whatsapp_text' => 'Ada pertanyaan? Chat kami!',

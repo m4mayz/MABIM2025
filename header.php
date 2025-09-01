@@ -38,7 +38,7 @@ $menu = $menu_text[$lang];
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MABIM 2025 | Time Travelling: Unlocking the Culture</title>
+  <title>MABIM 2025 | Time Travelling: Unlocking the Future</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="vendors/fontawesome/all.min.css" rel="stylesheet">

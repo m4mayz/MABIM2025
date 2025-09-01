@@ -91,8 +91,7 @@ $text = $info_content[$lang];
       <div class="col-lg-4 col-md-6">
         <div class="info-card">
           <div class="info-card-img">
-            <img src="/assets/img/pics/denah_kampus.svg" alt="<?php echo $text['campus_map_title']; ?>"
-              class="img-fluid">
+            <img src="/assets/img/denahkampus.jpg" alt="<?php echo $text['campus_map_title']; ?>" class="img-fluid">
           </div>
           <div class="info-card-body">
             <h3 class="info-card-title"><?php echo $text['campus_map_title']; ?></h3>
@@ -109,7 +108,7 @@ $text = $info_content[$lang];
       <div class="col-lg-4 col-md-6">
         <div class="info-card">
           <div class="info-card-img">
-            <img src="/assets/img/pics/denah_BMC.svg" alt="<?php echo $text['bmc_map_title']; ?>" class="img-fluid">
+            <img src="/assets/img/denahbmc.jpg" alt="<?php echo $text['bmc_map_title']; ?>" class="img-fluid">
           </div>
           <div class="info-card-body">
             <h3 class="info-card-title"><?php echo $text['bmc_map_title']; ?></h3>
@@ -134,7 +133,7 @@ $text = $info_content[$lang];
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body text-center">
-        <img src="/assets/img/pics/denah_kampus.svg" alt="<?php echo $text['campus_map_title']; ?>" class="img-fluid"
+        <img src="/assets/img/denahkampus.jpg" alt="<?php echo $text['campus_map_title']; ?>" class="img-fluid"
           style="max-height: 200vh;">
       </div>
       <div class="modal-footer border-secondary">
@@ -154,8 +153,8 @@ $text = $info_content[$lang];
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body text-center">
-        <img src="/assets/img/pics/denah_BMC.svg" alt="<?php echo $text['bmc_map_title']; ?>" class="img-fluid"
-          style="max-height: 80vh;">
+        <img src="/assets/img/denahbmc.jpg" alt="<?php echo $text['bmc_map_title']; ?>" class="img-fluid"
+          style="max-height: 200vh;">
       </div>
       <div class="modal-footer border-secondary">
         <button type="button" class="btn btn-secondary-custom"
