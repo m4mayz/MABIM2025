@@ -45,8 +45,12 @@ $assignments = [
 ];
 $text = $assignments[$lang];
 
-// Load content from tugas.html
-$html_content = file_get_contents(__DIR__ . '/doc/tugas.html');
+// Load content from tugas-id.html or tugas-en.html based on language
+if ($lang === 'en') {
+  $html_content = file_get_contents(__DIR__ . '/doc/tugas-en.html');
+} else {
+  $html_content = file_get_contents(__DIR__ . '/doc/tugas-id.html');
+}
 
 // Function to extract sections from HTML content
 function extractSection($content, $title)
@@ -58,17 +62,36 @@ function extractSection($content, $title)
   return '';
 }
 
-// Extract each section
-$individual_tasks = extractSection($html_content, 'A. Penugasan Individu');
-$group_tasks = extractSection($html_content, 'B. Penugasan Kelompok');
-$consequences = extractSection($html_content, 'KONSEKUENSI');
-$submission = extractSection($html_content, 'PENGUMPULAN');
-$evaluation = extractSection($html_content, 'PENILAIAN');
+// Section titles for both languages
+if ($lang === 'en') {
+  $individual_title = 'A. Individual Assignments';
+  $group_title = 'B. Group Assignments';
+  $consequences_title = 'CONSEQUENCES';
+  $submission_title = 'SUBMISSION';
+  $evaluation_title = 'EVALUATION';
+  $org_follow_title = 'Follow Organization & Campus Accounts';
+  $org_button = '<h3>Follow Organization & Campus Accounts <br/><a href="#ormawaModal" data-bs-toggle="modal"><i class="fas fa-list me-1"></i> -> View Account List</a></h3>';
+} else {
+  $individual_title = 'A. Penugasan Individu';
+  $group_title = 'B. Penugasan Kelompok';
+  $consequences_title = 'KONSEKUENSI';
+  $submission_title = 'PENGUMPULAN';
+  $evaluation_title = 'PENILAIAN';
+  $org_follow_title = 'Memfollow Akun Organisasi Mahasiswa dan Kampus';
+  $org_button = '<h3>Memfollow Akun Organisasi Mahasiswa dan Kampus <br/><a href="#ormawaModal" data-bs-toggle="modal"><i class="fas fa-list me-1"></i> -> Lihat Daftar Akun</a></h3>';
+}
 
-// Add organization accounts button
+// Extract each section
+$individual_tasks = extractSection($html_content, $individual_title);
+$group_tasks = extractSection($html_content, $group_title);
+$consequences = extractSection($html_content, $consequences_title);
+$submission = extractSection($html_content, $submission_title);
+$evaluation = extractSection($html_content, $evaluation_title);
+
+// Add organization accounts button (for both languages)
 $individual_tasks = str_replace(
-  '<h3>Memfollow Akun Organisasi Mahasiswa dan Kampus</h3>',
-  '<h3>Memfollow Akun Organisasi Mahasiswa dan Kampus <br/><a href="#ormawaModal" data-bs-toggle="modal"><i class="fas fa-list me-1"></i> -> Lihat Daftar Akun</a></h3>',
+  '<h3>' . $org_follow_title . '</h3>',
+  $org_button,
   $individual_tasks
 );
 ?>
