@@ -121,7 +121,7 @@ $text = $content[$lang];
       <div class="col-lg-8">
         <h2 class="section-title"><?php echo $text['download_title']; ?></h2>
         <p class="section-subtitle mb-5"><?php echo $text['download_desc']; ?></p>
-        <a href="assets/pdf/buku-saku-mabim-2025.pdf" target="_blank" class="btn btn-primary-custom btn-lg">
+        <a href="/doc/buku-saku-mabim-2025.pdf" target="_blank" class="btn btn-primary-custom btn-lg">
           <i class="fas fa-download me-2"></i> <?php echo $text['download_button']; ?>
         </a>
       </div>
