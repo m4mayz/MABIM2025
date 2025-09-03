@@ -70,6 +70,40 @@ $text = $info_content[$lang];
   <div class="particle-container"></div>
   <div class="container">
     <div class="row g-4">
+
+      <!-- Buku Saku MABIM 2025 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="info-card">
+          <div class="info-card-img">
+            <img src="assets/img/bukusaku.png" alt="Buku Saku MABIM 2025" class="img-fluid">
+          </div>
+          <div class="info-card-body">
+            <h3 class="info-card-title">Buku Saku MABIM 2025</h3>
+            <p class="info-card-author">Posted by: IT Division MABIM 2025</p>
+            <a href="https://drive.google.com/file/d/1yEQlf9jJHWKgoSK3RZ-ijJBQE9hQqYnk/view?usp=sharing" target="_blank"
+              class="btn btn-primary-custom w-100">
+              <i class="fas fa-users me-2"></i>Lihat Buku Saku
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Link Twibbon -->
+      <div class="col-lg-4 col-md-6">
+        <div class="info-card">
+          <div class="info-card-img">
+            <img src="assets/img/contoh-twibbon.png" alt="Link Twibbon MABIM 2025" class="img-fluid">
+          </div>
+          <div class="info-card-body">
+            <h3 class="info-card-title">Link Twibbon MABIM 2025</h3>
+            <p class="info-card-author">Posted by: IT Division MABIM 2025</p>
+            <a href="https://twibbo.nz/mabimunsp2025" target="_blank" class="btn btn-primary-custom w-100">
+              <i class="fas fa-users me-2"></i>Lihat Twibbon
+            </a>
+          </div>
+        </div>
+      </div>
+
       <!-- Link Pembagian Kelompok -->
       <div class="col-lg-4 col-md-6">
         <div class="info-card">
@@ -91,7 +125,7 @@ $text = $info_content[$lang];
       <div class="col-lg-4 col-md-6">
         <div class="info-card">
           <div class="info-card-img">
-            <img src="/assets/img/denahkampus.jpg" alt="<?php echo $text['campus_map_title']; ?>" class="img-fluid">
+            <img src="/assets/img/denah_nusput.jpg" alt="<?php echo $text['campus_map_title']; ?>" class="img-fluid">
           </div>
           <div class="info-card-body">
             <h3 class="info-card-title"><?php echo $text['campus_map_title']; ?></h3>
@@ -108,7 +142,7 @@ $text = $info_content[$lang];
       <div class="col-lg-4 col-md-6">
         <div class="info-card">
           <div class="info-card-img">
-            <img src="/assets/img/denahbmc.jpg" alt="<?php echo $text['bmc_map_title']; ?>" class="img-fluid">
+            <img src="/assets/img/denah_puncak.jpg" alt="<?php echo $text['bmc_map_title']; ?>" class="img-fluid">
           </div>
           <div class="info-card-body">
             <h3 class="info-card-title"><?php echo $text['bmc_map_title']; ?></h3>
@@ -133,7 +167,7 @@ $text = $info_content[$lang];
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body text-center">
-        <img src="/assets/img/denahkampus.jpg" alt="<?php echo $text['campus_map_title']; ?>" class="img-fluid"
+        <img src="/assets/img/denah_nusput.jpg" alt="<?php echo $text['campus_map_title']; ?>" class="img-fluid"
           style="max-height: 200vh;">
       </div>
       <div class="modal-footer border-secondary">
@@ -153,7 +187,7 @@ $text = $info_content[$lang];
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body text-center">
-        <img src="/assets/img/denahbmc.jpg" alt="<?php echo $text['bmc_map_title']; ?>" class="img-fluid"
+        <img src="/assets/img/denah_puncak.jpg" alt="<?php echo $text['bmc_map_title']; ?>" class="img-fluid"
           style="max-height: 200vh;">
       </div>
       <div class="modal-footer border-secondary">

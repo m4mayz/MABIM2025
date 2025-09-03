@@ -20,6 +20,7 @@ $assignments = [
     'evaluation_title' => 'Kriteria Penilaian',
     'follow_accounts' => 'Akun Ormawa & Kampus',
     'modal_title' => 'Daftar Akun Sosial Media Organisasi Kampus',
+    'daily_title' => 'Penugasan Harian & Presensi',
     'visit_profile' => 'Kunjungi Profil',
     'close_button' => 'Tutup',
     'search_placeholder' => 'Cari organisasi...',
@@ -27,8 +28,8 @@ $assignments = [
       'individual' => '#',
       'group' => '#'
     ],
-    'caption_twibon' => "Hello Genusian‼️🤩\nIntroduction myself,\nMy name is [.....] I'm from the group [....] my major is [.....]\n\n✨DI ISI FAKTA MENARIK TENTANG NAMA KELOMPOK ✨\n\nI'M READY FOR MABIM 2025‼️🤩\nMabim 2025 \"Melangkah Bersama, Membuka Portal Baru, Siap Berkelana Dalam Menopang Ilmu\"\n@mentor @abdurahman_pais @syifaiaa @mabim_unsp @nusaputrauniversity\n\n#mabimunsp2025 #nusaputrauniversity #Tugasmabim2025 #acaramabimunsp #TimeTravelers #Genusian2025 #TimeToTravelTimeToGrow",
-    'caption_video' => "Hello Genusian👋🏻🤩\nIntroduction myself‼️\nMy name is [nama] I'm from the group [nama kelompok] my major is [jurusan]\n\n(Caption menarik tentang kelompok masing-masing, menggunakan bahasa nasional)\n\nI'M READY FOR MABIM 2025‼️🤩\nMabim 2025 \"Melangkah Bersama, Membuka Portal Baru, Siap Berkelana Dalam Menopang Ilmu\"\n@mentor @abdurahman_pais @syifaiaa @mabim_unsp @nusaputrauniversity\n\n#mabimunsp2025 #nusaputrauniversity #Tugasmabim2025 #acaramabimunsp #TimeTravelers #Genusian2025 #TimeToTravelTimeToGrow"
+    'caption_twibon' => "Hello Genusian‼️🤩\nLet me Introduce myself,\nMy name is [.....] I'm from the group [....] my major is [.....]\n\n✨DI ISI FAKTA MENARIK TENTANG NAMA KELOMPOK ✨\n\nI'M READY FOR MABIM 2025‼️🤩\nMabim 2025 \"Melangkah Bersama, Membuka Portal Baru, Siap Berkelana Dalam Menopang Ilmu\"\n@mentor @abdurahman_pais @syifaiaa @mabim_unsp @nusaputrauniversity\n\n#mabimunsp2025 #nusaputrauniversity #Tugasmabim2025 #acaramabimunsp #TimeTravelers #Genusian2025 #TimeToTravelTimeToGrow",
+    'caption_video' => "Hello Genusian👋🏻🤩\nLet me Introduce myself‼️\nMy name is [nama] I'm from the group [nama kelompok] my major is [jurusan]\n\n(Caption menarik tentang kelompok masing-masing, menggunakan bahasa nasional)\n\nI'M READY FOR MABIM 2025‼️🤩\nMabim 2025 \"Melangkah Bersama, Membuka Portal Baru, Siap Berkelana Dalam Menopang Ilmu\"\n@mentor @abdurahman_pais @syifaiaa @mabim_unsp @nusaputrauniversity\n\n#mabimunsp2025 #nusaputrauniversity #Tugasmabim2025 #acaramabimunsp #TimeTravelers #Genusian2025 #TimeToTravelTimeToGrow"
   ],
   'en' => [
     'page_title' => 'Mission Assignments',
@@ -38,6 +39,7 @@ $assignments = [
     'consequences_title' => 'Consequences',
     'submission_title' => 'Submission Methods',
     'evaluation_title' => 'Evaluation Criteria',
+    'daily_title' => 'Daily Tasks & Attendance',
     'follow_accounts' => 'Organization & Campus Accounts',
     'modal_title' => 'Campus Organization Social Media Accounts',
     'visit_profile' => 'Visit Profile',
@@ -47,8 +49,8 @@ $assignments = [
       'individual' => '#',
       'group' => '#'
     ],
-    'caption_twibon' => "Hello Genusian‼️🤩\nIntroduction myself,\nMy name is [.....] I'm from the group [....] my major is [.....]\n\n✨ADD INTERESTING FACTS ABOUT YOUR GROUP NAME ✨\n\nI'M READY FOR MABIM 2025‼️🤩\nMabim 2025 \"Stepping Together, Opening New Portals, Ready to Journey in Supporting Knowledge\"\n@mentor @abdurahman_pais @syifaiaa @mabim_unsp @nusaputrauniversity\n\n#mabimunsp2025 #nusaputrauniversity #Tugasmabim2025 #acaramabimunsp #TimeTravelers #Genusian2025 #TimeToTravelTimeToGrow",
-    'caption_video' => "Hello Genusian👋🏻🤩\nIntroduction myself‼️\nMy name is [name] I'm from the group [group name] my major is [major]\n\n(Interesting caption about your group, using national language)\n\nI'M READY FOR MABIM 2025‼️🤩\nMabim 2025 \"Stepping Together, Opening New Portals, Ready to Journey in Supporting Knowledge\"\n@mentor @abdurahman_pais @syifaiaa @mabim_unsp @nusaputrauniversity\n\n#mabimunsp2025 #nusaputrauniversity #Tugasmabim2025 #acaramabimunsp #TimeTravelers #Genusian2025 #TimeToTravelTimeToGrow"
+    'caption_twibon' => "Hello Genusian‼️🤩\nLet me introduce myself,\nMy name is [.....] I'm from the group [....] my major is [.....]\n\n✨ADD INTERESTING FACTS ABOUT YOUR GROUP NAME ✨\n\nI'M READY FOR MABIM 2025‼️🤩\nMabim 2025 \"Stepping Together, Opening New Portals, Ready to Journey in Supporting Knowledge\"\n@mentor @abdurahman_pais @syifaiaa @mabim_unsp @nusaputrauniversity\n\n#mabimunsp2025 #nusaputrauniversity #Tugasmabim2025 #acaramabimunsp #TimeTravelers #Genusian2025 #TimeToTravelTimeToGrow",
+    'caption_video' => "Hello Genusian👋🏻🤩\nLet me introduce myself‼️\nMy name is [name] I'm from the group [group name] my major is [major]\n\n(Interesting caption about your group, using national language)\n\nI'M READY FOR MABIM 2025‼️🤩\nMabim 2025 \"Stepping Together, Opening New Portals, Ready to Journey in Supporting Knowledge\"\n@mentor @abdurahman_pais @syifaiaa @mabim_unsp @nusaputrauniversity\n\n#mabimunsp2025 #nusaputrauniversity #Tugasmabim2025 #acaramabimunsp #TimeTravelers #Genusian2025 #TimeToTravelTimeToGrow"
   ]
 ];
 $text = $assignments[$lang];
@@ -77,6 +79,7 @@ if ($lang === 'en') {
   $consequences_title = 'CONSEQUENCES';
   $submission_title = 'SUBMISSION';
   $evaluation_title = 'EVALUATION';
+  $harian_dan_presensi_title = 'C. Daily Assignments & Attendance';
   $org_follow_title = 'Follow Organization & Campus Accounts';
   $org_button = '<h3>Follow Organization & Campus Accounts <br/><a href="#ormawaModal" class="org-accounts-button" data-bs-toggle="modal"><i class="fas fa-list me-1"></i> View Account List</a></h3>';
 } else {
@@ -85,6 +88,7 @@ if ($lang === 'en') {
   $consequences_title = 'KONSEKUENSI';
   $submission_title = 'PENGUMPULAN';
   $evaluation_title = 'PENILAIAN';
+  $harian_dan_presensi_title = 'C. Penugasan Harian & Presensi';
   $org_follow_title = 'Memfollow Akun Organisasi Mahasiswa dan Kampus';
   $org_button = '<h3>Memfollow Akun Organisasi Mahasiswa dan Kampus</h3>';
 }
@@ -95,6 +99,7 @@ $group_tasks = extractSection($html_content, $group_title);
 $consequences = extractSection($html_content, $consequences_title);
 $submission = extractSection($html_content, $submission_title);
 $evaluation = extractSection($html_content, $evaluation_title);
+$harian_dan_presensi = extractSection($html_content, $harian_dan_presensi_title);
 
 // Add organization accounts button (for both languages)
 $individual_tasks = str_replace(
@@ -610,6 +615,12 @@ $individual_tasks = str_replace(
           <i class="fas fa-award me-2"></i><?php echo $text['evaluation_title']; ?>
         </button>
       </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="harian-tab" data-bs-toggle="pill" data-bs-target="#harian" type="button"
+          role="tab">
+          <i class="fas fa-calendar-alt me-2"></i><?php echo $text['daily_title']; ?>
+        </button>
+      </li>
     </ul>
 
     <!-- Tab Content -->
@@ -646,6 +657,12 @@ $individual_tasks = str_replace(
       <div class="tab-pane fade" id="evaluation" role="tabpanel">
         <div class="task-section-modern">
           <?php echo $evaluation; ?>
+        </div>
+      </div>
+      <!-- Harian & Presensi Tab -->
+      <div class="tab-pane fade" id="harian" role="tabpanel">
+        <div class="task-section-modern">
+          <?php echo $harian_dan_presensi; ?>
         </div>
       </div>
     </div>

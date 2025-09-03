@@ -14,7 +14,8 @@ $content = [
     // 'hero_subtitle' => 'Unlocking The Culture',
     'hero_greeting' => 'Selamat Datang Para Penjelajah Waktu Genusian 2025!',
     'hero_button_main' => 'Mulai Perjalanan',
-    'hero_button_trailer' => 'Trailer MABIM 2025',
+    'hero_button_trailer' => '(SOON) Trailer MABIM 2025',
+    'trailer_link' => '',
     'philosophy_title' => 'Filosofi Tema',
     'philosophy_desc' => '"Perjalanan menembus waktu untuk menyingkap, memahami, dan menghidupkan kembali nilai budaya, sehingga warisan masa lalu dapat menjadi cahaya bagi masa depan."',
     'philosophy_item1_title' => 'Time Travelling',
@@ -67,7 +68,8 @@ $content = [
     // 'hero_subtitle' => 'Unlocking The Culture',
     'hero_greeting' => 'Welcome, Genusian Time Travelers of 2025!',
     'hero_button_main' => 'Start the Journey',
-    'hero_button_trailer' => 'MABIM 2025 Trailer',
+    'hero_button_trailer' => '(SOON) MABIM 2025 Trailer',
+    'trailer_link' => '',
     'philosophy_title' => 'Theme Philosophy',
     'philosophy_desc' => '"A journey through time to uncover, understand, and revive cultural values, so that the heritage of the past can become a light for the future."',
     'philosophy_item1_title' => 'Time Travelling',
@@ -143,9 +145,15 @@ $cta_link = 'https://docs.google.com/spreadsheets/d/1FXAdRNxKhRVnteOrbnoJ5OJP12K
       <a class="btn btn-primary-custom" href="#trilogi-nusa-putra">
         <i class="fas fa-rocket me-2"></i><?php echo $text['hero_button_main']; ?>
       </a>
-      <a class="btn btn-secondary-custom" href="#" target="_blank">
-        <i class="fab fa-youtube me-2"></i><?php echo $text['hero_button_trailer']; ?>
-      </a>
+      <?php if (empty($text['trailer_link'])): ?>
+        <button class="btn btn-secondary-custom" disabled>
+          <i class="fab fa-youtube me-2"></i><?php echo $text['hero_button_trailer']; ?>
+        </button>
+      <?php else: ?>
+        <a class="btn btn-secondary-custom" href="<?php echo $text['trailer_link']; ?>" target="_blank">
+          <i class="fab fa-youtube me-2"></i><?php echo $text['hero_button_trailer']; ?>
+        </a>
+      <?php endif; ?>
     </div>
   </div>
 </section>

@@ -72,7 +72,7 @@ $kegiatan_data = [
           ['time' => '10:30-11:30', 'activity' => 'Materi 1: Sistem Perguruan Tinggi di Era Digital', 'facilitator' => 'Vice Rector I (ARCI)', 'action' => ''],
           ['time' => '11:30-12:30', 'activity' => 'Materi 2: Administrasi dan Keuangan', 'facilitator' => 'Vice Rector II (ORF)', 'action' => ''],
           ['time' => '12:30-13:30', 'activity' => 'ISHOMA', 'facilitator' => '-', 'action' => ''],
-          ['time' => '13:30-14:30', 'activity' => 'Materi 3: Talkshow Meneguhkan Nasionalisme', 'facilitator' => 'Prof Dewi', 'action' => ''],
+          ['time' => '13:30-14:30', 'activity' => 'Materi 3: Talkshow Meneguhkan Nasionalisme', 'facilitator' => 'Prof. Dr. RR. Dewi Anggraeni, S.H., M.H', 'action' => ''],
           ['time' => '14:30-15:30', 'activity' => 'Materi 4: Talkshow Membangun Generasi Kreatif', 'facilitator' => 'Unit & Alumni Kewirausahaan', 'action' => ''],
           ['time' => '15:30-15:40', 'activity' => 'Penutupan', 'facilitator' => 'MC', 'action' => ''],
         ]
@@ -88,7 +88,7 @@ $kegiatan_data = [
           ['time' => '08:50-09:50', 'activity' => 'Materi 6: Pengenalan DPM', 'facilitator' => 'Ketua DPM', 'action' => ''],
           ['time' => '09:50-10:50', 'activity' => 'Materi 7: Pengenalan BEM', 'facilitator' => 'Ketua BEM', 'action' => ''],
           ['time' => '10:50-11:50', 'activity' => 'ISHOMA', 'facilitator' => '-', 'action' => ''],
-          ['time' => '11:50-13:50', 'activity' => 'Materi 8: Talkshow Kesehatan & Kebijakan Hukum HIV/AIDS', 'facilitator' => 'Rida Ista Sitepu, SH., MH. & Dr. Heri', 'action' => ''],
+          ['time' => '11:50-13:50', 'activity' => 'Materi 8: Talkshow Kesehatan & Kebijakan Hukum HIV/AIDS', 'facilitator' => 'Rida Ista Sitepu, SH., MH. & Dr. Heri Heriyanto, M.M.', 'action' => ''],
           ['time' => '13:50-14:05', 'activity' => 'Sosialisasi Informasi Hari ke-3', 'facilitator' => 'Div. Acara', 'action' => ''],
           ['time' => '14:05-14:15', 'activity' => 'Penutupan', 'facilitator' => 'MC', 'action' => ''],
         ]
@@ -188,7 +188,7 @@ $kegiatan_data = [
           ['time' => '10:30-11:30', 'activity' => 'Session 1: Higher Education System in the Digital Era', 'facilitator' => 'Vice Rector I (ARCI)', 'action' => ''],
           ['time' => '11:30-12:30', 'activity' => 'Session 2: Administration and Finance', 'facilitator' => 'Vice Rector II (ORF)', 'action' => ''],
           ['time' => '12:30-13:30', 'activity' => 'ISHOMA (Break)', 'facilitator' => '-', 'action' => ''],
-          ['time' => '13:30-14:30', 'activity' => 'Session 3: Talkshow Strengthening Nationalism', 'facilitator' => 'Prof Dewi', 'action' => ''],
+          ['time' => '13:30-14:30', 'activity' => 'Session 3: Talkshow Strengthening Nationalism', 'facilitator' => 'Prof. Dr. RR. Dewi Anggraeni, S.H., M.H', 'action' => ''],
           ['time' => '14:30-15:30', 'activity' => 'Session 4: Talkshow Building a Creative Generation', 'facilitator' => 'Entrepreneurship Unit & Alumni', 'action' => ''],
           ['time' => '15:30-15:40', 'activity' => 'Closing', 'facilitator' => 'MC', 'action' => ''],
         ]
@@ -204,7 +204,7 @@ $kegiatan_data = [
           ['time' => '08:50-09:50', 'activity' => 'Session 6: Introduction to DPM', 'facilitator' => 'DPM Chair', 'action' => ''],
           ['time' => '09:50-10:50', 'activity' => 'Session 7: Introduction to BEM', 'facilitator' => 'BEM Chair', 'action' => ''],
           ['time' => '10:50-11:50', 'activity' => 'ISHOMA (Break)', 'facilitator' => '-', 'action' => ''],
-          ['time' => '11:50-13:50', 'activity' => 'Session 8: Talkshow on Health & HIV/AIDS Legal Policy', 'facilitator' => 'Rida Ista Sitepu, SH., MH. & Dr. Heri', 'action' => ''],
+          ['time' => '11:50-13:50', 'activity' => 'Session 8: Talkshow on Health & HIV/AIDS Legal Policy', 'facilitator' => 'Rida Ista Sitepu, SH., MH. & Dr. Heri Heriyanto, M.M.', 'action' => ''],
           ['time' => '13:50-14:05', 'activity' => 'Day 3 Information Briefing', 'facilitator' => 'Event Division', 'action' => ''],
           ['time' => '14:05-14:15', 'activity' => 'Closing', 'facilitator' => 'MC', 'action' => ''],
         ]
