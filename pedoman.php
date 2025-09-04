@@ -18,6 +18,7 @@ $content = [
     'download_title' => 'Buku Saku Panduan Penjelajah Waktu',
     'download_desc' => 'Unduh arsip lengkap berisi peta, jadwal, dan semua protokol perjalanan waktu. Buku saku ini adalah kompas utamamu.',
     'download_button' => 'Unduh Buku Saku (.PDF)',
+    'link_buku_saku' => 'https://drive.google.com/file/d/1yEQlf9jJHWKgoSK3RZ-ijJBQE9hQqYnk/view?usp=sharing',
 
     // Section 2: Peraturan
     'rules_title' => 'Dekrit Lintas Waktu',
@@ -63,6 +64,7 @@ $content = [
     'download_title' => 'Time Traveler\'s Pocket Guide',
     'download_desc' => 'Download the complete archive containing maps, schedules, and all time travel protocols. This guide is your primary compass.',
     'download_button' => 'Download Guide (.PDF)',
+    'link_buku_saku' => 'https://drive.google.com/file/d/1TRfotYlpJkw2LdOCORiPLC3seXHvm2nj/view?usp=sharing',
 
     // Section 2: Rules
     'rules_title' => 'Temporal Decrees',
@@ -121,9 +123,8 @@ $text = $content[$lang];
       <div class="col-lg-8">
         <h2 class="section-title"><?php echo $text['download_title']; ?></h2>
         <p class="section-subtitle mb-5"><?php echo $text['download_desc']; ?></p>
-        <a href="https://drive.google.com/file/d/1yEQlf9jJHWKgoSK3RZ-ijJBQE9hQqYnk/view?usp=sharing" target="_blank"
-          class="btn btn-primary-custom btn-lg">
-          <i class="fas fa-download me-2"></i> <?php echo $text['download_button']; ?>
+        <a href="<?php echo $text['link_buku_saku']; ?>" target="_blank" class="btn btn-primary-custom btn-lg">
+          <i class="fas fa-download </a>me-2"></i> <?php echo $text['download_button']; ?>
         </a>
       </div>
     </div>
