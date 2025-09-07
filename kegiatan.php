@@ -69,14 +69,14 @@ $kegiatan_data = [
           ['time' => '09:40-10:00', 'activity' => 'Penyematan simbolis panitia & peserta', 'facilitator' => 'Dr.Ir. Kurniawan, ST. M.Si. MM', 'action' => '', 'youtube_link' => ''],
           ['time' => '10:00-10:10', 'activity' => 'Foto Bersama', 'facilitator' => 'Div. PDD', 'action' => '', 'youtube_link' => ''],
           ['time' => '10:10-10:30', 'activity' => 'Kolaborasi Ormawa', 'facilitator' => 'Div. Seremonial', 'action' => '', 'youtube_link' => ''],
-          ['time' => '10:30-11:30', 'activity' => 'Materi 1: Sistem Perguruan Tinggi di Era Digital', 'facilitator' => 'Vice Rector I (ARCI)', 'action' => '', 'youtube_link' => 'https://www.youtube.com/watch?v=link-materi-1'],
-          ['time' => '11:30-12:30', 'activity' => 'Materi 2: Administrasi dan Keuangan', 'facilitator' => 'Vice Rector II (ORF)', 'action' => '', 'youtube_link' => 'https://www.youtube.com/watch?v=link-materi-2'],
+          ['time' => '10:30-11:30', 'activity' => 'Materi 1: Sistem Perguruan Tinggi di Era Digital', 'facilitator' => 'Vice Rector I (ARCI)', 'action' => '', 'youtube_link' => 'https://youtu.be/qa_Kj65TmVQ'],
+          ['time' => '11:30-12:30', 'activity' => 'Materi 2: Administrasi dan Keuangan', 'facilitator' => 'Vice Rector II (ORF)', 'action' => '', 'youtube_link' => ''],
           ['time' => '12:30-13:30', 'activity' => 'ISHOMA', 'facilitator' => '-', 'action' => '', 'youtube_link' => ''],
           ['time' => '13:30-14:30', 'activity' => 'Materi 3: Talkshow Meneguhkan Nasionalisme', 'facilitator' => 'Prof. Dr. RR. Dewi Anggraeni, S.H., M.H', 'action' => '', 'youtube_link' => ''], // Belum ada link
-          ['time' => '14:30-15:30', 'activity' => 'Materi 4: Talkshow Membangun Generasi Kreatif', 'facilitator' => 'Unit & Alumni Kewirausahaan', 'action' => '', 'youtube_link' => 'https://www.youtube.com/watch?v=link-materi-4'],
+          ['time' => '14:30-15:30', 'activity' => 'Materi 4: Talkshow Membangun Generasi Kreatif', 'facilitator' => 'Unit & Alumni Kewirausahaan', 'action' => '', 'youtube_link' => ''],
           ['time' => '15:30-15:40', 'activity' => 'Penutupan', 'facilitator' => 'MC', 'action' => '', 'youtube_link' => ''],
         ],
-        'live_link' => '' // Tautan live hari 1
+        'live_link' => 'https://www.youtube.com/live/Ekf4LG2DgNk?si=FrRGe2PkYNZxy4oB' // Tautan live hari 1
       ],
       [
         'title' => 'Hari 2: Penempaan Karakter',
@@ -85,11 +85,11 @@ $kegiatan_data = [
           ['time' => '06:00-06:30', 'activity' => 'Persiapan Panitia', 'facilitator' => 'OC', 'action' => '', 'youtube_link' => ''],
           ['time' => '06:30-07:30', 'activity' => 'Check In Peserta', 'facilitator' => 'Mentor & Keamanan', 'action' => '', 'youtube_link' => ''],
           ['time' => '07:30-07:50', 'activity' => 'Pendistribusian Air Mineral', 'facilitator' => 'Div. Konsumsi', 'action' => '', 'youtube_link' => ''],
-          ['time' => '07:50-08:50', 'activity' => 'Materi 5: Kemahasiswaan', 'facilitator' => 'Vice Rector III (SAAC)', 'action' => '', 'youtube_link' => 'https://www.youtube.com/watch?v=link-materi-5'],
+          ['time' => '07:50-08:50', 'activity' => 'Materi 5: Kemahasiswaan', 'facilitator' => 'Vice Rector III (SAAC)', 'action' => '', 'youtube_link' => ''],
           ['time' => '08:50-09:50', 'activity' => 'Materi 6: Pengenalan DPM', 'facilitator' => 'Ketua DPM', 'action' => '', 'youtube_link' => ''], // Belum ada link
-          ['time' => '09:50-10:50', 'activity' => 'Materi 7: Pengenalan BEM', 'facilitator' => 'Ketua BEM', 'action' => '', 'youtube_link' => 'https://www.youtube.com/watch?v=link-materi-7'],
+          ['time' => '09:50-10:50', 'activity' => 'Materi 7: Pengenalan BEM', 'facilitator' => 'Ketua BEM', 'action' => '', 'youtube_link' => ''],
           ['time' => '10:50-11:50', 'activity' => 'ISHOMA', 'facilitator' => '-', 'action' => '', 'youtube_link' => ''],
-          ['time' => '11:50-13:50', 'activity' => 'Materi 8: Talkshow Kesehatan & Kebijakan Hukum HIV/AIDS', 'facilitator' => 'Rida Ista Sitepu, SH., MH. & Dr. Heri Heriyanto, M.M.', 'action' => '', 'youtube_link' => 'https://www.youtube.com/watch?v=link-materi-8'],
+          ['time' => '11:50-13:50', 'activity' => 'Materi 8: Talkshow Kesehatan & Kebijakan Hukum HIV/AIDS', 'facilitator' => 'Rida Ista Sitepu, SH., MH. & Dr. Heri Heriyanto, M.M.', 'action' => '', 'youtube_link' => ''],
           ['time' => '13:50-14:05', 'activity' => 'Sosialisasi Informasi Hari ke-3', 'facilitator' => 'Div. Acara', 'action' => '', 'youtube_link' => ''],
           ['time' => '14:05-14:15', 'activity' => 'Penutupan', 'facilitator' => 'MC', 'action' => '', 'youtube_link' => ''],
         ],
@@ -103,7 +103,7 @@ $kegiatan_data = [
           ['time' => '07:00-08:00', 'activity' => 'Check In Peserta', 'facilitator' => 'Mentor & Keamanan', 'action' => '', 'youtube_link' => ''],
           ['time' => '08:00-08:20', 'activity' => 'Ice Breaking', 'facilitator' => 'Div. Acara', 'action' => '', 'youtube_link' => ''],
           ['time' => '08:20-09:20', 'activity' => 'Pengarahan Peserta ke Ruangan', 'facilitator' => 'Div. Korlap & Keamanan', 'action' => '', 'youtube_link' => ''],
-          ['time' => '09:20-10:50', 'activity' => 'Materi 10: Pengenalan 6 Prodi (FECD)', 'facilitator' => 'Fakultas FECD', 'action' => '', 'youtube_link' => 'https://www.youtube.com/watch?v=link-materi-10'],
+          ['time' => '09:20-10:50', 'activity' => 'Materi 10: Pengenalan 6 Prodi (FECD)', 'facilitator' => 'Fakultas FECD', 'action' => '', 'youtube_link' => ''],
           ['time' => '09:20-10:50', 'activity' => 'Pasar Rakyat Genusian (Ormawa)', 'facilitator' => 'Fakultas FBH', 'action' => '', 'youtube_link' => ''],
           ['time' => '10:50-11:20', 'activity' => 'Mobilitas', 'facilitator' => 'Div. Korlap & Keamanan', 'action' => '', 'youtube_link' => ''],
           ['time' => '11:20-11:40', 'activity' => 'Pendistribusian Air Minum', 'facilitator' => 'Div. Konsumsi', 'action' => '', 'youtube_link' => ''],
@@ -123,7 +123,7 @@ $kegiatan_data = [
           ['time' => '05:00-06:00', 'activity' => 'Check In Peserta', 'facilitator' => 'Mentor & Keamanan', 'action' => '', 'youtube_link' => ''],
           ['time' => '06:00-07:30', 'activity' => 'Sarapan', 'facilitator' => 'Div. Konsumsi', 'action' => '', 'youtube_link' => ''],
           ['time' => '07:30-09:30', 'activity' => 'Olimpiade Debat & Estafet/Olahraga', 'facilitator' => 'Div. Acara & Seremonial', 'action' => '', 'youtube_link' => ''],
-          ['time' => '09:30-11:00', 'activity' => 'Materi 12: Kenusaputraan', 'facilitator' => 'Dr.Ir. Kurniawan, ST. M.Si. MM', 'action' => '', 'youtube_link' => 'https://www.youtube.com/watch?v=link-materi-12'],
+          ['time' => '09:30-11:00', 'activity' => 'Materi 12: Kenusaputraan', 'facilitator' => 'Dr.Ir. Kurniawan, ST. M.Si. MM', 'action' => '', 'youtube_link' => ''],
           ['time' => '11:00-12:00', 'activity' => 'Distribusi Makan Siang', 'facilitator' => 'Div. Konsumsi', 'action' => '', 'youtube_link' => ''],
           ['time' => '12:00-13:00', 'activity' => 'ISHOMA', 'facilitator' => '-', 'action' => '', 'youtube_link' => ''],
           ['time' => '13:00-13:30', 'activity' => 'Pembagian Hadiah', 'facilitator' => 'Div. Seremonial', 'action' => '', 'youtube_link' => ''],
@@ -189,11 +189,11 @@ $kegiatan_data = [
           ['time' => '09:40-10:00', 'activity' => 'Symbolic Pinning for Committee & Participants', 'facilitator' => 'Dr.Ir. Kurniawan, ST. M.Si. MM', 'action' => '', 'youtube_link' => ''],
           ['time' => '10:00-10:10', 'activity' => 'Group Photo', 'facilitator' => 'PDD Division', 'action' => '', 'youtube_link' => ''],
           ['time' => '10:10-10:30', 'activity' => 'Ormawa Collaboration', 'facilitator' => 'Ceremonial Division', 'action' => '', 'youtube_link' => ''],
-          ['time' => '10:30-11:30', 'activity' => 'Session 1: Higher Education System in the Digital Era', 'facilitator' => 'Vice Rector I (ARCI)', 'action' => '', 'youtube_link' => 'https://www.youtube.com/watch?v=link-session-1'],
-          ['time' => '11:30-12:30', 'activity' => 'Session 2: Administration and Finance', 'facilitator' => 'Vice Rector II (ORF)', 'action' => '', 'youtube_link' => 'https://www.youtube.com/watch?v=link-session-2'],
+          ['time' => '10:30-11:30', 'activity' => 'Session 1: Higher Education System in the Digital Era', 'facilitator' => 'Vice Rector I (ARCI)', 'action' => '', 'youtube_link' => 'https://youtu.be/qa_Kj65TmVQ'],
+          ['time' => '11:30-12:30', 'activity' => 'Session 2: Administration and Finance', 'facilitator' => 'Vice Rector II (ORF)', 'action' => '', 'youtube_link' => ''],
           ['time' => '12:30-13:30', 'activity' => 'ISHOMA (Break)', 'facilitator' => '-', 'action' => '', 'youtube_link' => ''],
           ['time' => '13:30-14:30', 'activity' => 'Session 3: Talkshow Strengthening Nationalism', 'facilitator' => 'Prof. Dr. RR. Dewi Anggraeni, S.H., M.H', 'action' => '', 'youtube_link' => ''], // Link not yet available
-          ['time' => '14:30-15:30', 'activity' => 'Session 4: Talkshow Building a Creative Generation', 'facilitator' => 'Entrepreneurship Unit & Alumni', 'action' => '', 'youtube_link' => 'https://www.youtube.com/watch?v=link-session-4'],
+          ['time' => '14:30-15:30', 'activity' => 'Session 4: Talkshow Building a Creative Generation', 'facilitator' => 'Entrepreneurship Unit & Alumni', 'action' => '', 'youtube_link' => ''],
           ['time' => '15:30-15:40', 'activity' => 'Closing', 'facilitator' => 'MC', 'action' => '', 'youtube_link' => ''],
         ],
         'live_link' => '' // Live link for Day 1
@@ -205,11 +205,11 @@ $kegiatan_data = [
           ['time' => '06:00-06:30', 'activity' => 'Committee Preparation', 'facilitator' => 'OC', 'action' => '', 'youtube_link' => ''],
           ['time' => '06:30-07:30', 'activity' => 'Participant Check-In', 'facilitator' => 'Mentors & Security', 'action' => '', 'youtube_link' => ''],
           ['time' => '07:30-07:50', 'activity' => 'Mineral Water Distribution', 'facilitator' => 'Consumption Division', 'action' => '', 'youtube_link' => ''],
-          ['time' => '07:50-08:50', 'activity' => 'Session 5: Student Affairs', 'facilitator' => 'Vice Rector III (SAAC)', 'action' => '', 'youtube_link' => 'https://www.youtube.com/watch?v=link-session-5'],
+          ['time' => '07:50-08:50', 'activity' => 'Session 5: Student Affairs', 'facilitator' => 'Vice Rector III (SAAC)', 'action' => '', 'youtube_link' => ''],
           ['time' => '08:50-09:50', 'activity' => 'Session 6: Introduction to DPM', 'facilitator' => 'DPM Chair', 'action' => '', 'youtube_link' => ''], // Link not yet available
-          ['time' => '09:50-10:50', 'activity' => 'Session 7: Introduction to BEM', 'facilitator' => 'BEM Chair', 'action' => '', 'youtube_link' => 'https://www.youtube.com/watch?v=link-session-7'],
+          ['time' => '09:50-10:50', 'activity' => 'Session 7: Introduction to BEM', 'facilitator' => 'BEM Chair', 'action' => '', 'youtube_link' => ''],
           ['time' => '10:50-11:50', 'activity' => 'ISHOMA (Break)', 'facilitator' => '-', 'action' => '', 'youtube_link' => ''],
-          ['time' => '11:50-13:50', 'activity' => 'Session 8: Talkshow on Health & HIV/AIDS Legal Policy', 'facilitator' => 'Rida Ista Sitepu, SH., MH. & Dr. Heri Heriyanto, M.M.', 'action' => '', 'youtube_link' => 'https://www.youtube.com/watch?v=link-session-8'],
+          ['time' => '11:50-13:50', 'activity' => 'Session 8: Talkshow on Health & HIV/AIDS Legal Policy', 'facilitator' => 'Rida Ista Sitepu, SH., MH. & Dr. Heri Heriyanto, M.M.', 'action' => '', 'youtube_link' => ''],
           ['time' => '13:50-14:05', 'activity' => 'Day 3 Information Briefing', 'facilitator' => 'Event Division', 'action' => '', 'youtube_link' => ''],
           ['time' => '14:05-14:15', 'activity' => 'Closing', 'facilitator' => 'MC', 'action' => '', 'youtube_link' => ''],
         ],
@@ -223,7 +223,7 @@ $kegiatan_data = [
           ['time' => '07:00-08:00', 'activity' => 'Participant Check-In', 'facilitator' => 'Mentors & Security', 'action' => '', 'youtube_link' => ''],
           ['time' => '08:00-08:20', 'activity' => 'Ice Breaking', 'facilitator' => 'Event Division', 'action' => '', 'youtube_link' => ''],
           ['time' => '08:20-09:20', 'activity' => 'Participant Guidance to Rooms', 'facilitator' => 'Korlap & Security Division', 'action' => '', 'youtube_link' => ''],
-          ['time' => '09:20-10:50', 'activity' => 'Session 10: Introduction to 6 Study Programs (FECD)', 'facilitator' => 'FECD Faculty', 'action' => '', 'youtube_link' => 'https://www.youtube.com/watch?v=link-session-10'],
+          ['time' => '09:20-10:50', 'activity' => 'Session 10: Introduction to 6 Study Programs (FECD)', 'facilitator' => 'FECD Faculty', 'action' => '', 'youtube_link' => ''],
           ['time' => '09:20-10:50', 'activity' => 'Genusian People\'s Market (Ormawa)', 'facilitator' => 'FBH Faculty', 'action' => '', 'youtube_link' => ''],
           ['time' => '10:50-11:20', 'activity' => 'Mobility', 'facilitator' => 'Korlap & Security Division', 'action' => '', 'youtube_link' => ''],
           ['time' => '11:20-11:40', 'activity' => 'Drinking Water Distribution', 'facilitator' => 'Consumption Division', 'action' => '', 'youtube_link' => ''],
@@ -243,7 +243,7 @@ $kegiatan_data = [
           ['time' => '05:00-06:00', 'activity' => 'Participant Check-In', 'facilitator' => 'Mentors & Security', 'action' => '', 'youtube_link' => ''],
           ['time' => '06:00-07:30', 'activity' => 'Breakfast', 'facilitator' => 'Consumption Division', 'action' => '', 'youtube_link' => ''],
           ['time' => '07:30-09:30', 'activity' => 'Debate Olympiad & Relay/Sports', 'facilitator' => 'Event & Ceremonial Division', 'action' => '', 'youtube_link' => ''],
-          ['time' => '09:30-11:00', 'activity' => 'Session 12: Kenusaputraan', 'facilitator' => 'Dr.Ir. Kurniawan, ST. M.Si. MM', 'action' => '', 'youtube_link' => 'https://www.youtube.com/watch?v=link-session-12'],
+          ['time' => '09:30-11:00', 'activity' => 'Session 12: Kenusaputraan', 'facilitator' => 'Dr.Ir. Kurniawan, ST. M.Si. MM', 'action' => '', 'youtube_link' => ''],
           ['time' => '11:00-12:00', 'activity' => 'Lunch Distribution', 'facilitator' => 'Consumption Division', 'action' => '', 'youtube_link' => ''],
           ['time' => '12:00-13:00', 'activity' => 'ISHOMA (Break)', 'facilitator' => '-', 'action' => '', 'youtube_link' => ''],
           ['time' => '13:00-13:30', 'activity' => 'Prize Distribution', 'facilitator' => 'Ceremonial Division', 'action' => '', 'youtube_link' => ''],
@@ -369,16 +369,20 @@ $text = $kegiatan_data[$lang];
                       <tr>
                         <td><?php echo $event['time']; ?></td>
                         <td>
-                          <div class="d-flex align-items-center">
-                            <span><?php echo $event['activity']; ?></span>
-                            <?php if (strpos($event['activity'], 'Materi') !== false && !empty($event['youtube_link'])): ?>
-                              <a href="<?php echo $event['youtube_link']; ?>" target="_blank" class="ms-2">
-                                <i class="fas fa-play-circle" title="Tonton Video"></i>
-                              </a>
-                            <?php elseif (strpos($event['activity'], 'Materi') !== false && empty($event['youtube_link'])): ?>
-                              <i class="fas fa-lock ms-2 text-secondary" title="Tautan belum tersedia"></i>
-                            <?php endif; ?>
-                          </div>
+                          <?php
+                          // Tentukan label tombol/link video
+                          $video_label = ($lang == 'en') ? '[Watch Session Video]' : '[Tonton Materi Video]';
+
+                          if (strpos($event['activity'], ($lang == 'en' ? 'Session' : 'Materi')) !== false) {
+                            if (!empty($event['youtube_link'])) {
+                              echo '<a href="' . $event['youtube_link'] . '" target="_blank">' . $event['activity'] . ' <span class="badge bg-danger ms-2">' . $video_label . '</span></a>';
+                            } else {
+                              echo '<span class="activity-text">' . $event['activity'] . '</span>' . ' <i class="fas fa-lock ms-2 text-secondary" title="Tautan belum tersedia"></i>';
+                            }
+                          } else {
+                            echo $event['activity'];
+                          }
+                          ?>
                         </td>
                         <td><?php echo $event['facilitator']; ?></td>
                       </tr>
