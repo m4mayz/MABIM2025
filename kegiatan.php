@@ -76,7 +76,7 @@ $kegiatan_data = [
           ['time' => '14:30-15:30', 'activity' => 'Materi 4: Talkshow Membangun Generasi Kreatif', 'facilitator' => 'Unit & Alumni Kewirausahaan', 'action' => '', 'youtube_link' => 'https://www.youtube.com/watch?v=link-materi-4'],
           ['time' => '15:30-15:40', 'activity' => 'Penutupan', 'facilitator' => 'MC', 'action' => '', 'youtube_link' => ''],
         ],
-        'live_link' => 'https://www.youtube.com/live/gp5eiBCoF-k?si=aCHArDHPZ0NONqAu' // Tautan live hari 1
+        'live_link' => '' // Tautan live hari 1
       ],
       [
         'title' => 'Hari 2: Penempaan Karakter',
@@ -196,7 +196,7 @@ $kegiatan_data = [
           ['time' => '14:30-15:30', 'activity' => 'Session 4: Talkshow Building a Creative Generation', 'facilitator' => 'Entrepreneurship Unit & Alumni', 'action' => '', 'youtube_link' => 'https://www.youtube.com/watch?v=link-session-4'],
           ['time' => '15:30-15:40', 'activity' => 'Closing', 'facilitator' => 'MC', 'action' => '', 'youtube_link' => ''],
         ],
-        'live_link' => 'https://www.youtube.com/live/gp5eiBCoF-k?si=aCHArDHPZ0NONqAu' // Live link for Day 1
+        'live_link' => '' // Live link for Day 1
       ],
       [
         'title' => 'Day 2: Character Building',

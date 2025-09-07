@@ -125,7 +125,8 @@ $text = $info_content[$lang];
       <div class="col-lg-4 col-md-6">
         <div class="info-card">
           <div class="info-card-img">
-            <img src="/assets/img/denah_nusput.jpg" alt="<?php echo $text['campus_map_title']; ?>" class="img-fluid">
+            <img src="https://raw.githubusercontent.com/m4mayz/MABIM2025/refs/heads/main/assets/img/denah_nusput.jpg"
+              alt="<?php echo $text['campus_map_title']; ?>" class="img-fluid">
           </div>
           <div class="info-card-body">
             <h3 class="info-card-title"><?php echo $text['campus_map_title']; ?></h3>
@@ -142,7 +143,8 @@ $text = $info_content[$lang];
       <div class="col-lg-4 col-md-6">
         <div class="info-card">
           <div class="info-card-img">
-            <img src="/assets/img/denah_puncak.jpg" alt="<?php echo $text['bmc_map_title']; ?>" class="img-fluid">
+            <img src="https://raw.githubusercontent.com/m4mayz/MABIM2025/refs/heads/main/assets/img/denah_puncak.jpg"
+              alt="<?php echo $text['bmc_map_title']; ?>" class="img-fluid">
           </div>
           <div class="info-card-body">
             <h3 class="info-card-title"><?php echo $text['bmc_map_title']; ?></h3>
@@ -167,8 +169,8 @@ $text = $info_content[$lang];
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body text-center">
-        <img src="/assets/img/denah_nusput.jpg" alt="<?php echo $text['campus_map_title']; ?>" class="img-fluid"
-          style="max-height: 200vh;">
+        <img src="https://raw.githubusercontent.com/m4mayz/MABIM2025/refs/heads/main/assets/img/denah_nusput.jpg"
+          alt="<?php echo $text['campus_map_title']; ?>" class="img-fluid" style="max-height: 200vh;">
       </div>
       <div class="modal-footer border-secondary">
         <button type="button" class="btn btn-secondary-custom"
@@ -187,8 +189,8 @@ $text = $info_content[$lang];
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body text-center">
-        <img src="/assets/img/denah_puncak.jpg" alt="<?php echo $text['bmc_map_title']; ?>" class="img-fluid"
-          style="max-height: 200vh;">
+        <img src="https://raw.githubusercontent.com/m4mayz/MABIM2025/refs/heads/main/assets/img/denah_puncak.jpg"
+          alt="<?php echo $text['bmc_map_title']; ?>" class="img-fluid" style="max-height: 200vh;">
       </div>
       <div class="modal-footer border-secondary">
         <button type="button" class="btn btn-secondary-custom"
