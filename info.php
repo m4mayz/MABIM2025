@@ -81,7 +81,8 @@ $text = $info_content[$lang];
       <div class="col-lg-4 col-md-6">
         <div class="info-card">
           <div class="info-card-img">
-            <img src="assets/img/supporting-unit.png" alt="<?php echo $text['units_title']; ?>" class="img-fluid">
+            <img src="https://raw.githubusercontent.com/m4mayz/MABIM2025/refs/heads/main/assets/img/supporting-unit.png"
+              alt="<?php echo $text['units_title']; ?>" class="img-fluid">
           </div>
           <div class="info-card-body">
             <h3 class="info-card-title"><?php echo $text['units_title']; ?></h3>
