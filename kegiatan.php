@@ -28,7 +28,7 @@ $kegiatan_data = [
 
     // --- Daftar Absensi ---
     'attendance_list' => [
-      ['title' => 'Absensi Hari ke-1 (8 Sep)', 'link' => ''],
+      ['title' => 'Absensi Hari ke-1 (8 Sep)', 'link' => 'https://forms.gle/JGzN7hChaxhVxaqt5'],
       ['title' => 'Absensi Hari ke-2 (9 Sep)', 'link' => ''],
       ['title' => 'Absensi Hari ke-3 (10 Sep)', 'link' => ''],
       ['title' => 'Absensi Hari ke-4 (13 Sep)', 'link' => ''],
@@ -150,7 +150,7 @@ $kegiatan_data = [
     'location_button' => 'View Map',
     'labels' => ['date' => 'Day/Date', 'time' => 'Time', 'place' => 'Location'],
     'attendance_list' => [
-      ['title' => 'Attendance Day 1 (Sep 8)', 'link' => ''],
+      ['title' => 'Attendance Day 1 (Sep 8)', 'link' => 'https://forms.gle/JGzN7hChaxhVxaqt5'],
       ['title' => 'Attendance Day 2 (Sep 9)', 'link' => ''],
       ['title' => 'Attendance Day 3 (Sep 10)', 'link' => ''],
       ['title' => 'Attendance Day 4 (Sep 13)', 'link' => ''],
