@@ -96,7 +96,7 @@ $kegiatan_data = [
           ['time' => '15:20-15:35', 'activity' => 'Sosialisasi Informasi Hari ke 3', 'facilitator' => 'Div. Acara', 'action' => '', 'youtube_link' => ''],
           ['time' => '15:35-15:45', 'activity' => 'Penutupan', 'facilitator' => 'MC', 'action' => '', 'youtube_link' => ''],
         ],
-        'live_link' => '' // Tautan hari 2
+        'live_link' => 'https://www.youtube.com/live/8xdETfAFXaE' // Tautan hari 2
       ],
       [
         'title' => 'Hari 3: Pengenalan Fakultas & Ormawa',
@@ -202,7 +202,7 @@ $kegiatan_data = [
           ['time' => '14:25-15:25', 'activity' => 'Session 4: Entrepreneurship Talkshow', 'facilitator' => 'Amalia Hasnah & M. Ibda Alfaiza', 'action' => '', 'youtube_link' => ''],
           ['time' => '15:25-15:35', 'activity' => 'Closing', 'facilitator' => 'MC', 'action' => '', 'youtube_link' => ''],
         ],
-        'live_link' => '' // Live link for Day 1
+        'live_link' => 'https://www.youtube.com/live/Ekf4LG2DgNk?si=FrRGe2PkYNZxy4oB' // Live link for Day 1
       ],
       [
         'title' => 'Day 2: Character Building',
@@ -221,7 +221,7 @@ $kegiatan_data = [
           ['time' => '15:20-15:35', 'activity' => 'Day 3 Information Briefing', 'facilitator' => 'Event Division', 'action' => '', 'youtube_link' => ''],
           ['time' => '15:35-15:45', 'activity' => 'Closing', 'facilitator' => 'MC', 'action' => '', 'youtube_link' => ''],
         ],
-        'live_link' => '' // Live link for day 2
+        'live_link' => 'https://www.youtube.com/live/8xdETfAFXaE' // Live link for day 2
       ],
       [
         'title' => 'Day 3: Faculty & Ormawa Introduction',
@@ -272,234 +272,234 @@ $text = $kegiatan_data[$lang];
 ?>
 
 <section class="page-header">
-    <canvas id="plexus-canvas"></canvas>
-    <div class="container text-center">
-        <h1 class="page-header-title"><?php echo $text['page_title']; ?></h1>
-        <p class="lead text-light"><?php echo $text['page_subtitle']; ?></p>
-    </div>
+  <canvas id="plexus-canvas"></canvas>
+  <div class="container text-center">
+    <h1 class="page-header-title"><?php echo $text['page_title']; ?></h1>
+    <p class="lead text-light"><?php echo $text['page_subtitle']; ?></p>
+  </div>
 </section>
 
 <section class="section animated-bg" id="lokasi">
-    <div class="particle-container"></div>
-    <div class="container">
-        <h2 class="section-title"><?php echo $text['location_title']; ?></h2>
-        <div class="row justify-content-center g-4">
-            <?php foreach ($text['location_sessions'] as $session): ?>
-              <div class="col-lg-5 col-md-6">
-                  <div class="location-card-modern">
-                      <h3><?php echo $session['title']; ?></h3>
-                      <ul>
-                          <li><i class="fas fa-calendar-alt"></i>
-                              <div><strong><?php echo $text['labels']['date']; ?>:</strong> <?php echo $session['date']; ?></div>
-                          </li>
-                          <li><i class="fas fa-clock"></i>
-                              <div><strong><?php echo $text['labels']['time']; ?>:</strong> <?php echo $session['time']; ?></div>
-                          </li>
-                          <li><i class="fas fa-map-marker-alt"></i>
-                              <div><strong><?php echo $text['labels']['place']; ?>:</strong> <?php echo $session['place']; ?></div>
-                          </li>
-                      </ul>
-                      <a href="<?php echo $session['gmaps_link']; ?>" target="_blank"
-                          class="btn btn-secondary-custom mt-auto w-100"><i
-                              class="fas fa-map-signs me-2"></i><?php echo $text['location_button']; ?></a>
-                  </div>
-              </div>
-            <?php endforeach; ?>
+  <div class="particle-container"></div>
+  <div class="container">
+    <h2 class="section-title"><?php echo $text['location_title']; ?></h2>
+    <div class="row justify-content-center g-4">
+      <?php foreach ($text['location_sessions'] as $session): ?>
+        <div class="col-lg-5 col-md-6">
+          <div class="location-card-modern">
+            <h3><?php echo $session['title']; ?></h3>
+            <ul>
+              <li><i class="fas fa-calendar-alt"></i>
+                <div><strong><?php echo $text['labels']['date']; ?>:</strong> <?php echo $session['date']; ?></div>
+              </li>
+              <li><i class="fas fa-clock"></i>
+                <div><strong><?php echo $text['labels']['time']; ?>:</strong> <?php echo $session['time']; ?></div>
+              </li>
+              <li><i class="fas fa-map-marker-alt"></i>
+                <div><strong><?php echo $text['labels']['place']; ?>:</strong> <?php echo $session['place']; ?></div>
+              </li>
+            </ul>
+            <a href="<?php echo $session['gmaps_link']; ?>" target="_blank"
+              class="btn btn-secondary-custom mt-auto w-100"><i
+                class="fas fa-map-signs me-2"></i><?php echo $text['location_button']; ?></a>
+          </div>
         </div>
+      <?php endforeach; ?>
     </div>
+  </div>
 </section>
 
 <section class="section absensi-section animated-bg" id="absensi">
-    <div class="particle-container"></div>
-    <div class="container">
-        <h2 class="section-title"><?php echo $text['attendance_title']; ?></h2>
-        <div class="row justify-content-center g-4">
-            <?php foreach ($text['attendance_list'] as $item): ?>
-              <div class="col-lg-3 col-md-6">
-                  <div class="attendance-card">
-                      <i class="fas fa-qrcode"></i>
-                      <h4><?php echo $item['title']; ?></h4>
-                      <?php if (empty($item['link'])): ?>
-                        <button class="btn btn-primary-custom mt-3 btn-disabled" disabled>
-                            <i class="fas fa-lock-alt me-2"></i><?php echo $text['attendance_button']; ?>
-                        </button>
-                      <?php else: ?>
-                        <a href="<?php echo $item['link']; ?>" target="_blank" class="btn btn-primary-custom mt-3">
-                            <i class="fas fa-qrcode me-2"></i><?php echo $text['attendance_button']; ?>
-                        </a>
-                      <?php endif; ?>
-                  </div>
-              </div>
-            <?php endforeach; ?>
+  <div class="particle-container"></div>
+  <div class="container">
+    <h2 class="section-title"><?php echo $text['attendance_title']; ?></h2>
+    <div class="row justify-content-center g-4">
+      <?php foreach ($text['attendance_list'] as $item): ?>
+        <div class="col-lg-3 col-md-6">
+          <div class="attendance-card">
+            <i class="fas fa-qrcode"></i>
+            <h4><?php echo $item['title']; ?></h4>
+            <?php if (empty($item['link'])): ?>
+              <button class="btn btn-primary-custom mt-3 btn-disabled" disabled>
+                <i class="fas fa-lock-alt me-2"></i><?php echo $text['attendance_button']; ?>
+              </button>
+            <?php else: ?>
+              <a href="<?php echo $item['link']; ?>" target="_blank" class="btn btn-primary-custom mt-3">
+                <i class="fas fa-qrcode me-2"></i><?php echo $text['attendance_button']; ?>
+              </a>
+            <?php endif; ?>
+          </div>
         </div>
+      <?php endforeach; ?>
     </div>
+  </div>
 </section>
 
 <section class="section animated-bg" id="rundown">
-    <div class="particle-container"></div>
-    <div class="container">
-        <h2 class="section-title"><?php echo $text['rundown_title']; ?></h2>
-        <div class="accordion" id="rundownAccordion">
-            <?php foreach ($text['rundown_days'] as $index => $day): ?>
-              <div class="accordion-item">
-                  <h2 class="accordion-header" id="heading<?php echo $index; ?>">
-                      <button class="accordion-button <?php if ($index > 0)
-                        echo 'collapsed'; ?>" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#collapse<?php echo $index; ?>">
-                          <?php echo $day['title']; ?> <span class="accordion-date"><?php echo $day['date']; ?></span>
-                      </button>
-                  </h2>
-                  <div id="collapse<?php echo $index; ?>" class="accordion-collapse collapse <?php if ($index == 0)
-                       echo 'show'; ?>" data-bs-parent="#rundownAccordion">
-                      <div class="accordion-body">
-                          <?php if (!empty($day['live_link'])): ?>
-                            <div class="d-grid mb-3">
-                                <a href="<?php echo $day['live_link']; ?>" target="_blank" class="btn btn-danger btn-lg">
-                                    <i class="fab fa-youtube me-2"></i> Tonton Live
-                                </a>
-                            </div>
-                          <?php else: ?>
-                            <div class="d-grid mb-3">
-                                <button class="btn btn-secondary btn-lg" disabled>
-                                    <i class="fas fa-lock me-2"></i> Live Belum Tersedia
-                                </button>
-                            </div>
-                          <?php endif; ?>
-                          <div class="table-responsive">
-                              <table class="table table-rundown-compact">
-                                  <thead>
-                                      <tr>
-                                          <th scope="col"><?php echo $text['rundown_time']; ?></th>
-                                          <th scope="col"><?php echo $text['rundown_activity']; ?></th>
-                                          <th scope="col"><?php echo $text['rundown_facilitator']; ?></th>
-                                      </tr>
-                                  </thead>
-                                  <tbody>
-                                      <?php foreach ($day['schedule'] as $event): ?>
-                                        <tr>
-                                            <td><?php echo $event['time']; ?></td>
-                                            <td>
-                                                <?php
-                                                // Tentukan label tombol/link video
-                                                $video_label = ($lang == 'en') ? '[Watch Session Video]' : '[Tonton Materi Video]';
+  <div class="particle-container"></div>
+  <div class="container">
+    <h2 class="section-title"><?php echo $text['rundown_title']; ?></h2>
+    <div class="accordion" id="rundownAccordion">
+      <?php foreach ($text['rundown_days'] as $index => $day): ?>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading<?php echo $index; ?>">
+            <button class="accordion-button <?php if ($index > 0)
+              echo 'collapsed'; ?>" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse<?php echo $index; ?>">
+              <?php echo $day['title']; ?> <span class="accordion-date"><?php echo $day['date']; ?></span>
+            </button>
+          </h2>
+          <div id="collapse<?php echo $index; ?>" class="accordion-collapse collapse <?php if ($index == 0)
+               echo 'show'; ?>" data-bs-parent="#rundownAccordion">
+            <div class="accordion-body">
+              <?php if (!empty($day['live_link'])): ?>
+                <div class="d-grid mb-3">
+                  <a href="<?php echo $day['live_link']; ?>" target="_blank" class="btn btn-danger btn-lg">
+                    <i class="fab fa-youtube me-2"></i> Tonton Live
+                  </a>
+                </div>
+              <?php else: ?>
+                <div class="d-grid mb-3">
+                  <button class="btn btn-secondary btn-lg" disabled>
+                    <i class="fas fa-lock me-2"></i> Live Belum Tersedia
+                  </button>
+                </div>
+              <?php endif; ?>
+              <div class="table-responsive">
+                <table class="table table-rundown-compact">
+                  <thead>
+                    <tr>
+                      <th scope="col"><?php echo $text['rundown_time']; ?></th>
+                      <th scope="col"><?php echo $text['rundown_activity']; ?></th>
+                      <th scope="col"><?php echo $text['rundown_facilitator']; ?></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <?php foreach ($day['schedule'] as $event): ?>
+                      <tr>
+                        <td><?php echo $event['time']; ?></td>
+                        <td>
+                          <?php
+                          // Tentukan label tombol/link video
+                          $video_label = ($lang == 'en') ? '[Watch Session Video]' : '[Tonton Materi Video]';
 
-                                                if (strpos($event['activity'], 'Materi 1:') !== false) {
-                                                  echo '<a href="' . $event['youtube_link'] . '" target="_blank">' . $event['activity'] . ' <span class="badge bg-danger ms-2">' . $video_label . '</span></a>';
-                                                } else if (strpos($event['activity'], 'Materi 2:') !== false) {
-                                                  echo '<a href="' . $event['youtube_link'] . '" target="_blank">' . $event['activity'] . ' <span class="badge bg-primary ms-2">[Lihat Slide]</span></a>';
-                                                } else {
-                                                  echo $event['activity'];
-                                                }
-                                                ?>
-                                            </td>
-                                            <td><?php echo $event['facilitator']; ?></td>
-                                        </tr>
-                                      <?php endforeach; ?>
-                                  </tbody>
-                              </table>
-                          </div>
-                      </div>
-                  </div>
+                          if (strpos($event['activity'], 'Materi 1:') !== false) {
+                            echo '<a href="' . $event['youtube_link'] . '" target="_blank">' . $event['activity'] . ' <span class="badge bg-danger ms-2">' . $video_label . '</span></a>';
+                          } else if (strpos($event['activity'], 'Materi 2:') !== false) {
+                            echo '<a href="' . $event['youtube_link'] . '" target="_blank">' . $event['activity'] . ' <span class="badge bg-primary ms-2">[Lihat Slide]</span></a>';
+                          } else {
+                            echo $event['activity'];
+                          }
+                          ?>
+                        </td>
+                        <td><?php echo $event['facilitator']; ?></td>
+                      </tr>
+                    <?php endforeach; ?>
+                  </tbody>
+                </table>
               </div>
-            <?php endforeach; ?>
+            </div>
+          </div>
         </div>
+      <?php endforeach; ?>
     </div>
+  </div>
 </section>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const animatedSections = document.querySelectorAll('.animated-bg');
-        const numParticles = 15;
-        animatedSections.forEach(section => {
-            const container = section.querySelector('.particle-container');
-            if (container) {
-                for (let i = 0; i < numParticles; i++) {
-                    const particle = document.createElement('div');
-                    particle.classList.add('particle');
-                    const size = Math.random() * 3 + 1;
-                    particle.style.width = `${size}px`;
-                    particle.style.height = `${size}px`;
-                    particle.style.left = Math.random() * 100 + 'vw';
-                    particle.style.top = Math.random() * 100 + 'vh';
-                    const duration = Math.random() * 10 + 10;
-                    particle.style.animationDuration = `${duration}s`;
-                    const delay = Math.random() * 15;
-                    particle.style.animationDelay = `-${delay}s`;
-                    container.appendChild(particle);
-                }
-            }
-        });
+  document.addEventListener('DOMContentLoaded', function () {
+    const animatedSections = document.querySelectorAll('.animated-bg');
+    const numParticles = 15;
+    animatedSections.forEach(section => {
+      const container = section.querySelector('.particle-container');
+      if (container) {
+        for (let i = 0; i < numParticles; i++) {
+          const particle = document.createElement('div');
+          particle.classList.add('particle');
+          const size = Math.random() * 3 + 1;
+          particle.style.width = `${size}px`;
+          particle.style.height = `${size}px`;
+          particle.style.left = Math.random() * 100 + 'vw';
+          particle.style.top = Math.random() * 100 + 'vh';
+          const duration = Math.random() * 10 + 10;
+          particle.style.animationDuration = `${duration}s`;
+          const delay = Math.random() * 15;
+          particle.style.animationDelay = `-${delay}s`;
+          container.appendChild(particle);
+        }
+      }
     });
+  });
 </script>
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const canvas = document.getElementById('plexus-canvas');
-        if (canvas) {
-            const ctx = canvas.getContext('2d');
-            let particles = [];
-            const numParticles = window.innerWidth < 768 ? 40 : 80;
-            const connectDistance = window.innerWidth < 768 ? 100 : 150;
-            const styles = getComputedStyle(document.documentElement);
-            const colors = [
-                styles.getPropertyValue('--primary-magenta').trim(),
-                styles.getPropertyValue('--secondary-blue').trim(),
-                styles.getPropertyValue('--accent-yellow').trim()
-            ];
-            const resizeCanvas = () => {
-                canvas.width = canvas.offsetWidth;
-                canvas.height = canvas.offsetHeight;
-                particles = [];
-                for (let i = 0; i < numParticles; i++) { particles.push(new Particle()); }
-            };
-            class Particle {
-                constructor() {
-                    this.x = Math.random() * canvas.width;
-                    this.y = Math.random() * canvas.height;
-                    this.vx = (Math.random() - 0.5) * 0.5;
-                    this.vy = (Math.random() - 0.5) * 0.5;
-                    this.radius = Math.random() * 2 + 1;
-                    this.color = colors[Math.floor(Math.random() * colors.length)];
-                }
-                update() {
-                    this.x += this.vx; this.y += this.vy;
-                    if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
-                    if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
-                }
-                draw() {
-                    ctx.beginPath();
-                    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-                    ctx.fillStyle = this.color;
-                    ctx.fill();
-                }
-            }
-            const connectParticles = () => {
-                for (let i = 0; i < particles.length; i++) {
-                    for (let j = i + 1; j < particles.length; j++) {
-                        const dx = particles[i].x - particles[j].x;
-                        const dy = particles[i].y - particles[j].y;
-                        const distance = Math.sqrt(dx * dx + dy * dy);
-                        if (distance < connectDistance) {
-                            ctx.beginPath();
-                            ctx.moveTo(particles[i].x, particles[i].y);
-                            ctx.lineTo(particles[j].x, particles[j].y);
-                            ctx.strokeStyle = `rgba(251, 204, 27, ${1 - distance / connectDistance})`;
-                            ctx.lineWidth = 0.5;
-                            ctx.stroke();
-                        }
-                    }
-                }
-            };
-            const animate = () => {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                particles.forEach(p => { p.update(); p.draw(); });
-                connectParticles();
-                requestAnimationFrame(animate);
-            };
-            window.addEventListener('resize', resizeCanvas);
-            resizeCanvas();
-            animate();
+  document.addEventListener('DOMContentLoaded', function () {
+    const canvas = document.getElementById('plexus-canvas');
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      let particles = [];
+      const numParticles = window.innerWidth < 768 ? 40 : 80;
+      const connectDistance = window.innerWidth < 768 ? 100 : 150;
+      const styles = getComputedStyle(document.documentElement);
+      const colors = [
+        styles.getPropertyValue('--primary-magenta').trim(),
+        styles.getPropertyValue('--secondary-blue').trim(),
+        styles.getPropertyValue('--accent-yellow').trim()
+      ];
+      const resizeCanvas = () => {
+        canvas.width = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
+        particles = [];
+        for (let i = 0; i < numParticles; i++) { particles.push(new Particle()); }
+      };
+      class Particle {
+        constructor() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.vx = (Math.random() - 0.5) * 0.5;
+          this.vy = (Math.random() - 0.5) * 0.5;
+          this.radius = Math.random() * 2 + 1;
+          this.color = colors[Math.floor(Math.random() * colors.length)];
         }
-    });
+        update() {
+          this.x += this.vx; this.y += this.vy;
+          if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+          if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+        }
+        draw() {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+          ctx.fillStyle = this.color;
+          ctx.fill();
+        }
+      }
+      const connectParticles = () => {
+        for (let i = 0; i < particles.length; i++) {
+          for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+            if (distance < connectDistance) {
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.strokeStyle = `rgba(251, 204, 27, ${1 - distance / connectDistance})`;
+              ctx.lineWidth = 0.5;
+              ctx.stroke();
+            }
+          }
+        }
+      };
+      const animate = () => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => { p.update(); p.draw(); });
+        connectParticles();
+        requestAnimationFrame(animate);
+      };
+      window.addEventListener('resize', resizeCanvas);
+      resizeCanvas();
+      animate();
+    }
+  });
 </script>
 
 <?php
