@@ -28,6 +28,10 @@ $info_content = [
     'bmc_map_button' => 'Lihat Denah',
     'bmc_map_modal_title' => 'Denah BMC',
 
+    'units_title' => 'Pengenalan Supporting Units Universitas Nusa Putra',
+    'units_author' => 'Di-post oleh: Panitia MABIM',
+    'units_button' => 'Tonton Video',
+
     'close_button' => 'Tutup',
     'image_placeholder' => 'Gambar akan segera tersedia'
   ],
@@ -48,6 +52,10 @@ $info_content = [
     'bmc_map_author' => 'Posted by: MABIM Committee',
     'bmc_map_button' => 'View Map',
     'bmc_map_modal_title' => 'BMC Map',
+
+    'units_title' => 'Introduction to Nusa Putra University Supporting Units',
+    'units_author' => 'Posted by: MABIM Committee',
+    'units_button' => 'Watch Video',
 
     'close_button' => 'Close',
     'image_placeholder' => 'Image coming soon'
@@ -70,8 +78,21 @@ $text = $info_content[$lang];
   <div class="particle-container"></div>
   <div class="container">
     <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="info-card">
+          <div class="info-card-img">
+            <img src="assets/img/supporting-unit.png" alt="<?php echo $text['units_title']; ?>" class="img-fluid">
+          </div>
+          <div class="info-card-body">
+            <h3 class="info-card-title"><?php echo $text['units_title']; ?></h3>
+            <p class="info-card-author">Posted by: IT Division MABIM 2025</p>
+            <a href="https://www.youtube.com/watch?v=osbLNpT5lz4" target="_blank" class="btn btn-primary-custom w-100">
+              <i class="fab fa-youtube me-2"></i><?php echo $text['units_button']; ?>
+            </a>
+          </div>
+        </div>
+      </div>
 
-      <!-- Buku Saku MABIM 2025 -->
       <div class="col-lg-4 col-md-6">
         <div class="info-card">
           <div class="info-card-img">
@@ -88,7 +109,6 @@ $text = $info_content[$lang];
         </div>
       </div>
 
-      <!-- Link Twibbon -->
       <div class="col-lg-4 col-md-6">
         <div class="info-card">
           <div class="info-card-img">
@@ -104,7 +124,6 @@ $text = $info_content[$lang];
         </div>
       </div>
 
-      <!-- Link Pembagian Kelompok -->
       <div class="col-lg-4 col-md-6">
         <div class="info-card">
           <div class="info-card-img">
@@ -121,7 +140,6 @@ $text = $info_content[$lang];
         </div>
       </div>
 
-      <!-- Denah Kampus -->
       <div class="col-lg-4 col-md-6">
         <div class="info-card">
           <div class="info-card-img">
@@ -139,7 +157,6 @@ $text = $info_content[$lang];
         </div>
       </div>
 
-      <!-- Denah BMC -->
       <div class="col-lg-4 col-md-6">
         <div class="info-card">
           <div class="info-card-img">
@@ -156,11 +173,13 @@ $text = $info_content[$lang];
           </div>
         </div>
       </div>
+
+
+
     </div>
   </div>
 </section>
 
-<!-- Modal for Campus Map -->
 <div class="modal fade" id="campusMapModal" tabindex="-1" aria-labelledby="campusMapModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered">
     <div class="modal-content bg-dark">
@@ -180,7 +199,6 @@ $text = $info_content[$lang];
   </div>
 </div>
 
-<!-- Modal for BMC Map -->
 <div class="modal fade" id="bmcMapModal" tabindex="-1" aria-labelledby="bmcMapModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered">
     <div class="modal-content bg-dark">
