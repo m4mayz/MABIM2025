@@ -97,7 +97,8 @@ $text = $info_content[$lang];
       <div class="col-lg-4 col-md-6">
         <div class="info-card">
           <div class="info-card-img">
-            <img src="assets/img/day-1.jpg" alt="<?php echo $text['day1_doc_title']; ?>" class="img-fluid">
+            <img src="https://raw.githubusercontent.com/m4mayz/MABIM2025/refs/heads/main/assets/img/day-1.jpg"
+              alt="<?php echo $text['day1_doc_title']; ?>" class="img-fluid">
           </div>
           <div class="info-card-body">
             <h3 class="info-card-title"><?php echo $text['day1_doc_title']; ?></h3>
@@ -113,7 +114,8 @@ $text = $info_content[$lang];
       <div class="col-lg-4 col-md-6">
         <div class="info-card">
           <div class="info-card-img">
-            <img src="assets/img/day-2.jpg" alt="<?php echo $text['day2_doc_title']; ?>" class="img-fluid">
+            <img src="https://raw.githubusercontent.com/m4mayz/MABIM2025/refs/heads/main/assets/img/day-2.jpg"
+              alt="<?php echo $text['day2_doc_title']; ?>" class="img-fluid">
           </div>
           <div class="info-card-body">
             <h3 class="info-card-title"><?php echo $text['day2_doc_title']; ?></h3>
