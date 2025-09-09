@@ -32,6 +32,14 @@ $info_content = [
     'units_author' => 'Di-post oleh: Panitia MABIM',
     'units_button' => 'Tonton Video',
 
+    'day1_doc_title' => 'Dokumentasi Day 1',
+    'day1_doc_author' => 'Posted by: IT Division MABIM 2025',
+    'day1_doc_button' => 'Lihat Dokumentasi',
+
+    'day2_doc_title' => 'Dokumentasi Day 2',
+    'day2_doc_author' => 'Posted by: IT Division MABIM 2025',
+    'day2_doc_button' => 'Lihat Dokumentasi',
+
     'close_button' => 'Tutup',
     'image_placeholder' => 'Gambar akan segera tersedia'
   ],
@@ -57,6 +65,14 @@ $info_content = [
     'units_author' => 'Posted by: MABIM Committee',
     'units_button' => 'Watch Video',
 
+    'day1_doc_title' => 'Day 1 Documentation',
+    'day1_doc_author' => 'Posted by: IT Division MABIM 2025',
+    'day1_doc_button' => 'View Documentation',
+
+    'day2_doc_title' => 'Day 2 Documentation',
+    'day2_doc_author' => 'Posted by: IT Division MABIM 2025',
+    'day2_doc_button' => 'View Documentation',
+
     'close_button' => 'Close',
     'image_placeholder' => 'Image coming soon'
   ]
@@ -78,6 +94,38 @@ $text = $info_content[$lang];
   <div class="particle-container"></div>
   <div class="container">
     <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="info-card">
+          <div class="info-card-img">
+            <img src="assets/img/day-1.jpg" alt="<?php echo $text['day1_doc_title']; ?>" class="img-fluid">
+          </div>
+          <div class="info-card-body">
+            <h3 class="info-card-title"><?php echo $text['day1_doc_title']; ?></h3>
+            <p class="info-card-author"><?php echo $text['day1_doc_author']; ?></p>
+            <a href="https://drive.google.com/drive/folders/12cBVwkMMgWgjfeFIFaiXy3JKFdotovcR?usp=drive_link"
+              target="_blank" class="btn btn-primary-custom w-100">
+              <i class="fas fa-file-image me-2"></i><?php echo $text['day1_doc_button']; ?>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="info-card">
+          <div class="info-card-img">
+            <img src="assets/img/day-2.jpg" alt="<?php echo $text['day2_doc_title']; ?>" class="img-fluid">
+          </div>
+          <div class="info-card-body">
+            <h3 class="info-card-title"><?php echo $text['day2_doc_title']; ?></h3>
+            <p class="info-card-author"><?php echo $text['day2_doc_author']; ?></p>
+            <a href="https://drive.google.com/drive/folders/1reSFbEgfDNgyg6qa0eTvL1tRMwF515uz?usp=drive_link"
+              target="_blank" class="btn btn-primary-custom w-100">
+              <i class="fas fa-file-image me-2"></i><?php echo $text['day2_doc_button']; ?>
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div class="col-lg-4 col-md-6">
         <div class="info-card">
           <div class="info-card-img">
@@ -174,8 +222,6 @@ $text = $info_content[$lang];
           </div>
         </div>
       </div>
-
-
 
     </div>
   </div>

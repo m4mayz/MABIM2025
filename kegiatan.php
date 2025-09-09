@@ -23,17 +23,15 @@ $kegiatan_data = [
     'attendance_title' => 'Gerbang Absensi',
     'rundown_title' => 'Rundown Perjalanan Waktu',
     'attendance_button' => 'Isi Absensi',
+    'attendance_ended_button' => 'Absensi telah berakhir', // Teks baru untuk bahasa Indonesia
     'location_button' => 'Lihat Peta',
     'labels' => ['date' => 'Hari/Tanggal', 'time' => 'Waktu', 'place' => 'Lokasi'],
-
-    // --- Daftar Absensi ---
     'attendance_list' => [
-      ['title' => 'Absensi Hari ke-1 (8 Sep)', 'link' => 'https://forms.gle/JGzN7hChaxhVxaqt5'],
-      ['title' => 'Absensi Hari ke-2 (9 Sep)', 'link' => ''],
+      ['title' => 'Absensi Hari ke-1 (8 Sep)', 'link' => ''],
+      ['title' => 'Absensi Hari ke-2 (9 Sep)', 'link' => 'https://forms.gle/nS4t8GsykvCmEMbDA'],
       ['title' => 'Absensi Hari ke-3 (10 Sep)', 'link' => ''],
       ['title' => 'Absensi Hari ke-4 (13 Sep)', 'link' => ''],
     ],
-    // --- Informasi Tempat & Waktu per Sesi ---
     'location_sessions' => [
       [
         'title' => 'HARI 1-3',
@@ -50,7 +48,6 @@ $kegiatan_data = [
         'gmaps_link' => 'https://maps.app.goo.gl/xE9EZwdZyEr7hvWY6'
       ]
     ],
-    // --- Jadwal Rundown Harian ---
     'rundown_days' => [
       [
         'title' => 'Hari 1: Gerbang Waktu Terbuka',
@@ -152,11 +149,12 @@ $kegiatan_data = [
     'attendance_title' => 'Attendance Gate',
     'rundown_title' => 'Time Travel Rundown',
     'attendance_button' => 'Fill Attendance',
+    'attendance_ended_button' => 'Attendance has ended', // Teks baru untuk bahasa Inggris
     'location_button' => 'View Map',
     'labels' => ['date' => 'Day/Date', 'time' => 'Time', 'place' => 'Location'],
     'attendance_list' => [
-      ['title' => 'Attendance Day 1 (Sep 8)', 'link' => 'https://forms.gle/JGzN7hChaxhVxaqt5'],
-      ['title' => 'Attendance Day 2 (Sep 9)', 'link' => ''],
+      ['title' => 'Attendance Day 1 (Sep 8)', 'link' => ''],
+      ['title' => 'Attendance Day 2 (Sep 9)', 'link' => 'https://forms.gle/nS4t8GsykvCmEMbDA'],
       ['title' => 'Attendance Day 3 (Sep 10)', 'link' => ''],
       ['title' => 'Attendance Day 4 (Sep 13)', 'link' => ''],
     ],
@@ -314,12 +312,49 @@ $text = $kegiatan_data[$lang];
   <div class="container">
     <h2 class="section-title"><?php echo $text['attendance_title']; ?></h2>
     <div class="row justify-content-center g-4">
+      <?php
+      // Dapatkan tanggal hari ini dalam format YYYY-MM-DD untuk perbandingan yang akurat
+      $today = new DateTime('now', new DateTimeZone('Asia/Jakarta'));
+      $today_string = $today->format('Y-m-d');
+      ?>
       <?php foreach ($text['attendance_list'] as $item): ?>
         <div class="col-lg-3 col-md-6">
           <div class="attendance-card">
             <i class="fas fa-qrcode"></i>
             <h4><?php echo $item['title']; ?></h4>
-            <?php if (empty($item['link'])): ?>
+            <?php
+            // Ambil tanggal dari judul absensi, contoh "(8 Sep)" atau "(Sep 8)"
+            preg_match('/\((.*?)\)/', $item['title'], $matches);
+            $date_string = isset($matches[1]) ? $matches[1] : '';
+
+            $is_past_day = false;
+            if (!empty($date_string)) {
+              $date_format = '';
+              // Tentukan format tanggal berdasarkan bahasa
+              if ($lang == 'id') {
+                $date_format = 'j M'; // Contoh: 8 Sep
+              } else {
+                $date_format = 'M j'; // Contoh: Sep 8
+              }
+
+              // Buat objek tanggal absensi dengan tahun 2025 agar bisa dibandingkan
+              $attendance_date_obj = DateTime::createFromFormat($date_format . ' Y', $date_string . ' 2025', new DateTimeZone('Asia/Jakarta'));
+
+              if ($attendance_date_obj) {
+                // Format tanggal absensi ke YYYY-MM-DD
+                $attendance_day_string = $attendance_date_obj->format('Y-m-d');
+                // Bandingkan dengan tanggal hari ini
+                if ($attendance_day_string < $today_string && empty($item['link'])) {
+                  $is_past_day = true;
+                }
+              }
+            }
+            ?>
+            <?php if ($is_past_day): ?>
+              <button class="btn btn-primary-custom mt-3 btn-disabled" disabled>
+                <i class="fas fa-calendar-times me-2"></i> <?php echo $text['attendance_ended_button']; ?>
+              </button>
+            <?php elseif (empty($item['link'])): ?>
               <button class="btn btn-primary-custom mt-3 btn-disabled" disabled>
                 <i class="fas fa-lock-alt me-2"></i><?php echo $text['attendance_button']; ?>
               </button>
