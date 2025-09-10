@@ -28,8 +28,8 @@ $kegiatan_data = [
     'labels' => ['date' => 'Hari/Tanggal', 'time' => 'Waktu', 'place' => 'Lokasi'],
     'attendance_list' => [
       ['title' => 'Absensi Hari ke-1 (8 Sep)', 'link' => ''],
-      ['title' => 'Absensi Hari ke-2 (9 Sep)', 'link' => 'https://forms.gle/nS4t8GsykvCmEMbDA'],
-      ['title' => 'Absensi Hari ke-3 (10 Sep)', 'link' => ''],
+      ['title' => 'Absensi Hari ke-2 (9 Sep)', 'link' => ''],
+      ['title' => 'Absensi Hari ke-3 (10 Sep)', 'link' => 'https://forms.gle/JsbXGjUFfi6ecBs67'],
       ['title' => 'Absensi Hari ke-4 (13 Sep)', 'link' => ''],
     ],
     'location_sessions' => [
@@ -113,7 +113,7 @@ $kegiatan_data = [
           ['time' => '13:10-14:40', 'activity' => 'Pasar Rakyat Genusian (Ormawa)', 'facilitator' => 'Fakultas FECD', 'action' => '', 'youtube_link' => ''],
           ['time' => '14:40-14:50', 'activity' => 'Penutupan', 'facilitator' => 'MC', 'action' => '', 'youtube_link' => ''],
         ],
-        'live_link' => '' // Tautan live hari 3
+        'live_link' => 'https://www.youtube.com/live/M8bZ_mBX7HU' // Tautan live hari 3
       ],
       [
         'title' => 'Hari 4: Puncak Ekspedisi',
@@ -154,8 +154,8 @@ $kegiatan_data = [
     'labels' => ['date' => 'Day/Date', 'time' => 'Time', 'place' => 'Location'],
     'attendance_list' => [
       ['title' => 'Attendance Day 1 (Sep 8)', 'link' => ''],
-      ['title' => 'Attendance Day 2 (Sep 9)', 'link' => 'https://forms.gle/nS4t8GsykvCmEMbDA'],
-      ['title' => 'Attendance Day 3 (Sep 10)', 'link' => ''],
+      ['title' => 'Attendance Day 2 (Sep 9)', 'link' => ''],
+      ['title' => 'Attendance Day 3 (Sep 10)', 'link' => 'https://forms.gle/JsbXGjUFfi6ecBs67'],
       ['title' => 'Attendance Day 4 (Sep 13)', 'link' => ''],
     ],
     'location_sessions' => [
@@ -239,7 +239,7 @@ $kegiatan_data = [
           ['time' => '13:10-14:40', 'activity' => 'Genusian People\'s Market (Ormawa)', 'facilitator' => 'FECD Faculty', 'action' => '', 'youtube_link' => ''],
           ['time' => '14:40-14:50', 'activity' => 'Closing', 'facilitator' => 'MC', 'action' => '', 'youtube_link' => ''],
         ],
-        'live_link' => '' // Live link for Day 3
+        'live_link' => 'https://www.youtube.com/live/M8bZ_mBX7HU' // Live link for Day 3
       ],
       [
         'title' => 'Day 4: Expedition Peak',

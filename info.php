@@ -40,6 +40,10 @@ $info_content = [
     'day2_doc_author' => 'Posted by: IT Division MABIM 2025',
     'day2_doc_button' => 'Lihat Dokumentasi',
 
+    'day3_doc_title' => 'Dokumentasi Day 3',
+    'day3_doc_author' => 'Posted by: IT Division MABIM 2025',
+    'day3_doc_button' => 'Lihat Dokumentasi',
+
     'close_button' => 'Tutup',
     'image_placeholder' => 'Gambar akan segera tersedia'
   ],
@@ -72,6 +76,10 @@ $info_content = [
     'day2_doc_title' => 'Day 2 Documentation',
     'day2_doc_author' => 'Posted by: IT Division MABIM 2025',
     'day2_doc_button' => 'View Documentation',
+
+    'day3_doc_title' => 'Day 3 Documentation',
+    'day3_doc_author' => 'Posted by: IT Division MABIM 2025',
+    'day3_doc_button' => 'View Documentation',
 
     'close_button' => 'Close',
     'image_placeholder' => 'Image coming soon'
@@ -123,6 +131,23 @@ $text = $info_content[$lang];
             <a href="https://drive.google.com/drive/folders/1reSFbEgfDNgyg6qa0eTvL1tRMwF515uz?usp=drive_link"
               target="_blank" class="btn btn-primary-custom w-100">
               <i class="fas fa-file-image me-2"></i><?php echo $text['day2_doc_button']; ?>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="info-card">
+          <div class="info-card-img">
+            <img src="https://raw.githubusercontent.com/m4mayz/MABIM2025/refs/heads/main/assets/img/day-3.JPG"
+              alt="<?php echo $text['day1_doc_title']; ?>" class="img-fluid">
+          </div>
+          <div class="info-card-body">
+            <h3 class="info-card-title"><?php echo $text['day3_doc_title']; ?></h3>
+            <p class="info-card-author"><?php echo $text['day3_doc_author']; ?></p>
+            <a href="https://drive.google.com/drive/folders/1T5QKsoVLis5MywJOzz1qwxhWpnRQp-3_" target="_blank"
+              class="btn btn-primary-custom w-100">
+              <i class="fas fa-file-image me-2"></i><?php echo $text['day3_doc_button']; ?>
             </a>
           </div>
         </div>
