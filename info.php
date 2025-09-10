@@ -105,15 +105,15 @@ $text = $info_content[$lang];
       <div class="col-lg-4 col-md-6">
         <div class="info-card">
           <div class="info-card-img">
-            <img src="https://raw.githubusercontent.com/m4mayz/MABIM2025/refs/heads/main/assets/img/day-1.JPG"
+            <img src="https://raw.githubusercontent.com/m4mayz/MABIM2025/refs/heads/main/assets/img/day-3.JPG"
               alt="<?php echo $text['day1_doc_title']; ?>" class="img-fluid">
           </div>
           <div class="info-card-body">
-            <h3 class="info-card-title"><?php echo $text['day1_doc_title']; ?></h3>
-            <p class="info-card-author"><?php echo $text['day1_doc_author']; ?></p>
-            <a href="https://drive.google.com/drive/folders/12cBVwkMMgWgjfeFIFaiXy3JKFdotovcR?usp=drive_link"
-              target="_blank" class="btn btn-primary-custom w-100">
-              <i class="fas fa-file-image me-2"></i><?php echo $text['day1_doc_button']; ?>
+            <h3 class="info-card-title"><?php echo $text['day3_doc_title']; ?></h3>
+            <p class="info-card-author"><?php echo $text['day3_doc_author']; ?></p>
+            <a href="https://drive.google.com/drive/folders/1T5QKsoVLis5MywJOzz1qwxhWpnRQp-3_" target="_blank"
+              class="btn btn-primary-custom w-100">
+              <i class="fas fa-file-image me-2"></i><?php echo $text['day3_doc_button']; ?>
             </a>
           </div>
         </div>
@@ -139,15 +139,15 @@ $text = $info_content[$lang];
       <div class="col-lg-4 col-md-6">
         <div class="info-card">
           <div class="info-card-img">
-            <img src="https://raw.githubusercontent.com/m4mayz/MABIM2025/refs/heads/main/assets/img/day-3.JPG"
+            <img src="https://raw.githubusercontent.com/m4mayz/MABIM2025/refs/heads/main/assets/img/day-1.JPG"
               alt="<?php echo $text['day1_doc_title']; ?>" class="img-fluid">
           </div>
           <div class="info-card-body">
-            <h3 class="info-card-title"><?php echo $text['day3_doc_title']; ?></h3>
-            <p class="info-card-author"><?php echo $text['day3_doc_author']; ?></p>
-            <a href="https://drive.google.com/drive/folders/1T5QKsoVLis5MywJOzz1qwxhWpnRQp-3_" target="_blank"
-              class="btn btn-primary-custom w-100">
-              <i class="fas fa-file-image me-2"></i><?php echo $text['day3_doc_button']; ?>
+            <h3 class="info-card-title"><?php echo $text['day1_doc_title']; ?></h3>
+            <p class="info-card-author"><?php echo $text['day1_doc_author']; ?></p>
+            <a href="https://drive.google.com/drive/folders/12cBVwkMMgWgjfeFIFaiXy3JKFdotovcR?usp=drive_link"
+              target="_blank" class="btn btn-primary-custom w-100">
+              <i class="fas fa-file-image me-2"></i><?php echo $text['day1_doc_button']; ?>
             </a>
           </div>
         </div>
